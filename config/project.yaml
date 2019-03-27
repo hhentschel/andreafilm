@@ -1,0 +1,32 @@
+email:
+  fromEmail: p@henrik-hentschel.de
+  fromName: 'Andrea Film'
+  transportType: craft\mail\transportadapters\Sendmail
+fieldGroups:
+  b6201258-940b-4113-ba3b-d6e2b2aa38e1:
+    name: Common
+siteGroups:
+  330548d1-b81b-4755-96d3-a57901c9800d:
+    name: 'Andrea Film'
+sites:
+  eccd415c-2a08-4035-94cd-62a46c8cd0a2:
+    baseUrl: $DEFAULT_SITE_URL
+    handle: default
+    hasUrls: true
+    language: de
+    name: 'Andrea Film'
+    primary: true
+    siteGroup: 330548d1-b81b-4755-96d3-a57901c9800d
+    sortOrder: 1
+system:
+  edition: solo
+  name: 'Andrea Film'
+  live: true
+  schemaVersion: 3.1.25
+  timeZone: America/Los_Angeles
+users:
+  requireEmailVerification: true
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoVolumeUid: null
+  photoSubpath: ''
