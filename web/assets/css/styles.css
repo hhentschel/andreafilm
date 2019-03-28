@@ -623,6 +623,7 @@ body {
 
 /* line 10, src/sass/_layout.scss */
 .container__home {
+  background: blueviolet;
   display: grid;
   /* We need to set the margin used on flex items to 0 as we have gaps in grid.  */
 }

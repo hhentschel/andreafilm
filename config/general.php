@@ -43,9 +43,8 @@ return [
     // Production environment settings
     'production' => [
         // Prevent administrative changes from being made on production
-        'allowAdminChanges' => true,
-         'devMode' => true,
+        'allowAdminChanges' => false,
+        'devMode' => false,
     ],
-
-
+    
 ];
