@@ -3,23 +3,25 @@
 <!doctype html>
 <html lang="{{craft.app.language}}">
 
-{% include 'walderwyss/_includes/header.twig' %}
+{% include '/_includes/meta.twig' %}
 
 <body>
 
     <div id="header-container" class="header-container">
         <header class="header">
-            {% include "walderwyss/_includes/navigation_main.twig" %}
+            {#% include "/_includes/navigation_main.twig" %#}
         </header>
     </div>
    
     {# MAIN CONTENT #}
     <div class='layout__main' id="wrapper">
-        {% block main %}{% endblock %}
+        {% block main %}
+        
+        {% endblock %}
     </div>
 
     {# FOOTER #}
-    {% include "walderwyss/_includes/footer.twig" %}
+    {% include '/_includes/footer.twig' %}
 
     {# </div> #}
 

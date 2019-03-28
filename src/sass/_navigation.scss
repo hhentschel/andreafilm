@@ -1,0 +1,32 @@
+.container {
+	&__nav {
+		font-size: 5rem;
+
+		li {
+			line-height: 1;
+		}
+
+		&-item {
+			line-height: 1;
+			color: var(--color-primary);
+			text-transform: uppercase;
+			padding: 5px 0;
+			display: block;
+		}
+	}
+
+	.nav__item {
+		&-home {
+		}
+
+		&-films {
+			color: var(--color-secondary);
+		}
+
+		&-about {
+		}
+
+		&-contact {
+		}
+	}
+}

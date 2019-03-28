@@ -44,5 +44,6 @@ return [
     'production' => [
         // Prevent administrative changes from being made on production
         'allowAdminChanges' => false,
+         'devMode' => true,
     ],
 ];

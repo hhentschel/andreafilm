@@ -1,11 +1,37 @@
-<!DOCTYPE html>
-<html lang="de">
-{% include 'walderwyss/_includes/header.twig' %}
+{% extends '/_layout' %}
 
-<body>
+{% block main %}
+    {# MAIN CONTENT #}
+   
+        <div class="container container__home">
+            <div class="container__home--introbox">
+                {% include '/_includes/navigation.twig' %}
+            </div>
 
-    
-</body>
+            <a href="#" class="container__home--filmbox">
+                <h2 class="container__home--filmbox-title">To Dream as he does</h2>
+                <p class="container__home--filmbox-subtitle">2019</p>
+            </a>
 
-{% include 'walderwyss/_includes/footer.twig' %}
-</html>
+
+            <div class="container__home--filmbox">
+                <h2>Salvage of a galley</h2>
+                <p>2019</p>
+            </div>
+            <div class="container__home--filmbox">
+                <h2>THE TRIAL OF KLARA WENDEL</h2>
+            </div>
+            <div class="container__home--filmbox">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque voluptates alias totam dicta laudantium sit pariatur, veniam fugiat itaque officia.
+            </div>
+            <div class="container__home--filmbox">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, eligendi.
+            </div>
+            <div class="container__home--filmbox">
+            Lorem ipsum dolor sit.
+            </div>
+
+        </div>
+
+
+{% endblock %}

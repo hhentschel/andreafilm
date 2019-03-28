@@ -1,4 +1,30 @@
+
+
+
+# CRAFT ENVIRONMENT
+.env
 /.env
-/.idea
+
+# COMPOSER
 /vendor
+
+# CRAFT STORAGE
+/storage/*
+
+# ASSETS
+
+# BUILD FILES
+/bower_components/*
+/node_modules/*
+
+# MISC FILES
+.cache
 .DS_Store
+.idea
+*.sublime-workspace
+*.sublime-project
+node_modules
+bower_components
+Gulpfile.js
+gulpfile.js
+cpresources

@@ -33,11 +33,11 @@ var paths = {
 		input: 'src/svg/*.svg',
 		output: 'web/assets/svg/'
 	},
-	copy: {
-		input: 'templates/**/*',
-		output: 'web/assets/'
-	},
-	reload: 'http://andreafilm.local/web/index.html'
+	// copy: {
+	// 	input: 'templates/**/*',
+	// 	output: 'web/assets/'
+	// },
+	reload: 'http://andreafilm.local/'
 };
 
 /**
@@ -226,16 +226,16 @@ var buildSVGs = function(done) {
 };
 
 // Copy static files into output folder
-var copyFiles = function(done) {
-	// Make sure this feature is activated before running
-	if (!settings.copy) return done();
+// var copyFiles = function(done) {
+// 	// Make sure this feature is activated before running
+// 	if (!settings.copy) return done();
 
-	// Copy static files
-	src(paths.copy.input).pipe(dest(paths.copy.output));
+// 	// Copy static files
+// 	src(paths.copy.input).pipe(dest(paths.copy.output));
 
-	// Signal completion
-	done();
-};
+// 	// Signal completion
+// 	done();
+// };
 
 // Watch for changes to the src directory
 var startServer = function(done) {
@@ -250,7 +250,7 @@ var startServer = function(done) {
 	// });
 
 	browserSync.init({
-		watch: true,
+		//watch: true,
 		proxy: 'http://andreafilm.local'
 		// proxy: {
 		// 	target: 'http://andreafilm.local'
@@ -281,7 +281,8 @@ var watchSource = function(done) {
 
 // Default task
 // gulp
-exports.default = series(cleanDist, parallel(buildScripts, lintScripts, buildStyles, buildSVGs, copyFiles));
+exports.default = series(cleanDist, parallel(buildScripts, lintScripts, buildStyles, buildSVGs));
+// exports.default = series(cleanDist, parallel(buildScripts, lintScripts, buildStyles, buildSVGs, copyFiles));
 
 // Watch and reload
 // gulp watch

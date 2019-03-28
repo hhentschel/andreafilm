@@ -1,3 +1,4 @@
+dateModified: 1553760378
 email:
   fromEmail: p@henrik-hentschel.de
   fromName: 'Andrea Film'
@@ -5,6 +6,270 @@ email:
 fieldGroups:
   b6201258-940b-4113-ba3b-d6e2b2aa38e1:
     name: Common
+  7dd38e4e-2004-4c25-9623-4a50770124d8:
+    name: Drinks
+  05290696-2d33-4040-8bdf-ecb9e2593586:
+    name: General
+  57800bf4-49d4-4aa9-ac2b-9953569db0ef:
+    name: News
+  695f2705-9ba1-4d94-800b-7601fa8fd1f0:
+    name: About
+fields:
+  d655e5be-d31c-48a7-8587-ff8423fa00d0:
+    name: 'Drinks Intro'
+    handle: drinksIntro
+    instructions: 'A short Introduction'
+    searchable: true
+    translationMethod: none
+    translationKeyFormat: null
+    type: craft\fields\PlainText
+    settings:
+      placeholder: ''
+      code: ''
+      multiline: ''
+      initialRows: '4'
+      charLimit: ''
+      columnType: text
+    contentColumnType: text
+    fieldGroup: 7dd38e4e-2004-4c25-9623-4a50770124d8
+  69983b47-acee-48fe-a414-30b622fe223b:
+    name: Inhaltsfeld
+    handle: contentField
+    instructions: ''
+    searchable: true
+    translationMethod: none
+    translationKeyFormat: null
+    type: craft\ckeditor\Field
+    settings:
+      purifierConfig: ''
+      purifyHtml: '1'
+      columnType: text
+    contentColumnType: text
+    fieldGroup: 05290696-2d33-4040-8bdf-ecb9e2593586
+  04a8398f-e475-4c20-8b5e-ff34d79210de:
+    name: 'News Excerpt'
+    handle: newsExcerpt
+    instructions: ''
+    searchable: true
+    translationMethod: none
+    translationKeyFormat: null
+    type: craft\fields\PlainText
+    settings:
+      placeholder: ''
+      code: ''
+      multiline: ''
+      initialRows: '4'
+      charLimit: ''
+      columnType: text
+    contentColumnType: text
+    fieldGroup: 57800bf4-49d4-4aa9-ac2b-9953569db0ef
+  54f6e39b-7a48-4853-aa96-ae218d4bacad:
+    name: 'News Body'
+    handle: newsBody
+    instructions: ''
+    searchable: true
+    translationMethod: none
+    translationKeyFormat: null
+    type: craft\ckeditor\Field
+    settings:
+      purifierConfig: ''
+      purifyHtml: '1'
+      columnType: text
+    contentColumnType: text
+    fieldGroup: 57800bf4-49d4-4aa9-ac2b-9953569db0ef
+  554e73b2-36b3-4fe6-a4bc-6628e7941e76:
+    name: 'Drink Image'
+    handle: drinkImage
+    instructions: ''
+    searchable: true
+    translationMethod: site
+    translationKeyFormat: null
+    type: craft\fields\Assets
+    settings:
+      useSingleFolder: ''
+      defaultUploadLocationSource: 'volume:9161c7ba-81a8-43c7-88a0-1c31bc63965e'
+      defaultUploadLocationSubpath: ''
+      singleUploadLocationSource: 'volume:9161c7ba-81a8-43c7-88a0-1c31bc63965e'
+      singleUploadLocationSubpath: ''
+      restrictFiles: '1'
+      allowedKinds:
+        - image
+      sources:
+        - 'volume:9161c7ba-81a8-43c7-88a0-1c31bc63965e'
+      source: null
+      targetSiteId: null
+      viewMode: list
+      limit: '1'
+      selectionLabel: 'Chosse a Drin kIMage'
+      localizeRelations: false
+    contentColumnType: string
+    fieldGroup: 7dd38e4e-2004-4c25-9623-4a50770124d8
+  5eec0c3a-943f-4959-b56a-bdb2c1ddc2f6:
+    name: Subtitel
+    handle: subtitle
+    instructions: ''
+    searchable: true
+    translationMethod: none
+    translationKeyFormat: null
+    type: craft\fields\PlainText
+    settings:
+      placeholder: ''
+      code: ''
+      multiline: ''
+      initialRows: '4'
+      charLimit: ''
+      columnType: text
+    contentColumnType: text
+    fieldGroup: 695f2705-9ba1-4d94-800b-7601fa8fd1f0
+  f8035747-f395-413b-81cb-077ad48d657a:
+    name: 'Page Intro'
+    handle: pageIntro
+    instructions: ''
+    searchable: true
+    translationMethod: none
+    translationKeyFormat: null
+    type: craft\fields\PlainText
+    settings:
+      placeholder: ''
+      code: ''
+      multiline: ''
+      initialRows: '4'
+      charLimit: ''
+      columnType: text
+    contentColumnType: text
+    fieldGroup: 695f2705-9ba1-4d94-800b-7601fa8fd1f0
+imageTransforms:
+  1e7f10eb-9c52-4c9d-8635-e84c81411788:
+    format: null
+    handle: drinksHomepageThumb
+    height: '200'
+    interlace: none
+    mode: crop
+    name: '840x200 Thumb'
+    position: center-center
+    quality: null
+    width: '840'
+plugins:
+  ckeditor:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+sections:
+  0bc9c09c-8649-4220-9d2d-4356819c3f56:
+    name: Drinks
+    handle: drinksSection
+    type: channel
+    enableVersioning: true
+    propagateEntries: true
+    siteSettings:
+      eccd415c-2a08-4035-94cd-62a46c8cd0a2:
+        enabledByDefault: true
+        hasUrls: true
+        uriFormat: 'drinks/{slug}'
+        template: drinks/_entry
+    entryTypes:
+      f1c17ce6-29b7-4e4e-8dc6-957c0483ed8e:
+        name: Drinks
+        handle: drinksSection
+        hasTitleField: true
+        titleLabel: 'Drink Name'
+        titleFormat: ''
+        sortOrder: 1
+        fieldLayouts:
+          5c158ed6-be5e-4446-a45d-3e5493cc15a1:
+            tabs:
+              -
+                name: Drinks
+                sortOrder: 1
+                fields:
+                  554e73b2-36b3-4fe6-a4bc-6628e7941e76:
+                    required: false
+                    sortOrder: 1
+                  d655e5be-d31c-48a7-8587-ff8423fa00d0:
+                    required: false
+                    sortOrder: 2
+                  69983b47-acee-48fe-a414-30b622fe223b:
+                    required: false
+                    sortOrder: 3
+  413bff4d-6bfc-4ac6-8e19-bc3a66cdb50a:
+    name: News
+    handle: newsSection
+    type: channel
+    enableVersioning: true
+    propagateEntries: true
+    siteSettings:
+      eccd415c-2a08-4035-94cd-62a46c8cd0a2:
+        enabledByDefault: true
+        hasUrls: true
+        uriFormat: 'news/{slug}'
+        template: news/_entry
+    entryTypes:
+      c2268867-f66e-46c9-a0b3-7366b403c982:
+        name: News
+        handle: newsSection
+        hasTitleField: true
+        titleLabel: Titel
+        titleFormat: null
+        sortOrder: 1
+  381f95a2-5ab7-4b9d-9a8b-ae3c3a5efbbf:
+    name: Homepage
+    handle: homepage
+    type: single
+    enableVersioning: false
+    propagateEntries: true
+    siteSettings:
+      eccd415c-2a08-4035-94cd-62a46c8cd0a2:
+        enabledByDefault: true
+        hasUrls: true
+        uriFormat: /
+        template: index.twig
+    entryTypes:
+      ec7692f4-f47a-4290-b6bd-3803680586f6:
+        name: Homepage
+        handle: homepage
+        hasTitleField: false
+        titleLabel: null
+        titleFormat: '{section.name|raw}'
+        sortOrder: 1
+  b063e1c5-e127-450e-8dd1-480f6deac923:
+    name: About
+    handle: aboutSection
+    type: structure
+    enableVersioning: true
+    propagateEntries: true
+    siteSettings:
+      eccd415c-2a08-4035-94cd-62a46c8cd0a2:
+        enabledByDefault: true
+        hasUrls: true
+        uriFormat: '{parent.uri}/{slug}'
+        template: about/_entry
+    structure:
+      uid: c24e7b7b-1c27-4722-bf4f-4bc0b833d73f
+      maxLevels: ''
+    entryTypes:
+      a4a96368-4fde-4bb3-85e9-f98695bbc66d:
+        name: About
+        handle: aboutSection
+        hasTitleField: true
+        titleLabel: 'Page Titel'
+        titleFormat: ''
+        sortOrder: 1
+        fieldLayouts:
+          7f6f84ee-517f-4fe1-87ec-1b4d83068cc8:
+            tabs:
+              -
+                name: About
+                sortOrder: 1
+                fields:
+                  5eec0c3a-943f-4959-b56a-bdb2c1ddc2f6:
+                    required: false
+                    sortOrder: 1
+                  f8035747-f395-413b-81cb-077ad48d657a:
+                    required: false
+                    sortOrder: 2
+                  69983b47-acee-48fe-a414-30b622fe223b:
+                    required: false
+                    sortOrder: 3
 siteGroups:
   330548d1-b81b-4755-96d3-a57901c9800d:
     name: 'Andrea Film'
@@ -30,3 +295,13 @@ users:
   defaultGroup: null
   photoVolumeUid: null
   photoSubpath: ''
+volumes:
+  9161c7ba-81a8-43c7-88a0-1c31bc63965e:
+    name: Drinks
+    handle: drinks
+    type: craft\volumes\Local
+    hasUrls: true
+    url: //andreafilm.local/images/drinks
+    settings:
+      path: /Applications/MAMP/htdocs/andreafilm/web/assets/images/drinks
+    sortOrder: 1
