@@ -46,4 +46,6 @@ return [
         'allowAdminChanges' => false,
          'devMode' => true,
     ],
+
+    
 ];
