@@ -1,0 +1,21 @@
+{% extends '/_layout' %}
+
+{% block main %}
+
+<div class="container container__detail">
+
+    {% include '/_includes/navigation.twig' %}
+
+    {% for entry in craft.entries.section('drinksSection').all() %}
+    <a href="{{entry.url}}">
+        <div style="background-image: url({{ entry.drinkImage.one().getUrl('drinksHomepageThumb') }});">
+            <!-- {{ entry.drinkImage.one().img }} -->
+            <h2>{{ entry.title }}</h2>
+        </div>
+    </a>
+    {% endfor %}
+
+</div>
+
+
+{% endblock %}

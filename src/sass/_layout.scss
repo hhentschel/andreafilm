@@ -3,25 +3,25 @@
 	max-width: 1920px;
 	margin: 0 auto;
 
-	&__detail {
-		padding: 25px;
+	&__navbox {
+		background: yellowgreen;
+		margin-left: 5px;
+		margin-right: 5px;
+		flex: 0 1 100%;
+		grid-column: 1 / -1;
+		//min-height: 500px;
 	}
 
-	&__home {
+	&__home,
+	&__index,
+	&__detail {
 		background: blueviolet;
 		display: grid;
 
-		&--introbox {
-			background: yellowgreen;
-			margin-left: 5px;
-			margin-right: 5px;
-			flex: 0 1 100%;
-			grid-column: 1 / -1;
-			min-height: 500px;
-		}
-
 		&--filmbox {
 			background: aliceblue;
+			background-repeat: no-repeat;
+			background-size: cover;
 
 			/* needed for the flex layout*/
 			margin-left: 5px;
@@ -30,14 +30,26 @@
 			display: flex;
 			flex-direction: column;
 			justify-content: flex-end;
+
+			&-title {
+				font-family: 'Nunito Sans', sans-serif;
+				font-weight: 700;
+				text-transform: uppercase;
+				font-size: 3rem;
+			}
+
+			&-subtitle {
+				font-family: 'Nunito Sans', sans-serif;
+				font-weight: 700;
+				font-size: 2rem;
+			}
 		}
 
 		> * {
 			background-color: #444;
-			color: #fff;
-			border-radius: 5px;
+			color: var(--color-white);
 			padding: 25px;
-			font-size: 150%;
+
 			margin-bottom: 10px;
 		}
 
@@ -50,7 +62,9 @@
 	}
 
 	/* no grid support? */
-	&__home {
+	&__home,
+	&__index,
+	&__detail {
 		display: flex;
 		flex-wrap: wrap;
 	}
@@ -61,6 +75,68 @@
 		margin: 0 auto;
 		grid-template-columns: repeat(auto-fill, minmax(480px, 1fr));
 		grid-auto-rows: minmax(300px, auto);
+
+		.container__navbox {
+			position: relative;
+			min-height: 800px;
+			overflow: hidden;
+		}
+
+		video {
+			position: absolute;
+			overflow: hidden;
+			transform: translate(-50%, -50%);
+			left: 50%;
+			top: 50%;
+			width: 100%;
+			z-index: 1;
+		}
+	}
+
+	&__index {
+		display: grid;
+		grid-gap: 10px;
+		margin: 0 auto;
+		grid-template-columns: repeat(auto-fill, minmax(480px, 1fr));
+		grid-auto-rows: minmax(300px, auto);
+	}
+
+	//DETAIL PAGE FILM
+
+	&__detail {
+		padding: 25px;
+		background-repeat: no-repeat;
+		background-size: cover;
+		display: grid;
+		grid-template-columns: repeat(6, 1fr);
+		grid-template-rows: 1fr 1fr 1fr 1fr;
+	}
+
+	.detail__movie {
+		&-titlebox {
+			grid-column: 1 / -1;
+		}
+
+		&-infotext {
+			grid-column: 1 / 5;
+		}
+
+		&-credits {
+			grid-column: 1 / 4;
+			column-count: 2;
+
+			.movie__credits-box {
+				//display: inline-block;
+				background-color: #001133;
+				margin: 0 0 10px 0;
+			}
+		}
+
+		&-filmbox {
+			grid-column: 5 / 7;
+			padding: 56.25% 0 0 0;
+			position: relative;
+		}
 	}
 }
 

@@ -1,0 +1,33 @@
+{% extends '/_layout' %}
+
+{% block main %}
+
+<div class="container container__index">
+
+    <div class="container__navbox">
+        {% include '/_includes/navigation.twig' %}
+    </div>
+
+    {% for entry in craft.entries.section('filmsSection').all() %}
+
+        <a href="{{entry.url}}" class="container__index--filmbox" style="background-image: url({{ entry.filmImage.one().getUrl('filmThumbImg') }});">
+            <div>
+                <!-- {{ entry.filmImage.one().img }} -->
+                <h2 class="container__index--filmbox-title">{{ entry.title }}</h2>
+                <p class="container__index--filmbox-subtitle">{{ entry.yearFilm }}</p>
+            </div>
+        </a>
+
+    {% endfor %}
+
+
+    {# <div class="video-box">
+        <iframe width="560" height="315" src="https://www.vimeo.com/embed/{{ video.videoID }}?rel=0" frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen="allowfullscreen"></iframe>
+    </div> #}
+
+</div>
+
+
+{% endblock %}

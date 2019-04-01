@@ -539,42 +539,26 @@ span.amp {
 /*
 COLORS
 
-Primary: #eb2f64
-Primary light: #FF3366
-Primary dark: #BA265D
-
-Grey light 1: #faf9f9
-Grey light 2: #f4f2f2
-Grey light 3: #f0eeee
-Grey light 4: #ccc
-
-Grey dark 1: #333
-Grey dark 2: #777
-Grey dark 3: #999
-
 */
-/* line 19, src/sass/_base.scss */
+/* line 6, src/sass/_base.scss */
 :root {
   --color-primary: #ffffff;
-  --color-primary-light: #ff3366;
-  --color-secondary: yellow;
-  --color-grey-light-1: #faf9f9;
+  --color-yellow: #ffff00;
+  --color-red: #ff0000;
+  --color-purple: #7f64ff;
+  --color-blue: #0050ff;
   --color-grey-light-2: #f4f2f2;
-  --color-grey-light-3: #f0eeee;
-  --color-grey-light-4: #ccc;
-  --color-grey-dark-1: #333;
-  --shadow-dark: 0 2rem 6rem rgba(0, 0, 0, .3);
-  --shadow-light: 0 2rem 5rem rgba(0, 0, 0, .1);
+  --color-font-default: #222222;
   --line: 1px solid var(--color-grey-light-2);
 }
 
-/* line 44, src/sass/_base.scss */
+/* line 25, src/sass/_base.scss */
 * {
   margin: 0;
   padding: 0;
 }
 
-/* line 49, src/sass/_base.scss */
+/* line 30, src/sass/_base.scss */
 *,
 *::before,
 *::after {
@@ -582,7 +566,7 @@ Grey dark 3: #999
           box-sizing: inherit;
 }
 
-/* line 55, src/sass/_base.scss */
+/* line 36, src/sass/_base.scss */
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -590,18 +574,18 @@ html {
 }
 
 @media only screen and (max-width: 68.75em) {
-  /* line 55, src/sass/_base.scss */
+  /* line 36, src/sass/_base.scss */
   html {
     font-size: 50%;
   }
 }
 
-/* line 64, src/sass/_base.scss */
+/* line 45, src/sass/_base.scss */
 body {
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   line-height: 1.6;
-  color: var(--color-grey-dark-2);
+  color: var(--color-primary);
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 100vh;
@@ -617,19 +601,7 @@ body {
 }
 
 /* line 6, src/sass/_layout.scss */
-.container__detail {
-  padding: 25px;
-}
-
-/* line 10, src/sass/_layout.scss */
-.container__home {
-  background: blueviolet;
-  display: grid;
-  /* We need to set the margin used on flex items to 0 as we have gaps in grid.  */
-}
-
-/* line 14, src/sass/_layout.scss */
-.container__home--introbox {
+.container__navbox {
   background: yellowgreen;
   margin-left: 5px;
   margin-right: 5px;
@@ -638,12 +610,20 @@ body {
       -ms-flex: 0 1 100%;
           flex: 0 1 100%;
   grid-column: 1 / -1;
-  min-height: 500px;
 }
 
-/* line 23, src/sass/_layout.scss */
-.container__home--filmbox {
+/* line 15, src/sass/_layout.scss */
+.container__home, .container__index, .container__detail {
+  background: blueviolet;
+  display: grid;
+  /* We need to set the margin used on flex items to 0 as we have gaps in grid.  */
+}
+
+/* line 21, src/sass/_layout.scss */
+.container__home--filmbox, .container__index--filmbox, .container__detail--filmbox {
   background: aliceblue;
+  background-repeat: no-repeat;
+  background-size: cover;
   /* needed for the flex layout*/
   margin-left: 5px;
   margin-right: 5px;
@@ -666,25 +646,38 @@ body {
           justify-content: flex-end;
 }
 
-/* line 35, src/sass/_layout.scss */
-.container__home > * {
+/* line 34, src/sass/_layout.scss */
+.container__home--filmbox-title, .container__index--filmbox-title, .container__detail--filmbox-title {
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 3rem;
+}
+
+/* line 41, src/sass/_layout.scss */
+.container__home--filmbox-subtitle, .container__index--filmbox-subtitle, .container__detail--filmbox-subtitle {
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+/* line 48, src/sass/_layout.scss */
+.container__home > *, .container__index > *, .container__detail > * {
   background-color: #444;
-  color: #fff;
-  border-radius: 5px;
+  color: var(--color-white);
   padding: 25px;
-  font-size: 150%;
   margin-bottom: 10px;
 }
 
 @supports (display: grid) {
-  /* line 46, src/sass/_layout.scss */
-  .container__home > * {
+  /* line 58, src/sass/_layout.scss */
+  .container__home > *, .container__index > *, .container__detail > * {
     margin: 0;
   }
 }
 
-/* line 53, src/sass/_layout.scss */
-.container__home {
+/* line 65, src/sass/_layout.scss */
+.container__home, .container__index, .container__detail {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -694,7 +687,7 @@ body {
           flex-wrap: wrap;
 }
 
-/* line 58, src/sass/_layout.scss */
+/* line 72, src/sass/_layout.scss */
 .container__home {
   display: grid;
   grid-gap: 10px;
@@ -703,26 +696,118 @@ body {
   grid-auto-rows: minmax(300px, auto);
 }
 
+/* line 79, src/sass/_layout.scss */
+.container__home .container__navbox {
+  position: relative;
+  min-height: 800px;
+  overflow: hidden;
+}
+
+/* line 85, src/sass/_layout.scss */
+.container__home video {
+  position: absolute;
+  overflow: hidden;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  width: 100%;
+  z-index: 1;
+}
+
+/* line 96, src/sass/_layout.scss */
+.container__index {
+  display: grid;
+  grid-gap: 10px;
+  margin: 0 auto;
+  grid-template-columns: repeat(auto-fill, minmax(480px, 1fr));
+  grid-auto-rows: minmax(300px, auto);
+}
+
+/* line 106, src/sass/_layout.scss */
+.container__detail {
+  padding: 25px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+/* line 116, src/sass/_layout.scss */
+.container .detail__movie-titlebox {
+  grid-column: 1 / -1;
+}
+
+/* line 120, src/sass/_layout.scss */
+.container .detail__movie-infotext {
+  grid-column: 1 / 5;
+}
+
+/* line 124, src/sass/_layout.scss */
+.container .detail__movie-credits {
+  grid-column: 1 / 4;
+  -webkit-column-count: 2;
+          column-count: 2;
+}
+
+/* line 128, src/sass/_layout.scss */
+.container .detail__movie-credits .movie__credits-box {
+  background-color: #001133;
+  margin: 0 0 10px 0;
+}
+
+/* line 135, src/sass/_layout.scss */
+.container .detail__movie-filmbox {
+  grid-column: 5 / 7;
+  padding: 56.25% 0 0 0;
+  position: relative;
+}
+
 /* line 2, src/sass/_navigation.scss */
 .container__nav {
   font-size: 5rem;
+  position: relative;
+  z-index: 10;
 }
 
-/* line 5, src/sass/_navigation.scss */
+/* line 7, src/sass/_navigation.scss */
 .container__nav li {
   line-height: 1;
 }
 
-/* line 9, src/sass/_navigation.scss */
+/* line 11, src/sass/_navigation.scss */
 .container__nav-item {
   line-height: 1;
-  color: var(--color-primary);
+  color: var(--color-white);
   text-transform: uppercase;
   padding: 5px 0;
   display: block;
+  font-family: 'Nunito Sans', sans-serif;
 }
 
 /* line 22, src/sass/_navigation.scss */
+.container .nav__item-home {
+  color: var(--color-yellow);
+  font-weight: 700;
+}
+
+/* line 27, src/sass/_navigation.scss */
 .container .nav__item-films {
-  color: var(--color-secondary);
+  font-style: italic;
+}
+
+/* line 31, src/sass/_navigation.scss */
+.container .nav__item-about {
+  font-weight: 700;
+}
+
+/* line 41, src/sass/_navigation.scss */
+.container__index .container__nav-item {
+  font-size: 2.5rem;
+}
+
+/* line 44, src/sass/_navigation.scss */
+.container__index .container__nav-item.active {
+  font-size: 5rem;
 }

@@ -4,34 +4,28 @@
     {# MAIN CONTENT #}
    
         <div class="container container__home">
-            <div class="container__home--introbox">
+            <div class="container__navbox">
                 {% include '/_includes/navigation.twig' %}
+
+                {% set image = entry.videoStillImage.one() %}
+                {% set video = entry.videoFileHome.one() %}
+                
+                {% if video %}
+                <video autoplay loop muted playsinline poster='{{ image.getUrl() }}'>
+                    <source src="{{ video.getUrl() }}" type="video/mp4">
+                </video>
+                {% endif %}
+
             </div>
 
-            <a href="#" class="container__home--filmbox">
-                <h2 class="container__home--filmbox-title">To Dream as he does</h2>
-                <p class="container__home--filmbox-subtitle">2019</p>
+        {% for entry in craft.entries.section('filmsSection').all() %}
+            <a href="{{entry.url}}" class="container__home--filmbox"
+                style="background-image: url({{ entry.filmImage.one().getUrl('filmThumbImg') }});">
+                <h2 class="container__home--filmbox-title">{{ entry.title }}</h2>
+                <p class="container__home--filmbox-subtitle">{{ entry.yearFilm }}</p>
             </a>
-
-
-            <div class="container__home--filmbox">
-                <h2>Salvage of a galley</h2>
-                <p>2019</p>
-            </div>
-            <div class="container__home--filmbox">
-                <h2>THE TRIAL OF KLARA WENDEL</h2>
-            </div>
-            <div class="container__home--filmbox">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque voluptates alias totam dicta laudantium sit pariatur, veniam fugiat itaque officia.
-            </div>
-            <div class="container__home--filmbox">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, eligendi.
-            </div>
-            <div class="container__home--filmbox">
-            Lorem ipsum dolor sit.
-            </div>
+        {% endfor %}
 
         </div>
-
 
 {% endblock %}

@@ -1,6 +1,8 @@
 .container {
 	&__nav {
 		font-size: 5rem;
+		position: relative;
+		z-index: 10;
 
 		li {
 			line-height: 1;
@@ -8,25 +10,41 @@
 
 		&-item {
 			line-height: 1;
-			color: var(--color-primary);
+			color: var(--color-white);
 			text-transform: uppercase;
 			padding: 5px 0;
 			display: block;
+			font-family: 'Nunito Sans', sans-serif;
 		}
 	}
 
 	.nav__item {
 		&-home {
+			color: var(--color-yellow);
+			font-weight: 700;
 		}
 
 		&-films {
-			color: var(--color-secondary);
+			font-style: italic;
 		}
 
 		&-about {
+			font-weight: 700;
 		}
 
 		&-contact {
+		}
+	}
+
+	&__index {
+		.container__nav {
+			&-item {
+				font-size: 2.5rem;
+
+				&.active {
+					font-size: 5rem;
+				}
+			}
 		}
 	}
 }

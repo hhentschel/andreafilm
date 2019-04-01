@@ -20,6 +20,18 @@ return [
         // Control Panel trigger word
         'cpTrigger' => 'admin',
 
+        // Enable CSRF Protection (recommended)
+        'enableCsrfProtection' => true,
+
+        'limitAutoSlugsToAscii' => true,
+        'convertFilenamesToAscii' => true,
+        'cacheDuration' => '0',
+        'allowUpdates' => true,
+        //'phpMaxMemoryLimit' => '512M',
+
+        //Make sure the image transforms are generated before pageload
+        'generateTransformsBeforePageLoad' => true,
+
         // The secure key Craft will use for hashing and encrypting data
         'securityKey' => getenv('SECURITY_KEY'),
 
@@ -30,8 +42,14 @@ return [
 
     // Dev environment settings
     'dev' => [
+
+        'baseUrl' => 'http://andreafilm.local',
         // Dev Mode (see https://craftcms.com/guides/what-dev-mode-does)
         'devMode' => true,
+        'aliases' => [
+            '@root' => getenv('ROOT'),
+            '@andreafilm_url' => 'http://andreafilm.local' // for publications pdf's
+        ],  
     ],
 
     // Staging environment settings
