@@ -589,12 +589,10 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 100vh;
-  background-color: green;
 }
 
 /* line 1, src/sass/_layout.scss */
 .container {
-  background: red;
   max-width: 1920px;
   margin: 0 auto;
   /* no grid support? */
@@ -602,7 +600,6 @@ body {
 
 /* line 6, src/sass/_layout.scss */
 .container__navbox {
-  background: yellowgreen;
   margin-left: 5px;
   margin-right: 5px;
   -webkit-box-flex: 0;
@@ -612,14 +609,28 @@ body {
   grid-column: 1 / -1;
 }
 
-/* line 15, src/sass/_layout.scss */
+/* line 13, src/sass/_layout.scss */
+.page--about .container__navbox {
+  grid-column: 1 / 2;
+}
+
+/* line 17, src/sass/_layout.scss */
+.page--home .container__navbox {
+  padding: 50px 40px 20px 40px;
+}
+
+/* line 22, src/sass/_layout.scss */
 .container__home, .container__index, .container__detail {
-  background: blueviolet;
   display: grid;
+  height: 100vh;
+  grid-gap: 10px;
+  margin: 0 auto;
+  background-repeat: no-repeat;
+  background-size: cover;
   /* We need to set the margin used on flex items to 0 as we have gaps in grid.  */
 }
 
-/* line 21, src/sass/_layout.scss */
+/* line 33, src/sass/_layout.scss */
 .container__home--filmbox, .container__index--filmbox, .container__detail--filmbox {
   background: aliceblue;
   background-repeat: no-repeat;
@@ -644,39 +655,41 @@ body {
   -webkit-justify-content: flex-end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  padding: 0 50px 20px 50px;
 }
 
-/* line 34, src/sass/_layout.scss */
+/* line 47, src/sass/_layout.scss */
 .container__home--filmbox-title, .container__index--filmbox-title, .container__detail--filmbox-title {
   font-family: 'Nunito Sans', sans-serif;
-  font-weight: 700;
+  font-weight: 900;
   text-transform: uppercase;
   font-size: 3rem;
+  letter-spacing: 0.2rem;
+  line-height: 1.2;
 }
 
-/* line 41, src/sass/_layout.scss */
+/* line 56, src/sass/_layout.scss */
 .container__home--filmbox-subtitle, .container__index--filmbox-subtitle, .container__detail--filmbox-subtitle {
   font-family: 'Nunito Sans', sans-serif;
   font-weight: 700;
   font-size: 2rem;
 }
 
-/* line 48, src/sass/_layout.scss */
+/* line 63, src/sass/_layout.scss */
 .container__home > *, .container__index > *, .container__detail > * {
   background-color: #444;
   color: var(--color-white);
-  padding: 25px;
   margin-bottom: 10px;
 }
 
 @supports (display: grid) {
-  /* line 58, src/sass/_layout.scss */
+  /* line 72, src/sass/_layout.scss */
   .container__home > *, .container__index > *, .container__detail > * {
     margin: 0;
   }
 }
 
-/* line 65, src/sass/_layout.scss */
+/* line 79, src/sass/_layout.scss */
 .container__home, .container__index, .container__detail {
   display: -webkit-box;
   display: -webkit-flex;
@@ -687,23 +700,25 @@ body {
           flex-wrap: wrap;
 }
 
-/* line 72, src/sass/_layout.scss */
+/* line 86, src/sass/_layout.scss */
 .container__home {
+  background: red;
   display: grid;
   grid-gap: 10px;
   margin: 0 auto;
+  height: 100%;
   grid-template-columns: repeat(auto-fill, minmax(480px, 1fr));
   grid-auto-rows: minmax(300px, auto);
 }
 
-/* line 79, src/sass/_layout.scss */
+/* line 95, src/sass/_layout.scss */
 .container__home .container__navbox {
   position: relative;
-  min-height: 800px;
+  grid-row: 1 / 3;
   overflow: hidden;
 }
 
-/* line 85, src/sass/_layout.scss */
+/* line 101, src/sass/_layout.scss */
 .container__home video {
   position: absolute;
   overflow: hidden;
@@ -715,68 +730,119 @@ body {
   z-index: 1;
 }
 
-/* line 96, src/sass/_layout.scss */
+/* line 112, src/sass/_layout.scss */
 .container__index {
   display: grid;
-  grid-gap: 10px;
-  margin: 0 auto;
   grid-template-columns: repeat(auto-fill, minmax(480px, 1fr));
   grid-auto-rows: minmax(300px, auto);
+  padding: 50px 40px 40px 40px;
+  background: blueviolet;
 }
 
-/* line 106, src/sass/_layout.scss */
+/* line 122, src/sass/_layout.scss */
 .container__detail {
-  padding: 25px;
-  background-repeat: no-repeat;
-  background-size: cover;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: 1fr 1fr 1fr 1fr;
+  padding: 50px 40px 20px 40px;
 }
 
-/* line 116, src/sass/_layout.scss */
+/* line 130, src/sass/_layout.scss */
+.container__textcontent {
+  font-family: 'Crimson Text', serif;
+  font-size: 2.4rem;
+}
+
+/* line 134, src/sass/_layout.scss */
+.container__textcontent p {
+  margin: 0 0 0.6em 0;
+}
+
+/* line 138, src/sass/_layout.scss */
+.page--about .container__textcontent {
+  grid-column: 2 / 4;
+}
+
+/* line 144, src/sass/_layout.scss */
 .container .detail__movie-titlebox {
   grid-column: 1 / -1;
 }
 
-/* line 120, src/sass/_layout.scss */
-.container .detail__movie-infotext {
-  grid-column: 1 / 5;
+/* line 147, src/sass/_layout.scss */
+.container .detail__movie-titlebox-title {
+  font-size: 3rem;
+  font-style: italic;
+  color: var(--color-red);
+  font-weight: normal;
+  text-transform: uppercase;
 }
 
-/* line 124, src/sass/_layout.scss */
+/* line 155, src/sass/_layout.scss */
+.container .detail__movie-titlebox-subtitle {
+  font-size: 3rem;
+  font-style: italic;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+/* line 162, src/sass/_layout.scss */
+.container .detail__movie-titlebox-subline {
+  font-size: 2rem;
+  font-family: 'Crimson Text', serif;
+  font-size: 2.6rem;
+}
+
+/* line 169, src/sass/_layout.scss */
+.container .detail__movie-infotext {
+  grid-column: 1 / 5;
+  font-size: 2.2rem;
+  font-family: 'Crimson Text', serif;
+  font-weight: normal;
+  font-style: italic;
+}
+
+/* line 177, src/sass/_layout.scss */
 .container .detail__movie-credits {
   grid-column: 1 / 4;
   -webkit-column-count: 2;
           column-count: 2;
+  font-size: 2rem;
+  font-family: 'Crimson Text', serif;
+  font-weight: normal;
 }
 
-/* line 128, src/sass/_layout.scss */
+/* line 184, src/sass/_layout.scss */
 .container .detail__movie-credits .movie__credits-box {
   background-color: #001133;
   margin: 0 0 10px 0;
 }
 
-/* line 135, src/sass/_layout.scss */
+/* line 190, src/sass/_layout.scss */
+.container .detail__movie-credits .movie__credits-text {
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+/* line 196, src/sass/_layout.scss */
 .container .detail__movie-filmbox {
   grid-column: 5 / 7;
   padding: 56.25% 0 0 0;
   position: relative;
+  max-height: 265px;
 }
 
 /* line 2, src/sass/_navigation.scss */
 .container__nav {
-  font-size: 5rem;
   position: relative;
   z-index: 10;
 }
 
-/* line 7, src/sass/_navigation.scss */
+/* line 6, src/sass/_navigation.scss */
 .container__nav li {
   line-height: 1;
 }
 
-/* line 11, src/sass/_navigation.scss */
+/* line 10, src/sass/_navigation.scss */
 .container__nav-item {
   line-height: 1;
   color: var(--color-white);
@@ -784,30 +850,37 @@ body {
   padding: 5px 0;
   display: block;
   font-family: 'Nunito Sans', sans-serif;
+  font-size: 6rem;
 }
 
-/* line 22, src/sass/_navigation.scss */
+/* line 19, src/sass/_navigation.scss */
+.container__nav-item.active {
+  font-size: 8rem;
+}
+
+/* line 26, src/sass/_navigation.scss */
 .container .nav__item-home {
   color: var(--color-yellow);
   font-weight: 700;
 }
 
-/* line 27, src/sass/_navigation.scss */
+/* line 31, src/sass/_navigation.scss */
 .container .nav__item-films {
   font-style: italic;
+  font-weight: 400;
 }
 
-/* line 31, src/sass/_navigation.scss */
+/* line 36, src/sass/_navigation.scss */
 .container .nav__item-about {
-  font-weight: 700;
+  font-weight: 900;
 }
 
-/* line 41, src/sass/_navigation.scss */
-.container__index .container__nav-item {
-  font-size: 2.5rem;
+/* line 58, src/sass/_navigation.scss */
+.container__detail .container__nav-item {
+  font-size: 3rem;
 }
 
-/* line 44, src/sass/_navigation.scss */
-.container__index .container__nav-item.active {
-  font-size: 5rem;
+/* line 61, src/sass/_navigation.scss */
+.container__detail .container__nav-item.active {
+  font-size: 3rem;
 }

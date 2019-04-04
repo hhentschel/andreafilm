@@ -1,11 +1,12 @@
 
 
 <!doctype html>
+
 <html lang="{{craft.app.language}}">
 
 {% include '/_includes/meta.twig' %}
 
-<body>
+<body {% if bodyClass is defined %}class="page--{{ bodyClass }}"{% endif %}>
 
     <div id="header-container" class="header-container">
         <header class="header">

@@ -10,20 +10,12 @@
 
     <div class="detail__movie-titlebox">
         {# {{ entry.filmImage.one().img }} #}
-        <h2 class="detail__movie-titlebox-title">{{ entry.title }}</h2>
-        <h3 class="detail__movie-titlebox-subtitle">to dream as he does</h3>
-        <p class="detail__movie-titlebox-subline">by Valentin Merz 2019</p>
+        <h2 class="detail__movie-titlebox-title">{{ entry.filmDetailTitle }}</h2>
+        <h3 class="detail__movie-titlebox-subtitle">{{ entry.filmDetailSubline }}</h3>
+        <p class="detail__movie-titlebox-subline">{{ entry.filmDetailAuthor }}</p>
     </div>
         
-    <p class="detail__movie-infotext">Louis passe l’été dans la maison familiale de son ami Paul, un manoir caché dans
-        les bois. Il fait chaud, la maison
-        est vide, les deux amants sont seuls.
-        Ils jouent, font l’amour, se promènent, dorment la nuit et souvent le jour. Mais Paul, dont la mère vient de
-        mourir,
-        est fatigué et nerveux. Louis perd ses repères et commence à s‘imaginer des choses, à moins qu’il ne les rêve
-        en
-        dor- mant debout...
-    </p>
+    <div class="detail__movie-infotext">{{ entry.contentField }}</div>
         
    
     <div class="detail__movie-credits">
@@ -40,7 +32,8 @@
 
   
 
-        {# 327554892 #}
+     {% if entry.videoID %}
+     
     <div class="detail__movie-filmbox">
         <iframe
             src="https://player.vimeo.com/video/{{ entry.videoID }}"
@@ -48,6 +41,7 @@
             mozallowfullscreen allowfullscreen>
         </iframe>
     </div>
+    {% endif %}
 
 </div>
 

@@ -10,14 +10,14 @@
 
     {% for entry in craft.entries.section('filmsSection').all() %}
 
+    {% if entry.filmImage | length %}
         <a href="{{entry.url}}" class="container__index--filmbox" style="background-image: url({{ entry.filmImage.one().getUrl('filmThumbImg') }});">
             <div>
-                <!-- {{ entry.filmImage.one().img }} -->
                 <h2 class="container__index--filmbox-title">{{ entry.title }}</h2>
-                <p class="container__index--filmbox-subtitle">{{ entry.yearFilm }}</p>
+                <p style="{% if entry.colorSubtitle %}color: {{ entry.colorSubtitle }} {% endif %}" class="container__index--filmbox-subtitle">{{ entry.yearFilm }}</p>
             </div>
         </a>
-
+        {% endif %}
     {% endfor %}
 
 

@@ -1,11 +1,20 @@
 {% extends '/_layout' %}
 
+{% set bodyClass = "about" %}
+
 {% block main %}
 
-<div class="container container__index">
+<div class="container container__index" style="background-image: url({{ entry.PageBackgroundImage.one().getUrl('fullImage') }});">
 
-    {% include '/_includes/navigation.twig' %}
+    <div class="container__navbox">
+        {% include '/_includes/navigation.twig' %}
+    </div>
 
+
+    <div class="container__textcontent">
+
+        {{ entry.contentField }}
+    </div>
    
 </div>
 

@@ -1,5 +1,5 @@
 {% extends '/_layout' %}
-
+{% set bodyClass = "home" %}
 {% block main %}
     {# MAIN CONTENT #}
    
@@ -11,7 +11,7 @@
                 {% set video = entry.videoFileHome.one() %}
                 
                 {% if video %}
-                <video autoplay loop muted playsinline poster='{{ image.getUrl() }}'>
+                <video muted playsinline poster='{{ image.getUrl() }}'>
                     <source src="{{ video.getUrl() }}" type="video/mp4">
                 </video>
                 {% endif %}
@@ -19,11 +19,12 @@
             </div>
 
         {% for entry in craft.entries.section('filmsSection').all() %}
-            <a href="{{entry.url}}" class="container__home--filmbox"
-                style="background-image: url({{ entry.filmImage.one().getUrl('filmThumbImg') }});">
+        {% if entry.filmImage %}
+            <a href="{{entry.url}}" class="container__home--filmbox" style="background-image: url({{ entry.filmImage.one().getUrl('filmThumbImg') }});">
                 <h2 class="container__home--filmbox-title">{{ entry.title }}</h2>
                 <p class="container__home--filmbox-subtitle">{{ entry.yearFilm }}</p>
             </a>
+            {% endif %}
         {% endfor %}
 
         </div>

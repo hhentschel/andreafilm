@@ -1,4 +1,4 @@
-dateModified: 1554136753
+dateModified: 1554396956
 email:
   fromEmail: p@henrik-hentschel.de
   fromName: 'Andrea Film'
@@ -6,8 +6,6 @@ email:
 fieldGroups:
   b6201258-940b-4113-ba3b-d6e2b2aa38e1:
     name: Common
-  7dd38e4e-2004-4c25-9623-4a50770124d8:
-    name: Drinks
   05290696-2d33-4040-8bdf-ecb9e2593586:
     name: General
   57800bf4-49d4-4aa9-ac2b-9953569db0ef:
@@ -18,24 +16,9 @@ fieldGroups:
     name: Films
   983dcdf8-d626-4aed-b9ef-7a181b0c1bbc:
     name: Homepage
+  a5f5d17b-2754-4410-b70a-67b25b2c4b46:
+    name: 'Film Detail'
 fields:
-  d655e5be-d31c-48a7-8587-ff8423fa00d0:
-    name: 'Drinks Intro'
-    handle: drinksIntro
-    instructions: 'A short Introduction'
-    searchable: true
-    translationMethod: none
-    translationKeyFormat: null
-    type: craft\fields\PlainText
-    settings:
-      placeholder: ''
-      code: ''
-      multiline: ''
-      initialRows: '4'
-      charLimit: ''
-      columnType: text
-    contentColumnType: text
-    fieldGroup: 7dd38e4e-2004-4c25-9623-4a50770124d8
   69983b47-acee-48fe-a414-30b622fe223b:
     name: Inhaltsfeld
     handle: contentField
@@ -89,33 +72,6 @@ fields:
       availableTransforms: '*'
     contentColumnType: text
     fieldGroup: 57800bf4-49d4-4aa9-ac2b-9953569db0ef
-  554e73b2-36b3-4fe6-a4bc-6628e7941e76:
-    name: 'Drink Image'
-    handle: drinkImage
-    instructions: ''
-    searchable: true
-    translationMethod: site
-    translationKeyFormat: null
-    type: craft\fields\Assets
-    settings:
-      useSingleFolder: '1'
-      defaultUploadLocationSource: 'volume:9161c7ba-81a8-43c7-88a0-1c31bc63965e'
-      defaultUploadLocationSubpath: ''
-      singleUploadLocationSource: 'volume:9161c7ba-81a8-43c7-88a0-1c31bc63965e'
-      singleUploadLocationSubpath: ''
-      restrictFiles: '1'
-      allowedKinds:
-        - image
-      sources:
-        - 'volume:9161c7ba-81a8-43c7-88a0-1c31bc63965e'
-      source: null
-      targetSiteId: null
-      viewMode: list
-      limit: '1'
-      selectionLabel: 'Chosse a Drink Image'
-      localizeRelations: false
-    contentColumnType: string
-    fieldGroup: 7dd38e4e-2004-4c25-9623-4a50770124d8
   5eec0c3a-943f-4959-b56a-bdb2c1ddc2f6:
     name: Subtitel
     handle: subtitle
@@ -277,6 +233,129 @@ fields:
       localizeRelations: false
     contentColumnType: string
     fieldGroup: 983dcdf8-d626-4aed-b9ef-7a181b0c1bbc
+  f13b35b9-004c-4ccb-9b3c-073525339052:
+    name: Hintergrundbild
+    handle: PageBackgroundImage
+    instructions: ''
+    searchable: true
+    translationMethod: site
+    translationKeyFormat: null
+    type: craft\fields\Assets
+    settings:
+      useSingleFolder: '1'
+      defaultUploadLocationSource: 'volume:9161c7ba-81a8-43c7-88a0-1c31bc63965e'
+      defaultUploadLocationSubpath: ''
+      singleUploadLocationSource: 'volume:2bd602c1-1b57-447d-81bd-0be7595de63a'
+      singleUploadLocationSubpath: ''
+      restrictFiles: '1'
+      allowedKinds:
+        - image
+      sources: '*'
+      source: null
+      targetSiteId: null
+      viewMode: list
+      limit: '1'
+      selectionLabel: ''
+      localizeRelations: false
+    contentColumnType: string
+    fieldGroup: 05290696-2d33-4040-8bdf-ecb9e2593586
+  bf2eb36d-0ecb-43ae-9d29-051fae84a60b:
+    name: 'Farbe Subtitel'
+    handle: colorSubtitle
+    instructions: ''
+    searchable: false
+    translationMethod: none
+    translationKeyFormat: null
+    type: craft\fields\Color
+    settings:
+      defaultColor: '#ffff00'
+    contentColumnType: string(7)
+    fieldGroup: 9256a3ac-dd6e-4b9a-bb95-5ed9b5249701
+  04996341-dc28-4956-8835-0b437e17d6dd:
+    name: Regisseur
+    handle: filmAuthor
+    instructions: ''
+    searchable: true
+    translationMethod: none
+    translationKeyFormat: null
+    type: craft\fields\PlainText
+    settings:
+      placeholder: ''
+      code: ''
+      multiline: ''
+      initialRows: '4'
+      charLimit: ''
+      columnType: text
+    contentColumnType: text
+    fieldGroup: 9256a3ac-dd6e-4b9a-bb95-5ed9b5249701
+  00a6421d-d37d-4148-a2bc-87e90165e7b8:
+    name: Subtitel
+    handle: filmSubtitle
+    instructions: ''
+    searchable: true
+    translationMethod: none
+    translationKeyFormat: null
+    type: craft\fields\PlainText
+    settings:
+      placeholder: ''
+      code: ''
+      multiline: '1'
+      initialRows: '1'
+      charLimit: ''
+      columnType: text
+    contentColumnType: text
+    fieldGroup: 9256a3ac-dd6e-4b9a-bb95-5ed9b5249701
+  16890e98-bcfc-4e72-a2f7-9ee23c3c93b9:
+    name: 'Film Title'
+    handle: filmDetailTitle
+    instructions: ''
+    searchable: true
+    translationMethod: none
+    translationKeyFormat: null
+    type: craft\fields\PlainText
+    settings:
+      placeholder: ''
+      code: ''
+      multiline: ''
+      initialRows: '4'
+      charLimit: ''
+      columnType: text
+    contentColumnType: text
+    fieldGroup: a5f5d17b-2754-4410-b70a-67b25b2c4b46
+  1514f8d1-b2aa-4e97-8c3b-fef6f23a4cd7:
+    name: 'Film Subline'
+    handle: filmDetailSubline
+    instructions: ''
+    searchable: true
+    translationMethod: none
+    translationKeyFormat: null
+    type: craft\fields\PlainText
+    settings:
+      placeholder: ''
+      code: ''
+      multiline: ''
+      initialRows: '4'
+      charLimit: ''
+      columnType: text
+    contentColumnType: text
+    fieldGroup: a5f5d17b-2754-4410-b70a-67b25b2c4b46
+  968402ba-82ef-4c27-aa14-4f14dc268c8a:
+    name: Regisseur
+    handle: filmDetailAuthor
+    instructions: ''
+    searchable: true
+    translationMethod: none
+    translationKeyFormat: null
+    type: craft\fields\PlainText
+    settings:
+      placeholder: ''
+      code: ''
+      multiline: ''
+      initialRows: '4'
+      charLimit: ''
+      columnType: text
+    contentColumnType: text
+    fieldGroup: a5f5d17b-2754-4410-b70a-67b25b2c4b46
 imageTransforms:
   db1f962f-5da7-4a16-a238-a313824e5c72:
     format: null
@@ -334,7 +413,7 @@ matrixBlockTypes:
           placeholder: ''
           code: ''
           multiline: '1'
-          initialRows: '3'
+          initialRows: '1'
           charLimit: ''
           columnType: text
         contentColumnType: text
@@ -442,6 +521,9 @@ sections:
                   69983b47-acee-48fe-a414-30b622fe223b:
                     required: false
                     sortOrder: 3
+                  f13b35b9-004c-4ccb-9b3c-073525339052:
+                    required: false
+                    sortOrder: 4
   d925a667-69cb-457e-92eb-22c9f5975792:
     name: Drinks
     handle: drinksSection
@@ -469,12 +551,6 @@ sections:
                 name: Drinks
                 sortOrder: 1
                 fields:
-                  554e73b2-36b3-4fe6-a4bc-6628e7941e76:
-                    required: false
-                    sortOrder: 1
-                  d655e5be-d31c-48a7-8587-ff8423fa00d0:
-                    required: false
-                    sortOrder: 2
                   69983b47-acee-48fe-a414-30b622fe223b:
                     required: false
                     sortOrder: 3
@@ -498,52 +574,6 @@ sections:
         titleLabel: null
         titleFormat: '{section.name|raw}'
         sortOrder: 1
-  b544f202-05b6-4b0d-973d-17763a6a2d84:
-    name: films
-    handle: filmsSection
-    type: channel
-    enableVersioning: true
-    propagateEntries: true
-    siteSettings:
-      eccd415c-2a08-4035-94cd-62a46c8cd0a2:
-        enabledByDefault: true
-        hasUrls: true
-        uriFormat: '{slug}'
-        template: films/_entry
-    entryTypes:
-      1b4e3c8f-a2d4-4279-a90b-fee047511101:
-        name: films
-        handle: filmsSection
-        hasTitleField: true
-        titleLabel: Titel
-        titleFormat: ''
-        sortOrder: 1
-        fieldLayouts:
-          a5adcbee-6aca-408c-958c-425e374e1e29:
-            tabs:
-              -
-                name: 'Film Details'
-                sortOrder: 1
-                fields:
-                  8837aea0-a136-4261-8bd5-5272b7e8172d:
-                    required: false
-                    sortOrder: 1
-                  f7647892-8b56-4f2c-bf36-036bfff0df4b:
-                    required: false
-                    sortOrder: 2
-                  69983b47-acee-48fe-a414-30b622fe223b:
-                    required: false
-                    sortOrder: 3
-                  95b6bd76-0ca5-46fe-b075-9cb9e9663005:
-                    required: false
-                    sortOrder: 4
-              -
-                name: Credits
-                sortOrder: 2
-                fields:
-                  002dc819-24d2-428e-9e9c-d279dd8f112f:
-                    required: false
-                    sortOrder: 1
   888462c5-883e-4fbc-b494-c46391f77a78:
     name: movies
     handle: moviesSection
@@ -567,6 +597,71 @@ sections:
         titleLabel: Titel
         titleFormat: null
         sortOrder: 1
+  b9364b69-4890-4291-87d2-84de73a5f576:
+    name: Filme
+    handle: filmsSection
+    type: structure
+    enableVersioning: true
+    propagateEntries: true
+    siteSettings:
+      eccd415c-2a08-4035-94cd-62a46c8cd0a2:
+        enabledByDefault: true
+        hasUrls: true
+        uriFormat: 'filme/{slug}'
+        template: films/_entry
+    structure:
+      uid: e293fa32-175d-4149-b22f-c505ac585cbd
+      maxLevels: ''
+    entryTypes:
+      12ede08a-8e47-43c2-b205-3b8fd714854f:
+        name: Film
+        handle: filmsSection2
+        hasTitleField: true
+        titleLabel: Titel
+        titleFormat: Titel
+        sortOrder: 1
+        fieldLayouts:
+          e95b998a-e615-4cb8-a530-d820ecb4f68f:
+            tabs:
+              -
+                name: Films
+                sortOrder: 1
+                fields:
+                  8837aea0-a136-4261-8bd5-5272b7e8172d:
+                    required: false
+                    sortOrder: 2
+                  bf2eb36d-0ecb-43ae-9d29-051fae84a60b:
+                    required: false
+                    sortOrder: 3
+                  69983b47-acee-48fe-a414-30b622fe223b:
+                    required: false
+                    sortOrder: 4
+                  f7647892-8b56-4f2c-bf36-036bfff0df4b:
+                    required: false
+                    sortOrder: 5
+                  95b6bd76-0ca5-46fe-b075-9cb9e9663005:
+                    required: false
+                    sortOrder: 6
+              -
+                name: Credits
+                sortOrder: 2
+                fields:
+                  002dc819-24d2-428e-9e9c-d279dd8f112f:
+                    required: false
+                    sortOrder: 1
+              -
+                name: 'Film Detail'
+                sortOrder: 3
+                fields:
+                  16890e98-bcfc-4e72-a2f7-9ee23c3c93b9:
+                    required: false
+                    sortOrder: 1
+                  1514f8d1-b2aa-4e97-8c3b-fef6f23a4cd7:
+                    required: false
+                    sortOrder: 2
+                  968402ba-82ef-4c27-aa14-4f14dc268c8a:
+                    required: false
+                    sortOrder: 3
 siteGroups:
   330548d1-b81b-4755-96d3-a57901c9800d:
     name: 'Andrea Film'
@@ -611,3 +706,12 @@ volumes:
     settings:
       path: '@webroot/user_assets/images/films'
     sortOrder: '2'
+  2bd602c1-1b57-447d-81bd-0be7595de63a:
+    name: Hintergrundbilder
+    handle: pageBackgroundImage
+    type: craft\volumes\Local
+    hasUrls: true
+    url: '@andreafilm_url/user_assets/images/bgimages'
+    settings:
+      path: '@webroot/user_assets/images/bgimages'
+    sortOrder: 3
