@@ -60,9 +60,14 @@ return [
 
     // Production environment settings
     'production' => [
+        'baseUrl' => 'http://andreafilm.com',
         // Prevent administrative changes from being made on production
         'allowAdminChanges' => true,
         'devMode' => false,
+        'aliases' => [
+            '@root' => getenv('ROOT'),
+            '@andreafilm_url' => 'http://andreafilm.com' // for publications pdf's
+        ], 
     ],
     
 ];
