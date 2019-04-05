@@ -4,8 +4,61 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "adb329bb53cf7c006ba946403df1caf5",
+    "content-hash": "65e831b156267cef88aea92993e36f13",
     "packages": [
+        {
+            "name": "barrelstrength/sprout-encode-email",
+            "version": "2.0.5",
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/barrelstrength/craft-sprout-encode-email/zipball/c621a4201d71f0039daafdcd78a113ee773d4a64",
+                "reference": "c621a4201d71f0039daafdcd78a113ee773d4a64",
+                "shasum": ""
+            },
+            "require": {
+                "craftcms/cms": "^3.0.0"
+            },
+            "type": "craft-plugin",
+            "extra": {
+                "name": "Sprout Encode Email",
+                "handle": "sprout-encode-email",
+                "developer": "Barrel Strength",
+                "developerUrl": "https://barrelstrengthdesign.com",
+                "documentationUrl": "https://sprout.barrelstrengthdesign.com/craft-plugins/encode-email",
+                "changelogUrl": "https://raw.githubusercontent.com/barrelstrength/sprout-encode-email/master/CHANGELOG.md",
+                "downloadUrl": "https://github.com/barrelstrength/sprout-encode-email/archive/master.zip",
+                "class": "barrelstrength\\sproutencodeemail\\SproutEncodeEmail"
+            },
+            "autoload": {
+                "psr-4": {
+                    "barrelstrength\\sproutencodeemail\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Barrel Strength",
+                    "homepage": "https://www.barrelstrengthdesign.com/"
+                }
+            ],
+            "description": "Encode the email addresses in your templates so they can't be harvested by evil spam bots.",
+            "keywords": [
+                "craftcms",
+                "twig",
+                "twig extension",
+                "urls"
+            ],
+            "support": {
+                "email": "support@barrelstrengthdesign.com",
+                "issues": "https://github.com/barrelstrength/sprout-encode-email/issues?state=open",
+                "source": "https://github.com/barrelstrength/sprout-encode-email",
+                "docs": "https://sprout.barrelstrengthdesign.com/craft-plugins/encode-email/docs",
+                "rss": "https://github.com/barrelstrength/sprout-encode-email/commits/v2.atom"
+            },
+            "time": "2018-07-24T12:50:32+00:00"
+        },
         {
             "name": "cebe/markdown",
             "version": "1.2.1",

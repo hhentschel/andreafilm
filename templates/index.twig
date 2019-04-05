@@ -11,7 +11,7 @@
                 {% set video = entry.videoFileHome.one() %}
                 
                 {% if video %}
-                <video muted playsinline poster='{{ image.getUrl() }}'>
+                <video autoplay loop muted playsinline poster='{{ image.getUrl() }}'>
                     <source src="{{ video.getUrl() }}" type="video/mp4">
                 </video>
                 {% endif %}

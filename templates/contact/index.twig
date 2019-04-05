@@ -1,0 +1,27 @@
+{% extends '/_layout' %}
+{% set bodyClass = "contact" %}
+{% block main %}
+
+{% set email = "<a href='mailto:info@andreafilm.com'>info@andreafilm.com</a>" %}
+
+<div class="container container__index" style="background-image: url({{ entry.PageBackgroundImage.one().getUrl('fullImage') }});">
+
+    <div class="container__navbox">
+        {% include '/_includes/navigation.twig' %}
+    </div>
+
+    <div class="container__textcontent container__textcontent-swiss">
+        <p class="container__textcontent-title" style="background-image: url({{ entry.miniIcon.one().getUrl('miniThumb50x50') }});">{{ entry.contactTitleCH }}</p>
+        <p class="container__textcontent-text">{{ entry.contactTextCH|nl2br }}</p>
+        <div class="container__textcontent-email" style="background-image: url({{ entry.miniIcon.one().getUrl('miniThumb50x50') }});">{{ email | rot13 }}</div>
+    </div>
+
+    <div class="container__textcontent container__textcontent-france">
+        <p class="container__textcontent-title" style="background-image: url({{ entry.miniIconEmail.one().getUrl('miniThumb50x50') }});">{{ entry.contactTitleFR }}</p>
+        <p class="container__textcontent-text">{{ entry.contactTextFR|nl2br }}</p>
+    </div>
+    
+</div>
+
+
+{% endblock %}

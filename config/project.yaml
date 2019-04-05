@@ -1,4 +1,4 @@
-dateModified: 1554396956
+dateModified: 1554462352
 email:
   fromEmail: p@henrik-hentschel.de
   fromName: 'Andrea Film'
@@ -18,6 +18,8 @@ fieldGroups:
     name: Homepage
   a5f5d17b-2754-4410-b70a-67b25b2c4b46:
     name: 'Film Detail'
+  4d7dbfa9-1442-453c-8342-8502890b71f4:
+    name: Kontakt
 fields:
   69983b47-acee-48fe-a414-30b622fe223b:
     name: Inhaltsfeld
@@ -356,6 +358,128 @@ fields:
       columnType: text
     contentColumnType: text
     fieldGroup: a5f5d17b-2754-4410-b70a-67b25b2c4b46
+  492ad7a2-68f1-4e64-9414-86e3aa3b8cd8:
+    name: Schweiz
+    handle: contactTitleCH
+    instructions: ''
+    searchable: true
+    translationMethod: none
+    translationKeyFormat: null
+    type: craft\fields\PlainText
+    settings:
+      placeholder: ''
+      code: ''
+      multiline: ''
+      initialRows: '4'
+      charLimit: ''
+      columnType: text
+    contentColumnType: text
+    fieldGroup: 4d7dbfa9-1442-453c-8342-8502890b71f4
+  33e01c33-728f-4c1a-9a61-3aea27ed7866:
+    name: 'Text Schweiz'
+    handle: contactTextCH
+    instructions: ''
+    searchable: true
+    translationMethod: none
+    translationKeyFormat: null
+    type: craft\redactor\Field
+    settings:
+      redactorConfig: ''
+      purifierConfig: ''
+      cleanupHtml: '1'
+      purifyHtml: '1'
+      columnType: text
+      availableVolumes: ''
+      availableTransforms: ''
+    contentColumnType: text
+    fieldGroup: 4d7dbfa9-1442-453c-8342-8502890b71f4
+  7a99164a-50a9-475c-b99d-61473c486253:
+    name: Frankreich
+    handle: contactTitleFR
+    instructions: ''
+    searchable: true
+    translationMethod: none
+    translationKeyFormat: null
+    type: craft\fields\PlainText
+    settings:
+      placeholder: ''
+      code: ''
+      multiline: ''
+      initialRows: '4'
+      charLimit: ''
+      columnType: text
+    contentColumnType: text
+    fieldGroup: 4d7dbfa9-1442-453c-8342-8502890b71f4
+  46982c5f-b8a8-4ba1-bdef-d9e05a0aec4c:
+    name: 'Text Frankreich'
+    handle: contactTextFR
+    instructions: ''
+    searchable: true
+    translationMethod: none
+    translationKeyFormat: null
+    type: craft\redactor\Field
+    settings:
+      redactorConfig: ''
+      purifierConfig: ''
+      cleanupHtml: '1'
+      purifyHtml: '1'
+      columnType: text
+      availableVolumes: ''
+      availableTransforms: ''
+    contentColumnType: text
+    fieldGroup: 4d7dbfa9-1442-453c-8342-8502890b71f4
+  eebf63a4-14fb-4630-b033-c6d97e89e154:
+    name: 'Mini Icon'
+    handle: miniIcon
+    instructions: ''
+    searchable: true
+    translationMethod: site
+    translationKeyFormat: null
+    type: craft\fields\Assets
+    settings:
+      useSingleFolder: ''
+      defaultUploadLocationSource: 'volume:69816707-a2df-4e48-b818-2b43eb29e9fd'
+      defaultUploadLocationSubpath: ''
+      singleUploadLocationSource: 'volume:9161c7ba-81a8-43c7-88a0-1c31bc63965e'
+      singleUploadLocationSubpath: ''
+      restrictFiles: ''
+      allowedKinds: null
+      sources:
+        - 'volume:69816707-a2df-4e48-b818-2b43eb29e9fd'
+      source: null
+      targetSiteId: null
+      viewMode: list
+      limit: '1'
+      selectionLabel: ''
+      localizeRelations: false
+    contentColumnType: string
+    fieldGroup: 4d7dbfa9-1442-453c-8342-8502890b71f4
+  de3c3820-1e5f-4317-8661-e739917c470a:
+    name: 'Mini Icon Email'
+    handle: miniIconEmail
+    instructions: ''
+    searchable: true
+    translationMethod: site
+    translationKeyFormat: null
+    type: craft\fields\Assets
+    settings:
+      useSingleFolder: ''
+      defaultUploadLocationSource: 'volume:69816707-a2df-4e48-b818-2b43eb29e9fd'
+      defaultUploadLocationSubpath: ''
+      singleUploadLocationSource: 'volume:9161c7ba-81a8-43c7-88a0-1c31bc63965e'
+      singleUploadLocationSubpath: ''
+      restrictFiles: ''
+      allowedKinds: null
+      sources:
+        - 'volume:69816707-a2df-4e48-b818-2b43eb29e9fd'
+      source: null
+      targetSiteId: null
+      viewMode: list
+      limit: '1'
+      selectionLabel: ''
+      localizeRelations: false
+    contentColumnType: string
+    fieldGroup: 4d7dbfa9-1442-453c-8342-8502890b71f4
 imageTransforms:
   db1f962f-5da7-4a16-a238-a313824e5c72:
     format: null
@@ -377,6 +501,16 @@ imageTransforms:
     position: center-center
     quality: null
     width: '1920'
+  9ef1ba03-2162-4953-81a3-66674319841c:
+    format: null
+    handle: miniThumb50x50
+    height: '50'
+    interlace: none
+    mode: crop
+    name: miniThumb50x50
+    position: center-center
+    quality: null
+    width: '50'
 matrixBlockTypes:
   10ba63eb-689c-4558-8c91-7e6b4f45a460:
     field: 002dc819-24d2-428e-9e9c-d279dd8f112f
@@ -445,6 +579,10 @@ plugins:
     enabled: true
     schemaVersion: 1.0.0
   cp-nav:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.0.0
+  sprout-encode-email:
     edition: standard
     enabled: true
     schemaVersion: 2.0.0
@@ -565,15 +703,51 @@ sections:
         enabledByDefault: true
         hasUrls: true
         uriFormat: contact
-        template: contact/_entry
+        template: contact/
     entryTypes:
       fd8bac83-e955-4b7d-b685-11622dbb13cf:
         name: Contact
         handle: contactSection
         hasTitleField: false
-        titleLabel: null
+        titleLabel: ''
         titleFormat: '{section.name|raw}'
         sortOrder: 1
+        fieldLayouts:
+          b0964ab8-fd10-4fe4-b0bc-cc385571b6a0:
+            tabs:
+              -
+                name: Kontakt
+                sortOrder: 1
+                fields:
+                  f13b35b9-004c-4ccb-9b3c-073525339052:
+                    required: false
+                    sortOrder: 1
+              -
+                name: 'Kontakt Schweiz'
+                sortOrder: 2
+                fields:
+                  eebf63a4-14fb-4630-b033-c6d97e89e154:
+                    required: false
+                    sortOrder: 1
+                  492ad7a2-68f1-4e64-9414-86e3aa3b8cd8:
+                    required: false
+                    sortOrder: 2
+                  33e01c33-728f-4c1a-9a61-3aea27ed7866:
+                    required: false
+                    sortOrder: 3
+                  de3c3820-1e5f-4317-8661-e739917c470a:
+                    required: false
+                    sortOrder: 4
+              -
+                name: 'Kontakt Frankreich'
+                sortOrder: 3
+                fields:
+                  7a99164a-50a9-475c-b99d-61473c486253:
+                    required: false
+                    sortOrder: 1
+                  46982c5f-b8a8-4ba1-bdef-d9e05a0aec4c:
+                    required: false
+                    sortOrder: 2
   888462c5-883e-4fbc-b494-c46391f77a78:
     name: movies
     handle: moviesSection
@@ -667,14 +841,14 @@ siteGroups:
     name: 'Andrea Film'
 sites:
   eccd415c-2a08-4035-94cd-62a46c8cd0a2:
-    baseUrl: $DEFAULT_SITE_URL
-    handle: default
-    hasUrls: true
-    language: de
-    name: 'Andrea Film'
-    primary: true
     siteGroup: 330548d1-b81b-4755-96d3-a57901c9800d
+    name: 'Andrea Film'
+    handle: default
+    language: de
+    hasUrls: true
+    baseUrl: ''
     sortOrder: 1
+    primary: true
 system:
   edition: solo
   name: 'Andrea Film'
@@ -715,3 +889,12 @@ volumes:
     settings:
       path: '@webroot/user_assets/images/bgimages'
     sortOrder: 3
+  69816707-a2df-4e48-b818-2b43eb29e9fd:
+    name: Icons
+    handle: icons
+    type: craft\volumes\Local
+    hasUrls: true
+    url: '@andreafilm_url/user_assets/icons'
+    settings:
+      path: '@webroot/user_assets/icons'
+    sortOrder: 4
