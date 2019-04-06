@@ -621,7 +621,7 @@ body {
       -ms-flex: 0 1 100%;
           flex: 0 1 100%;
   grid-column: 1 / -1;
-  padding: 20px 40px 20px 40px;
+  padding: 0 0 20px 0;
 }
 
 @media screen and (min-width: 48em) {
@@ -925,10 +925,17 @@ body {
 /* line 245, src/sass/_layout.scss */
 .container .detail__movie-titlebox {
   grid-column: 1 / -1;
-  padding: 0 0 40px 40px;
+  padding: 0 0 20px 0;
 }
 
-/* line 249, src/sass/_layout.scss */
+@media screen and (min-width: 48em) {
+  /* line 245, src/sass/_layout.scss */
+  .container .detail__movie-titlebox {
+    padding: 0 0 40px 40px;
+  }
+}
+
+/* line 253, src/sass/_layout.scss */
 .container .detail__movie-titlebox-title {
   font-size: 4rem;
   font-style: italic;
@@ -937,7 +944,7 @@ body {
   text-transform: uppercase;
 }
 
-/* line 257, src/sass/_layout.scss */
+/* line 261, src/sass/_layout.scss */
 .container .detail__movie-titlebox-subtitle {
   font-size: 4rem;
   font-style: italic;
@@ -945,30 +952,31 @@ body {
   text-transform: uppercase;
 }
 
-/* line 264, src/sass/_layout.scss */
+/* line 268, src/sass/_layout.scss */
 .container .detail__movie-titlebox-subline {
   font-family: 'Crimson Text', serif;
   font-size: 2.6rem;
 }
 
-/* line 270, src/sass/_layout.scss */
+/* line 274, src/sass/_layout.scss */
 .container .detail__movie-infotext {
   grid-column: 1 / -1;
   font-size: 2.6rem;
   font-family: 'Crimson Text', serif;
   font-weight: normal;
   font-style: italic;
-  padding: 0 0 40px 40px;
+  padding: 0 0 20px 0;
 }
 
 @media screen and (min-width: 48em) {
-  /* line 270, src/sass/_layout.scss */
+  /* line 274, src/sass/_layout.scss */
   .container .detail__movie-infotext {
     grid-column: 1 / 5;
+    padding: 0 0 40px 40px;
   }
 }
 
-/* line 283, src/sass/_layout.scss */
+/* line 288, src/sass/_layout.scss */
 .container .detail__movie-credits {
   grid-column: 1 / -1;
   -webkit-column-count: 2;
@@ -976,30 +984,31 @@ body {
   font-size: 2rem;
   font-family: 'Crimson Text', serif;
   font-weight: normal;
-  padding: 0 0 40px 40px;
+  padding: 0 0 20px 0;
 }
 
 @media screen and (min-width: 48em) {
-  /* line 283, src/sass/_layout.scss */
+  /* line 288, src/sass/_layout.scss */
   .container .detail__movie-credits {
     -webkit-column-count: 2;
             column-count: 2;
     grid-column: 1 / 4;
+    padding: 0 0 40px 40px;
   }
 }
 
-/* line 296, src/sass/_layout.scss */
+/* line 302, src/sass/_layout.scss */
 .container .detail__movie-credits .movie__credits-box {
   margin: 0 0 10px 0;
 }
 
-/* line 300, src/sass/_layout.scss */
+/* line 306, src/sass/_layout.scss */
 .container .detail__movie-credits .movie__credits-text {
   font-weight: bold;
   line-height: 1.2;
 }
 
-/* line 306, src/sass/_layout.scss */
+/* line 312, src/sass/_layout.scss */
 .container .detail__movie-filmbox {
   grid-column: 1 / -1;
   padding: 56.25% 0 0 0;
@@ -1008,7 +1017,7 @@ body {
 }
 
 @media screen and (min-width: 48em) {
-  /* line 306, src/sass/_layout.scss */
+  /* line 312, src/sass/_layout.scss */
   .container .detail__movie-filmbox {
     grid-column: 5 / 7;
   }
