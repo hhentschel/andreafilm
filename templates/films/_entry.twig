@@ -1,5 +1,5 @@
 {% extends '/_layout' %}
-
+{% set bodyClass = 'film-detail' %}
 {% block main %}
 
 <div class="container container__detail" style="background-image: url({{ entry.filmImage.one().getUrl('fullImage') }});">
