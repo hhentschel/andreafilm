@@ -571,6 +571,7 @@ html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-size: 37.5%;
+  height: 100%;
 }
 
 @media only screen and (min-width: 37.5em) {
@@ -587,7 +588,7 @@ html {
   }
 }
 
-/* line 50, src/sass/_base.scss */
+/* line 51, src/sass/_base.scss */
 body {
   font-family: 'Nunito Sans', sans-serif;
   font-weight: 400;
@@ -595,15 +596,16 @@ body {
   color: var(--color-primary);
   background-size: cover;
   background-repeat: no-repeat;
-  min-height: 100vh;
+  height: 100%;
 }
 
 /* line 1, src/sass/_layout.scss */
 .layout__main {
   padding: 0 0 10px 0;
+  height: 100%;
 }
 
-/* line 5, src/sass/_layout.scss */
+/* line 6, src/sass/_layout.scss */
 .container {
   max-width: 1920px;
   margin: 0 auto;
@@ -619,36 +621,36 @@ body {
       -ms-flex: 0 1 100%;
           flex: 0 1 100%;
   grid-column: 1 / -1;
+  padding: 20px 40px 20px 40px;
 }
 
-/* line 17, src/sass/_layout.scss */
+@media screen and (min-width: 48em) {
+  /* line 10, src/sass/_layout.scss */
+  .container__navbox {
+    padding: 50px 40px 50px 40px;
+  }
+}
+
+/* line 21, src/sass/_layout.scss */
 .page--about .container__navbox {
   grid-column: 1 / 2;
 }
 
-/* line 21, src/sass/_layout.scss */
-.page--home .container__navbox {
-  padding: 20px 40px 160px 40px;
-}
-
-@media screen and (min-width: 769px) {
-  /* line 21, src/sass/_layout.scss */
-  .page--home .container__navbox {
-    padding: 50px 40px 20px 40px;
-  }
+/* line 25, src/sass/_layout.scss */
+.page--films .container__navbox {
+  background-color: var(--color-purple);
 }
 
 /* line 30, src/sass/_layout.scss */
 .container__home, .container__index, .container__detail {
   display: grid;
-  grid-gap: 10px;
   margin: 0 auto;
   background-repeat: no-repeat;
   background-size: cover;
   /* We need to set the margin used on flex items to 0 as we have gaps in grid.  */
 }
 
-/* line 41, src/sass/_layout.scss */
+/* line 38, src/sass/_layout.scss */
 .container__home--filmbox, .container__index--filmbox, .container__detail--filmbox {
   background: aliceblue;
   background-repeat: no-repeat;
@@ -676,7 +678,7 @@ body {
   padding: 0 50px 20px 50px;
 }
 
-/* line 55, src/sass/_layout.scss */
+/* line 52, src/sass/_layout.scss */
 .container__home--filmbox-title, .container__index--filmbox-title, .container__detail--filmbox-title {
   font-family: 'Nunito Sans', sans-serif;
   font-weight: 900;
@@ -686,27 +688,27 @@ body {
   line-height: 1.2;
 }
 
-/* line 64, src/sass/_layout.scss */
+/* line 61, src/sass/_layout.scss */
 .container__home--filmbox-subtitle, .container__index--filmbox-subtitle, .container__detail--filmbox-subtitle {
   font-family: 'Nunito Sans', sans-serif;
   font-weight: 700;
   font-size: 2rem;
 }
 
-/* line 71, src/sass/_layout.scss */
+/* line 68, src/sass/_layout.scss */
 .container__home > *, .container__index > *, .container__detail > * {
   color: var(--color-white);
   margin-bottom: 10px;
 }
 
 @supports (display: grid) {
-  /* line 80, src/sass/_layout.scss */
+  /* line 76, src/sass/_layout.scss */
   .container__home > *, .container__index > *, .container__detail > * {
     margin: 0;
   }
 }
 
-/* line 87, src/sass/_layout.scss */
+/* line 83, src/sass/_layout.scss */
 .container__home, .container__index, .container__detail {
   display: -webkit-box;
   display: -webkit-flex;
@@ -717,10 +719,9 @@ body {
           flex-wrap: wrap;
 }
 
-/* line 94, src/sass/_layout.scss */
+/* line 90, src/sass/_layout.scss */
 .container__home {
   display: grid;
-  grid-gap: 10px;
   margin: 0 auto;
   height: 100%;
   grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
@@ -728,14 +729,14 @@ body {
 }
 
 @media screen and (min-width: 600px) {
-  /* line 94, src/sass/_layout.scss */
+  /* line 90, src/sass/_layout.scss */
   .container__home {
-    grid-template-columns: repeat(auto-fill, minmax(480px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
     grid-auto-rows: minmax(300px, auto);
   }
 }
 
-/* line 108, src/sass/_layout.scss */
+/* line 102, src/sass/_layout.scss */
 .container__home .container__navbox {
   position: relative;
   grid-row: 1 / 3;
@@ -743,13 +744,13 @@ body {
 }
 
 @media screen and (max-width: 768px) {
-  /* line 108, src/sass/_layout.scss */
+  /* line 102, src/sass/_layout.scss */
   .container__home .container__navbox {
     grid-row: 1 / 2;
   }
 }
 
-/* line 118, src/sass/_layout.scss */
+/* line 112, src/sass/_layout.scss */
 .container__home video {
   position: absolute;
   overflow: hidden;
@@ -759,55 +760,112 @@ body {
   top: 50%;
   width: 100%;
   z-index: 1;
-  height: 50vh;
+  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
-/* line 131, src/sass/_layout.scss */
+/* line 125, src/sass/_layout.scss */
 .container__index {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
   grid-auto-rows: minmax(250px, auto);
-  padding: 50px 40px 40px 40px;
-  height: 100%;
 }
 
 @media screen and (min-width: 600px) {
-  /* line 131, src/sass/_layout.scss */
+  /* line 125, src/sass/_layout.scss */
   .container__index {
-    grid-template-columns: repeat(auto-fill, minmax(480px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
     grid-auto-rows: minmax(300px, auto);
   }
 }
 
-/* line 146, src/sass/_layout.scss */
+/* line 135, src/sass/_layout.scss */
+.page--about .container__index {
+  grid-template-columns: 100%;
+  grid-auto-rows: -webkit-min-content;
+  grid-auto-rows: min-content;
+  height: 100%;
+}
+
+@media screen and (min-width: 48em) {
+  /* line 135, src/sass/_layout.scss */
+  .page--about .container__index {
+    grid-template-columns: 40% 60%;
+  }
+}
+
+@media screen and (min-width: 68.75em) {
+  /* line 135, src/sass/_layout.scss */
+  .page--about .container__index {
+    grid-template-columns: 30% 70%;
+  }
+}
+
+/* line 149, src/sass/_layout.scss */
+.page--contact .container__index {
+  grid-auto-rows: -webkit-min-content;
+  grid-auto-rows: min-content;
+  height: 100%;
+}
+
+/* line 157, src/sass/_layout.scss */
 .container__detail {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: 1fr minmax(200px, 6vh) 1fr 1fr;
+  grid-template-rows: -webkit-min-content;
+  grid-template-rows: min-content;
   padding: 50px 40px 20px 40px;
-  height: 100vh;
+  height: 100%;
 }
 
-/* line 155, src/sass/_layout.scss */
+/* line 166, src/sass/_layout.scss */
+.container__text {
+  grid-column: 1/-1;
+  padding: 0 50px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+
+/* line 174, src/sass/_layout.scss */
 .container__textcontent {
   font-family: 'Crimson Text', serif;
-  font-size: 2.4rem;
+  font-size: 3rem;
   line-height: 1.2;
 }
 
-/* line 160, src/sass/_layout.scss */
+/* line 179, src/sass/_layout.scss */
 .container__textcontent p {
   margin: 0 0 0.6em 0;
 }
 
-/* line 164, src/sass/_layout.scss */
+/* line 183, src/sass/_layout.scss */
 .page--about .container__textcontent {
-  grid-column: 2 / 4;
+  grid-column: 1 / -1;
+  padding: 20px 40px 20px 40px;
 }
 
-/* line 168, src/sass/_layout.scss */
+@media screen and (min-width: 48em) {
+  /* line 183, src/sass/_layout.scss */
+  .page--about .container__textcontent {
+    padding: 50px 40px 20px 40px;
+    grid-column: 2 / 3;
+  }
+}
+
+@media screen and (min-width: 75em) {
+  /* line 183, src/sass/_layout.scss */
+  .page--about .container__textcontent {
+    padding-right: 200px;
+  }
+}
+
+/* line 197, src/sass/_layout.scss */
 .container__textcontent .container__textcontent-title {
   color: var(--color-primary);
   background-repeat: no-repeat;
@@ -816,7 +874,7 @@ body {
   line-height: 1.6;
 }
 
-/* line 176, src/sass/_layout.scss */
+/* line 205, src/sass/_layout.scss */
 .container__textcontent .container__textcontent-email {
   background-repeat: no-repeat;
   padding: 0 0 0 60px;
@@ -824,31 +882,52 @@ body {
   line-height: 1.6;
 }
 
-/* line 182, src/sass/_layout.scss */
+/* line 211, src/sass/_layout.scss */
 .container__textcontent .container__textcontent-email a {
   color: var(--color-red);
 }
 
-/* line 187, src/sass/_layout.scss */
+/* line 216, src/sass/_layout.scss */
+.container__textcontent-swiss, .container__textcontent-france {
+  width: 100%;
+}
+
+@media screen and (min-width: 48em) {
+  /* line 216, src/sass/_layout.scss */
+  .container__textcontent-swiss, .container__textcontent-france {
+    width: calc(50% - 20px);
+  }
+}
+
+/* line 225, src/sass/_layout.scss */
 .container__textcontent-swiss {
   font-size: 3rem;
   color: var(--color-red);
   font-style: italic;
+  margin: 0 0 20px 0;
 }
 
-/* line 193, src/sass/_layout.scss */
+@media screen and (min-width: 48em) {
+  /* line 225, src/sass/_layout.scss */
+  .container__textcontent-swiss {
+    margin-right: 20px;
+  }
+}
+
+/* line 236, src/sass/_layout.scss */
 .container__textcontent-france {
   font-size: 3rem;
   color: var(--color-blue);
   font-style: italic;
 }
 
-/* line 201, src/sass/_layout.scss */
+/* line 244, src/sass/_layout.scss */
 .container .detail__movie-titlebox {
   grid-column: 1 / -1;
+  padding: 0 0 40px 40px;
 }
 
-/* line 204, src/sass/_layout.scss */
+/* line 248, src/sass/_layout.scss */
 .container .detail__movie-titlebox-title {
   font-size: 4rem;
   font-style: italic;
@@ -857,7 +936,7 @@ body {
   text-transform: uppercase;
 }
 
-/* line 212, src/sass/_layout.scss */
+/* line 256, src/sass/_layout.scss */
 .container .detail__movie-titlebox-subtitle {
   font-size: 4rem;
   font-style: italic;
@@ -865,29 +944,30 @@ body {
   text-transform: uppercase;
 }
 
-/* line 219, src/sass/_layout.scss */
+/* line 263, src/sass/_layout.scss */
 .container .detail__movie-titlebox-subline {
   font-family: 'Crimson Text', serif;
   font-size: 2.6rem;
 }
 
-/* line 225, src/sass/_layout.scss */
+/* line 269, src/sass/_layout.scss */
 .container .detail__movie-infotext {
   grid-column: 1 / -1;
-  font-size: 2.2rem;
+  font-size: 2.6rem;
   font-family: 'Crimson Text', serif;
   font-weight: normal;
   font-style: italic;
+  padding: 0 0 40px 40px;
 }
 
 @media screen and (min-width: 48em) {
-  /* line 225, src/sass/_layout.scss */
+  /* line 269, src/sass/_layout.scss */
   .container .detail__movie-infotext {
     grid-column: 1 / 5;
   }
 }
 
-/* line 237, src/sass/_layout.scss */
+/* line 282, src/sass/_layout.scss */
 .container .detail__movie-credits {
   grid-column: 1 / -1;
   -webkit-column-count: 2;
@@ -895,10 +975,11 @@ body {
   font-size: 2rem;
   font-family: 'Crimson Text', serif;
   font-weight: normal;
+  padding: 0 0 40px 40px;
 }
 
 @media screen and (min-width: 48em) {
-  /* line 237, src/sass/_layout.scss */
+  /* line 282, src/sass/_layout.scss */
   .container .detail__movie-credits {
     -webkit-column-count: 2;
             column-count: 2;
@@ -906,18 +987,18 @@ body {
   }
 }
 
-/* line 249, src/sass/_layout.scss */
+/* line 295, src/sass/_layout.scss */
 .container .detail__movie-credits .movie__credits-box {
   margin: 0 0 10px 0;
 }
 
-/* line 255, src/sass/_layout.scss */
+/* line 299, src/sass/_layout.scss */
 .container .detail__movie-credits .movie__credits-text {
   font-weight: bold;
   line-height: 1.2;
 }
 
-/* line 261, src/sass/_layout.scss */
+/* line 305, src/sass/_layout.scss */
 .container .detail__movie-filmbox {
   grid-column: 1 / -1;
   padding: 56.25% 0 0 0;
@@ -926,7 +1007,7 @@ body {
 }
 
 @media screen and (min-width: 48em) {
-  /* line 261, src/sass/_layout.scss */
+  /* line 305, src/sass/_layout.scss */
   .container .detail__movie-filmbox {
     grid-column: 5 / 7;
   }

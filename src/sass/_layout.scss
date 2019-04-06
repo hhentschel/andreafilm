@@ -1,29 +1,29 @@
 .layout__main {
 	padding: 0 0 10px 0;
+	height: 100%;
 }
 
 .container {
-	//background: red;
 	max-width: 1920px;
 	margin: 0 auto;
 
 	&__navbox {
-		//background: yellowgreen;
 		margin-left: 5px;
 		margin-right: 5px;
 		flex: 0 1 100%;
 		grid-column: 1 / -1;
+		padding: 20px 40px 20px 40px;
+
+		@media screen and (min-width: $bp-medium) {
+			padding: 50px 40px 50px 40px;
+		}
 
 		.page--about & {
 			grid-column: 1 / 2;
 		}
 
-		.page--home & {
-			padding: 20px 40px 160px 40px;
-
-			@media screen and (min-width: 769px) {
-				padding: 50px 40px 20px 40px;
-			}
+		.page--films & {
+			background-color: var(--color-purple);
 		}
 	}
 
@@ -31,12 +31,9 @@
 	&__index,
 	&__detail {
 		display: grid;
-
-		grid-gap: 10px;
 		margin: 0 auto;
 		background-repeat: no-repeat;
 		background-size: cover;
-		//height: 100%;
 
 		&--filmbox {
 			background: aliceblue;
@@ -71,7 +68,6 @@
 		> * {
 			//background-color: #444;
 			color: var(--color-white);
-
 			margin-bottom: 10px;
 		}
 
@@ -92,16 +88,14 @@
 	}
 
 	&__home {
-		//background: red;
 		display: grid;
-		grid-gap: 10px;
 		margin: 0 auto;
 		height: 100%;
 		grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
 		grid-auto-rows: minmax(250px, auto);
 
 		@media screen and (min-width: 600px) {
-			grid-template-columns: repeat(auto-fill, minmax(480px, 1fr));
+			grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
 			grid-auto-rows: minmax(300px, auto);
 		}
 
@@ -123,7 +117,7 @@
 			top: 50%;
 			width: 100%;
 			z-index: 1;
-			height: 50vh;
+			height: 100%;
 			object-fit: cover;
 		}
 	}
@@ -132,12 +126,29 @@
 		display: grid;
 		grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
 		grid-auto-rows: minmax(250px, auto);
-		padding: 50px 40px 40px 40px;
-		height: 100%;
 
 		@media screen and (min-width: 600px) {
-			grid-template-columns: repeat(auto-fill, minmax(480px, 1fr));
+			grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
 			grid-auto-rows: minmax(300px, auto);
+		}
+
+		.page--about & {
+			grid-template-columns: 100%;
+			grid-auto-rows: min-content;
+			height: 100%;
+
+			@media screen and (min-width: $bp-medium) {
+				grid-template-columns: 40% 60%;
+			}
+
+			@media screen and (min-width: $bp-large) {
+				grid-template-columns: 30% 70%;
+			}
+		}
+
+		.page--contact & {
+			grid-auto-rows: min-content;
+			height: 100%;
 		}
 	}
 
@@ -146,15 +157,23 @@
 	&__detail {
 		display: grid;
 		grid-template-columns: repeat(6, 1fr);
-		grid-template-rows: 1fr minmax(200px, 6vh) 1fr 1fr;
+		grid-template-rows: min-content;
 		padding: 50px 40px 20px 40px;
-		height: 100vh;
+		height: 100%;
+	}
+
+	// until now only on contact page
+	&__text {
+		grid-column: 1/-1;
+		padding: 0 50px;
+		display: flex;
+		flex-wrap: wrap;
 	}
 
 	//Text-Container
 	&__textcontent {
 		font-family: 'Crimson Text', serif;
-		font-size: 2.4rem;
+		font-size: 3rem;
 		line-height: 1.2;
 
 		p {
@@ -162,7 +181,17 @@
 		}
 
 		.page--about & {
-			grid-column: 2 / 4;
+			grid-column: 1 / -1;
+			padding: 20px 40px 20px 40px;
+
+			@media screen and (min-width: $bp-medium) {
+				padding: 50px 40px 20px 40px;
+				grid-column: 2 / 3;
+			}
+
+			@media screen and (min-width: $bp-largest) {
+				padding-right: 200px;
+			}
 		}
 
 		.container__textcontent-title {
@@ -184,10 +213,24 @@
 			}
 		}
 
+		&-swiss,
+		&-france {
+			width: 100%;
+
+			@media screen and (min-width: $bp-medium) {
+				width: calc(50% - 20px);
+			}
+		}
+
 		&-swiss {
 			font-size: 3rem;
 			color: var(--color-red);
 			font-style: italic;
+			margin: 0 0 20px 0;
+
+			@media screen and (min-width: $bp-medium) {
+				margin-right: 20px;
+			}
 		}
 
 		&-france {
@@ -200,6 +243,7 @@
 	.detail__movie {
 		&-titlebox {
 			grid-column: 1 / -1;
+			padding: 0 0 40px 40px;
 
 			&-title {
 				font-size: 4rem;
@@ -224,10 +268,11 @@
 
 		&-infotext {
 			grid-column: 1 / -1;
-			font-size: 2.2rem;
+			font-size: 2.6rem;
 			font-family: 'Crimson Text', serif;
 			font-weight: normal;
 			font-style: italic;
+			padding: 0 0 40px 40px;
 
 			@media screen and (min-width: $bp-medium) {
 				grid-column: 1 / 5;
@@ -240,6 +285,7 @@
 			font-size: 2rem;
 			font-family: 'Crimson Text', serif;
 			font-weight: normal;
+			padding: 0 0 40px 40px;
 
 			@media screen and (min-width: $bp-medium) {
 				column-count: 2;
@@ -247,8 +293,6 @@
 			}
 
 			.movie__credits-box {
-				//display: inline-block;
-				//background-color: #001133;
 				margin: 0 0 10px 0;
 			}
 

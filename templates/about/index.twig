@@ -4,9 +4,7 @@
 
 {% block main %}
 
-<div class="containerbg" style="background-image: url({{ entry.PageBackgroundImage.one().getUrl('fullImage') }});">
-
-    <div class="container container__index">
+    <div class="container container__index" style="background-image: url({{ entry.PageBackgroundImage.one().getUrl('fullImage') }});">
 
         <div class="container__navbox">
             {% include '/_includes/navigation.twig' %}
@@ -19,7 +17,5 @@
         </div>
     
     </div>
-
-</div>
 
 {% endblock %}
