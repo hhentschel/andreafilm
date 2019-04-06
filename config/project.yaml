@@ -1,15 +1,11 @@
-dateModified: 1554462352
+dateModified: 1554560302
 email:
   fromEmail: p@henrik-hentschel.de
   fromName: 'Andrea Film'
   transportType: craft\mail\transportadapters\Sendmail
 fieldGroups:
-  b6201258-940b-4113-ba3b-d6e2b2aa38e1:
-    name: Common
   05290696-2d33-4040-8bdf-ecb9e2593586:
     name: General
-  57800bf4-49d4-4aa9-ac2b-9953569db0ef:
-    name: News
   695f2705-9ba1-4d94-800b-7601fa8fd1f0:
     name: About
   9256a3ac-dd6e-4b9a-bb95-5ed9b5249701:
@@ -39,41 +35,6 @@ fields:
       availableTransforms: '*'
     contentColumnType: text
     fieldGroup: 05290696-2d33-4040-8bdf-ecb9e2593586
-  04a8398f-e475-4c20-8b5e-ff34d79210de:
-    name: 'News Excerpt'
-    handle: newsExcerpt
-    instructions: ''
-    searchable: true
-    translationMethod: none
-    translationKeyFormat: null
-    type: craft\fields\PlainText
-    settings:
-      placeholder: ''
-      code: ''
-      multiline: ''
-      initialRows: '4'
-      charLimit: ''
-      columnType: text
-    contentColumnType: text
-    fieldGroup: 57800bf4-49d4-4aa9-ac2b-9953569db0ef
-  54f6e39b-7a48-4853-aa96-ae218d4bacad:
-    name: 'News Body'
-    handle: newsBody
-    instructions: ''
-    searchable: true
-    translationMethod: none
-    translationKeyFormat: null
-    type: craft\redactor\Field
-    settings:
-      redactorConfig: ''
-      purifierConfig: ''
-      cleanupHtml: '1'
-      purifyHtml: '1'
-      columnType: text
-      availableVolumes: '*'
-      availableTransforms: '*'
-    contentColumnType: text
-    fieldGroup: 57800bf4-49d4-4aa9-ac2b-9953569db0ef
   5eec0c3a-943f-4959-b56a-bdb2c1ddc2f6:
     name: Subtitel
     handle: subtitle
@@ -111,7 +72,7 @@ fields:
   95b6bd76-0ca5-46fe-b075-9cb9e9663005:
     name: Video
     handle: videoID
-    instructions: 'Nummer vimeo.com/327554892'
+    instructions: "die Zahlenreihe aus der URL nehmen, nach \"...vimeo.com/\"\r\nz.B. 327554892"
     searchable: true
     translationMethod: none
     translationKeyFormat: null
@@ -264,7 +225,7 @@ fields:
   bf2eb36d-0ecb-43ae-9d29-051fae84a60b:
     name: 'Farbe Subtitel'
     handle: colorSubtitle
-    instructions: ''
+    instructions: "Entweder auf den Kreis klicken und Farbe auswählen\r\noder Hex-Wert in das Feld einsetzten."
     searchable: false
     translationMethod: none
     translationKeyFormat: null
@@ -662,36 +623,6 @@ sections:
                   f13b35b9-004c-4ccb-9b3c-073525339052:
                     required: false
                     sortOrder: 4
-  d925a667-69cb-457e-92eb-22c9f5975792:
-    name: Drinks
-    handle: drinksSection
-    type: channel
-    enableVersioning: true
-    propagateEntries: true
-    siteSettings:
-      eccd415c-2a08-4035-94cd-62a46c8cd0a2:
-        enabledByDefault: true
-        hasUrls: true
-        uriFormat: 'drinks/{slug}'
-        template: drinks/_entry
-    entryTypes:
-      0e61669f-fa8c-4da4-b70a-1951d90cf89f:
-        name: Drinks
-        handle: drinksSection
-        hasTitleField: true
-        titleLabel: Titel
-        titleFormat: ''
-        sortOrder: 1
-        fieldLayouts:
-          ec711a4f-149d-4b3d-9915-3b7f9586f2d8:
-            tabs:
-              -
-                name: Drinks
-                sortOrder: 1
-                fields:
-                  69983b47-acee-48fe-a414-30b622fe223b:
-                    required: false
-                    sortOrder: 3
   32e60c6a-8544-4297-9c0b-2894a3d4f370:
     name: Contact
     handle: contactSection
@@ -748,29 +679,6 @@ sections:
                   46982c5f-b8a8-4ba1-bdef-d9e05a0aec4c:
                     required: false
                     sortOrder: 2
-  888462c5-883e-4fbc-b494-c46391f77a78:
-    name: movies
-    handle: moviesSection
-    type: structure
-    enableVersioning: true
-    propagateEntries: true
-    siteSettings:
-      eccd415c-2a08-4035-94cd-62a46c8cd0a2:
-        enabledByDefault: true
-        hasUrls: true
-        uriFormat: '{parent.uri}/{slug}'
-        template: movies/_entry
-    structure:
-      uid: 9274c03e-7f90-48ab-af51-740abc5d74fb
-      maxLevels: ''
-    entryTypes:
-      9cc9ec25-6ee0-4d3b-8c33-de5d753e77c8:
-        name: movies
-        handle: moviesSection
-        hasTitleField: true
-        titleLabel: Titel
-        titleFormat: null
-        sortOrder: 1
   b9364b69-4890-4291-87d2-84de73a5f576:
     name: Filme
     handle: filmsSection
@@ -803,19 +711,19 @@ sections:
                 fields:
                   8837aea0-a136-4261-8bd5-5272b7e8172d:
                     required: false
-                    sortOrder: 2
+                    sortOrder: 1
                   bf2eb36d-0ecb-43ae-9d29-051fae84a60b:
                     required: false
-                    sortOrder: 3
+                    sortOrder: 2
                   69983b47-acee-48fe-a414-30b622fe223b:
                     required: false
-                    sortOrder: 4
+                    sortOrder: 3
                   f7647892-8b56-4f2c-bf36-036bfff0df4b:
                     required: false
-                    sortOrder: 5
+                    sortOrder: 4
                   95b6bd76-0ca5-46fe-b075-9cb9e9663005:
                     required: false
-                    sortOrder: 6
+                    sortOrder: 5
               -
                 name: Credits
                 sortOrder: 2
@@ -824,7 +732,7 @@ sections:
                     required: false
                     sortOrder: 1
               -
-                name: 'Film Detail'
+                name: 'Angaben für Film-Detail Seite'
                 sortOrder: 3
                 fields:
                   16890e98-bcfc-4e72-a2f7-9ee23c3c93b9:
@@ -853,7 +761,7 @@ system:
   edition: solo
   name: 'Andrea Film'
   live: true
-  schemaVersion: 3.1.25
+  schemaVersion: 3.1.26
   timeZone: Europe/Zurich
 users:
   requireEmailVerification: true
@@ -862,15 +770,6 @@ users:
   photoVolumeUid: null
   photoSubpath: ''
 volumes:
-  9161c7ba-81a8-43c7-88a0-1c31bc63965e:
-    name: Drinks
-    handle: drinks
-    type: craft\volumes\Local
-    hasUrls: true
-    url: '@andreafilm_url/assets/images/drinks'
-    settings:
-      path: '@root/assets/images/drinks'
-    sortOrder: '1'
   f7b6e1ba-4676-494b-bda5-666cf9d0533a:
     name: Films
     handle: films

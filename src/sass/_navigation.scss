@@ -5,6 +5,7 @@
 
 		li {
 			line-height: 1;
+			cursor: pointer;
 		}
 
 		&-item {
@@ -15,6 +16,7 @@
 			display: block;
 			font-family: 'Nunito Sans', sans-serif;
 			font-size: 6rem;
+			cursor: pointer;
 
 			&.active {
 				font-size: 8rem;
@@ -41,18 +43,6 @@
 		&-contact {
 		}
 	}
-
-	// &__index {
-	//     .container__nav {
-	//         &-item {
-	//             font-size: 6rem;
-
-	//             &.active {
-	//                 font-size: 8rem;
-	//             }
-	//         }
-	//     }
-	// }
 
 	&__detail {
 		.container__nav {
