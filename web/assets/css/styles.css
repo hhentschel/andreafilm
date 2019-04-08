@@ -601,8 +601,8 @@ body {
 
 /* line 1, src/sass/_layout.scss */
 .layout__main {
-  padding: 0 0 10px 0;
-  height: auto;
+  padding: 0;
+  height: 100%;
 }
 
 /* line 6, src/sass/_layout.scss */
@@ -697,31 +697,32 @@ body {
   font-weight: 900;
   text-transform: uppercase;
   font-size: 3rem;
-  letter-spacing: 0.2rem;
+  letter-spacing: 0.1rem;
   line-height: 1.2;
 }
 
 /* line 70, src/sass/_layout.scss */
 .container__home--filmbox-subtitle, .container__index--filmbox-subtitle, .container__detail--filmbox-subtitle {
   font-family: 'Nunito Sans', sans-serif;
-  font-weight: 700;
+  font-weight: 800;
   font-size: 2rem;
+  text-transform: uppercase;
 }
 
-/* line 77, src/sass/_layout.scss */
+/* line 78, src/sass/_layout.scss */
 .container__home > *, .container__index > *, .container__detail > * {
   color: var(--color-white);
   margin-bottom: 10px;
 }
 
 @supports (display: grid) {
-  /* line 85, src/sass/_layout.scss */
+  /* line 86, src/sass/_layout.scss */
   .container__home > *, .container__index > *, .container__detail > * {
     margin: 0;
   }
 }
 
-/* line 92, src/sass/_layout.scss */
+/* line 93, src/sass/_layout.scss */
 .container__home, .container__index, .container__detail {
   display: -webkit-box;
   display: -webkit-flex;
@@ -732,7 +733,7 @@ body {
           flex-wrap: wrap;
 }
 
-/* line 99, src/sass/_layout.scss */
+/* line 100, src/sass/_layout.scss */
 .container__home {
   display: grid;
   margin: 0 auto;
@@ -742,14 +743,14 @@ body {
 }
 
 @media screen and (min-width: 600px) {
-  /* line 99, src/sass/_layout.scss */
+  /* line 100, src/sass/_layout.scss */
   .container__home {
     grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
     grid-auto-rows: minmax(300px, auto);
   }
 }
 
-/* line 111, src/sass/_layout.scss */
+/* line 112, src/sass/_layout.scss */
 .container__home .container__navbox {
   position: relative;
   grid-row: 1 / 3;
@@ -757,13 +758,13 @@ body {
 }
 
 @media screen and (max-width: 768px) {
-  /* line 111, src/sass/_layout.scss */
+  /* line 112, src/sass/_layout.scss */
   .container__home .container__navbox {
     grid-row: 1 / 2;
   }
 }
 
-/* line 121, src/sass/_layout.scss */
+/* line 122, src/sass/_layout.scss */
 .container__home video {
   position: absolute;
   overflow: hidden;
@@ -778,7 +779,7 @@ body {
      object-fit: cover;
 }
 
-/* line 134, src/sass/_layout.scss */
+/* line 135, src/sass/_layout.scss */
 .container__index {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
@@ -786,14 +787,14 @@ body {
 }
 
 @media screen and (min-width: 600px) {
-  /* line 134, src/sass/_layout.scss */
+  /* line 135, src/sass/_layout.scss */
   .container__index {
     grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
     grid-auto-rows: minmax(300px, auto);
   }
 }
 
-/* line 144, src/sass/_layout.scss */
+/* line 145, src/sass/_layout.scss */
 .page--about .container__index {
   grid-template-columns: 100%;
   grid-auto-rows: -webkit-min-content;
@@ -802,20 +803,20 @@ body {
 }
 
 @media screen and (min-width: 48em) {
-  /* line 144, src/sass/_layout.scss */
+  /* line 145, src/sass/_layout.scss */
   .page--about .container__index {
     grid-template-columns: 40% 60%;
   }
 }
 
 @media screen and (min-width: 68.75em) {
-  /* line 144, src/sass/_layout.scss */
+  /* line 145, src/sass/_layout.scss */
   .page--about .container__index {
     grid-template-columns: 30% 70%;
   }
 }
 
-/* line 158, src/sass/_layout.scss */
+/* line 159, src/sass/_layout.scss */
 .page--contact .container__index {
   grid-auto-rows: -webkit-min-content;
   grid-auto-rows: min-content;
@@ -823,7 +824,7 @@ body {
   min-height: 100vh;
 }
 
-/* line 167, src/sass/_layout.scss */
+/* line 168, src/sass/_layout.scss */
 .container__detail {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
@@ -833,7 +834,7 @@ body {
   height: 100%;
 }
 
-/* line 176, src/sass/_layout.scss */
+/* line 177, src/sass/_layout.scss */
 .container__text {
   grid-column: 1/-1;
   padding: 0 50px;
@@ -846,26 +847,26 @@ body {
           flex-wrap: wrap;
 }
 
-/* line 184, src/sass/_layout.scss */
+/* line 185, src/sass/_layout.scss */
 .container__textcontent {
   font-family: 'Crimson Text', serif;
   font-size: 3rem;
   line-height: 1.2;
 }
 
-/* line 189, src/sass/_layout.scss */
+/* line 190, src/sass/_layout.scss */
 .container__textcontent p {
   margin: 0 0 0.6em 0;
 }
 
-/* line 193, src/sass/_layout.scss */
+/* line 194, src/sass/_layout.scss */
 .page--about .container__textcontent {
   grid-column: 1 / -1;
   padding: 20px 40px 20px 40px;
 }
 
 @media screen and (min-width: 48em) {
-  /* line 193, src/sass/_layout.scss */
+  /* line 194, src/sass/_layout.scss */
   .page--about .container__textcontent {
     padding: 50px 40px 20px 40px;
     grid-column: 2 / 3;
@@ -873,13 +874,13 @@ body {
 }
 
 @media screen and (min-width: 75em) {
-  /* line 193, src/sass/_layout.scss */
+  /* line 194, src/sass/_layout.scss */
   .page--about .container__textcontent {
     padding-right: 200px;
   }
 }
 
-/* line 207, src/sass/_layout.scss */
+/* line 208, src/sass/_layout.scss */
 .container__textcontent .container__textcontent-title {
   color: var(--color-primary);
   background-repeat: no-repeat;
@@ -888,7 +889,7 @@ body {
   line-height: 1.6;
 }
 
-/* line 215, src/sass/_layout.scss */
+/* line 216, src/sass/_layout.scss */
 .container__textcontent .container__textcontent-email {
   background-repeat: no-repeat;
   padding: 0 0 0 60px;
@@ -896,24 +897,24 @@ body {
   line-height: 1.6;
 }
 
-/* line 221, src/sass/_layout.scss */
+/* line 222, src/sass/_layout.scss */
 .container__textcontent .container__textcontent-email a {
   color: var(--color-red);
 }
 
-/* line 226, src/sass/_layout.scss */
+/* line 227, src/sass/_layout.scss */
 .container__textcontent-swiss, .container__textcontent-france {
   width: 100%;
 }
 
 @media screen and (min-width: 48em) {
-  /* line 226, src/sass/_layout.scss */
+  /* line 227, src/sass/_layout.scss */
   .container__textcontent-swiss, .container__textcontent-france {
     width: calc(50% - 20px);
   }
 }
 
-/* line 235, src/sass/_layout.scss */
+/* line 236, src/sass/_layout.scss */
 .container__textcontent-swiss {
   font-size: 3rem;
   color: var(--color-red);
@@ -922,56 +923,59 @@ body {
 }
 
 @media screen and (min-width: 48em) {
-  /* line 235, src/sass/_layout.scss */
+  /* line 236, src/sass/_layout.scss */
   .container__textcontent-swiss {
     margin-right: 20px;
   }
 }
 
-/* line 246, src/sass/_layout.scss */
+/* line 247, src/sass/_layout.scss */
 .container__textcontent-france {
   font-size: 3rem;
   color: var(--color-blue);
   font-style: italic;
 }
 
-/* line 254, src/sass/_layout.scss */
+/* line 255, src/sass/_layout.scss */
 .container .detail__movie-titlebox {
   grid-column: 1 / -1;
   padding: 0 0 20px 0;
 }
 
 @media screen and (min-width: 48em) {
-  /* line 254, src/sass/_layout.scss */
+  /* line 255, src/sass/_layout.scss */
   .container .detail__movie-titlebox {
     padding: 0 0 40px 40px;
   }
 }
 
-/* line 262, src/sass/_layout.scss */
+/* line 263, src/sass/_layout.scss */
 .container .detail__movie-titlebox-title {
   font-size: 4rem;
   font-style: italic;
   color: var(--color-red);
   font-weight: normal;
   text-transform: uppercase;
+  line-height: 1;
 }
 
-/* line 270, src/sass/_layout.scss */
+/* line 272, src/sass/_layout.scss */
 .container .detail__movie-titlebox-subtitle {
   font-size: 4rem;
   font-style: italic;
   font-weight: normal;
   text-transform: uppercase;
+  line-height: 1.2;
 }
 
-/* line 277, src/sass/_layout.scss */
+/* line 280, src/sass/_layout.scss */
 .container .detail__movie-titlebox-subline {
   font-family: 'Crimson Text', serif;
   font-size: 2.6rem;
+  line-height: 1.5;
 }
 
-/* line 283, src/sass/_layout.scss */
+/* line 287, src/sass/_layout.scss */
 .container .detail__movie-infotext {
   grid-column: 1 / -1;
   font-size: 2.6rem;
@@ -979,17 +983,18 @@ body {
   font-weight: normal;
   font-style: italic;
   padding: 0 0 20px 0;
+  line-height: 1.2;
 }
 
 @media screen and (min-width: 48em) {
-  /* line 283, src/sass/_layout.scss */
+  /* line 287, src/sass/_layout.scss */
   .container .detail__movie-infotext {
     grid-column: 1 / 5;
     padding: 0 0 40px 40px;
   }
 }
 
-/* line 297, src/sass/_layout.scss */
+/* line 302, src/sass/_layout.scss */
 .container .detail__movie-credits {
   grid-column: 1 / -1;
   -webkit-column-count: 2;
@@ -1001,7 +1006,7 @@ body {
 }
 
 @media screen and (min-width: 48em) {
-  /* line 297, src/sass/_layout.scss */
+  /* line 302, src/sass/_layout.scss */
   .container .detail__movie-credits {
     -webkit-column-count: 2;
             column-count: 2;
@@ -1010,18 +1015,18 @@ body {
   }
 }
 
-/* line 311, src/sass/_layout.scss */
+/* line 316, src/sass/_layout.scss */
 .container .detail__movie-credits .movie__credits-box {
   margin: 0 0 10px 0;
 }
 
-/* line 315, src/sass/_layout.scss */
+/* line 320, src/sass/_layout.scss */
 .container .detail__movie-credits .movie__credits-text {
   font-weight: bold;
   line-height: 1.2;
 }
 
-/* line 321, src/sass/_layout.scss */
+/* line 326, src/sass/_layout.scss */
 .container .detail__movie-filmbox {
   grid-column: 1 / -1;
   padding: 56.25% 0 0 0;
@@ -1030,7 +1035,7 @@ body {
 }
 
 @media screen and (min-width: 48em) {
-  /* line 321, src/sass/_layout.scss */
+  /* line 326, src/sass/_layout.scss */
   .container .detail__movie-filmbox {
     grid-column: 5 / 7;
   }
@@ -1053,16 +1058,16 @@ body {
   line-height: 1;
   color: var(--color-white);
   text-transform: uppercase;
-  padding: 5px 0;
+  padding: 3px 0;
   display: block;
   font-family: 'Nunito Sans', sans-serif;
-  font-size: 6rem;
+  font-size: 4.5rem;
   cursor: pointer;
 }
 
 /* line 21, src/sass/_navigation.scss */
 .container__nav-item.active {
-  font-size: 8rem;
+  font-size: 6rem;
   color: var(--color-yellow);
 }
 

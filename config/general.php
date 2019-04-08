@@ -27,6 +27,7 @@ return [
         'convertFilenamesToAscii' => true,
         'cacheDuration' => '0',
         'allowUpdates' => true,
+        
         //'phpMaxMemoryLimit' => '512M',
 
         //Make sure the image transforms are generated before pageload
