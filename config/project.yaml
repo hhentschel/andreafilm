@@ -1,4 +1,4 @@
-dateModified: 1554560302
+dateModified: 1554922890
 email:
   fromEmail: p@henrik-hentschel.de
   fromName: 'Andrea Film'
@@ -16,6 +16,8 @@ fieldGroups:
     name: 'Film Detail'
   4d7dbfa9-1442-453c-8342-8502890b71f4:
     name: Kontakt
+  280d368f-805a-4a08-8808-529fe65ff40c:
+    name: test
 fields:
   69983b47-acee-48fe-a414-30b622fe223b:
     name: Inhaltsfeld
@@ -441,6 +443,25 @@ fields:
       localizeRelations: false
     contentColumnType: string
     fieldGroup: 4d7dbfa9-1442-453c-8342-8502890b71f4
+  afeddbf1-f721-45ca-9d9b-af5e7707ab3b:
+    name: Testeintraege
+    handle: testeintraege
+    instructions: ''
+    searchable: true
+    translationMethod: site
+    translationKeyFormat: null
+    type: craft\fields\Entries
+    settings:
+      sources:
+        - 'section:b9364b69-4890-4291-87d2-84de73a5f576'
+      source: null
+      targetSiteId: null
+      viewMode: null
+      limit: ''
+      selectionLabel: ''
+      localizeRelations: false
+    contentColumnType: string
+    fieldGroup: 280d368f-805a-4a08-8808-529fe65ff40c
 imageTransforms:
   db1f962f-5da7-4a16-a238-a313824e5c72:
     format: null
@@ -744,6 +765,39 @@ sections:
                   968402ba-82ef-4c27-aa14-4f14dc268c8a:
                     required: false
                     sortOrder: 3
+  82d588ee-eefb-4528-b314-eadd8b266279:
+    name: Test
+    handle: test
+    type: structure
+    enableVersioning: true
+    propagateEntries: true
+    siteSettings:
+      eccd415c-2a08-4035-94cd-62a46c8cd0a2:
+        enabledByDefault: true
+        hasUrls: true
+        uriFormat: 'test/{slug}'
+        template: ''
+    structure:
+      uid: 592fa394-319c-4444-a779-6a1a95a865bd
+      maxLevels: ''
+    entryTypes:
+      4ba8e7f9-8b43-4641-90e6-3f06673acc8b:
+        name: Test
+        handle: test
+        hasTitleField: true
+        titleLabel: Titel
+        titleFormat: ''
+        sortOrder: 1
+        fieldLayouts:
+          95ed4269-26d7-470d-b373-af61c04d26ff:
+            tabs:
+              -
+                name: test
+                sortOrder: 1
+                fields:
+                  afeddbf1-f721-45ca-9d9b-af5e7707ab3b:
+                    required: false
+                    sortOrder: 1
 siteGroups:
   330548d1-b81b-4755-96d3-a57901c9800d:
     name: 'Andrea Film'
