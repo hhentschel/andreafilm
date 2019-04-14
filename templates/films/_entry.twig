@@ -2,7 +2,18 @@
 {% set bodyClass = 'film-detail' %}
 {% block main %}
 
-<div class="container container__detail" style="background-image: url({{ entry.filmImage.one().getUrl('fullImage') }});">
+<div class="container container__detail">
+        {# <div class="container container__detail" style="background-image: url({{ entry.filmImage.one().getUrl('fullImage') }});"> #}
+
+        {# {% set image = entry.videoStillImage.one() %} #}
+        {% set video = entry.videoBG.one() %}
+        
+        {% if video %}
+        <video autoplay loop muted playsinline preload>
+            <source src="{{ video.getUrl() }}" type="video/mp4">
+        </video>
+        {% endif %}
+
 
     <div class="container__navbox">
         {% include '/_includes/navigation.twig' %}
