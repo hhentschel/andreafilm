@@ -1,4 +1,4 @@
-dateModified: 1555106157
+dateModified: 1555357377
 email:
   fromEmail: p@henrik-hentschel.de
   fromName: 'Andrea Film'
@@ -87,7 +87,7 @@ fields:
     contentColumnType: text
     fieldGroup: 9256a3ac-dd6e-4b9a-bb95-5ed9b5249701
   f7647892-8b56-4f2c-bf36-036bfff0df4b:
-    name: 'Film Image'
+    name: 'Bild Hintergrund'
     handle: filmImage
     instructions: ''
     searchable: true
@@ -96,7 +96,7 @@ fields:
     type: craft\fields\Assets
     settings:
       useSingleFolder: '1'
-      defaultUploadLocationSource: 'volume:9161c7ba-81a8-43c7-88a0-1c31bc63965e'
+      defaultUploadLocationSource: 'volume:f7b6e1ba-4676-494b-bda5-666cf9d0533a'
       defaultUploadLocationSubpath: ''
       singleUploadLocationSource: 'volume:f7b6e1ba-4676-494b-bda5-666cf9d0533a'
       singleUploadLocationSubpath: ''
@@ -468,6 +468,33 @@ fields:
       localizeRelations: false
     contentColumnType: string
     fieldGroup: 9256a3ac-dd6e-4b9a-bb95-5ed9b5249701
+  c46ade7c-34e1-4543-98f6-69f58bae2993:
+    name: 'Bild Hintergrund'
+    handle: filmImageDetail
+    instructions: ''
+    searchable: true
+    translationMethod: site
+    translationKeyFormat: null
+    type: craft\fields\Assets
+    settings:
+      useSingleFolder: ''
+      defaultUploadLocationSource: 'volume:2bd602c1-1b57-447d-81bd-0be7595de63a'
+      defaultUploadLocationSubpath: ''
+      singleUploadLocationSource: 'volume:f7b6e1ba-4676-494b-bda5-666cf9d0533a'
+      singleUploadLocationSubpath: ''
+      restrictFiles: ''
+      allowedKinds: null
+      sources:
+        - 'volume:f7b6e1ba-4676-494b-bda5-666cf9d0533a'
+        - 'volume:2bd602c1-1b57-447d-81bd-0be7595de63a'
+      source: null
+      targetSiteId: null
+      viewMode: list
+      limit: ''
+      selectionLabel: ''
+      localizeRelations: false
+    contentColumnType: string
+    fieldGroup: a5f5d17b-2754-4410-b70a-67b25b2c4b46
 imageTransforms:
   db1f962f-5da7-4a16-a238-a313824e5c72:
     format: null
@@ -733,7 +760,7 @@ sections:
           e95b998a-e615-4cb8-a530-d820ecb4f68f:
             tabs:
               -
-                name: Films
+                name: 'Film Infos Startseite'
                 sortOrder: 1
                 fields:
                   8837aea0-a136-4261-8bd5-5272b7e8172d:
@@ -742,28 +769,12 @@ sections:
                   bf2eb36d-0ecb-43ae-9d29-051fae84a60b:
                     required: false
                     sortOrder: 2
-                  69983b47-acee-48fe-a414-30b622fe223b:
-                    required: false
-                    sortOrder: 3
                   f7647892-8b56-4f2c-bf36-036bfff0df4b:
                     required: false
-                    sortOrder: 4
-                  95b6bd76-0ca5-46fe-b075-9cb9e9663005:
-                    required: false
-                    sortOrder: 5
-                  4f0dec7a-50a1-4a37-9c5e-baec5cc417eb:
-                    required: false
-                    sortOrder: 6
-              -
-                name: Credits
-                sortOrder: 2
-                fields:
-                  002dc819-24d2-428e-9e9c-d279dd8f112f:
-                    required: false
-                    sortOrder: 1
+                    sortOrder: 3
               -
                 name: 'Angaben für Film-Detail Seite'
-                sortOrder: 3
+                sortOrder: 2
                 fields:
                   16890e98-bcfc-4e72-a2f7-9ee23c3c93b9:
                     required: false
@@ -774,35 +785,25 @@ sections:
                   968402ba-82ef-4c27-aa14-4f14dc268c8a:
                     required: false
                     sortOrder: 3
-  82d588ee-eefb-4528-b314-eadd8b266279:
-    name: Test
-    handle: test
-    type: structure
-    enableVersioning: true
-    propagateEntries: true
-    siteSettings:
-      eccd415c-2a08-4035-94cd-62a46c8cd0a2:
-        enabledByDefault: true
-        hasUrls: true
-        uriFormat: 'test/{slug}'
-        template: ''
-    structure:
-      uid: 592fa394-319c-4444-a779-6a1a95a865bd
-      maxLevels: ''
-    entryTypes:
-      4ba8e7f9-8b43-4641-90e6-3f06673acc8b:
-        name: Test
-        handle: test
-        hasTitleField: true
-        titleLabel: Titel
-        titleFormat: ''
-        sortOrder: 1
-        fieldLayouts:
-          95ed4269-26d7-470d-b373-af61c04d26ff:
-            tabs:
+                  69983b47-acee-48fe-a414-30b622fe223b:
+                    required: false
+                    sortOrder: 4
+                  95b6bd76-0ca5-46fe-b075-9cb9e9663005:
+                    required: false
+                    sortOrder: 5
+                  4f0dec7a-50a1-4a37-9c5e-baec5cc417eb:
+                    required: false
+                    sortOrder: 6
+                  c46ade7c-34e1-4543-98f6-69f58bae2993:
+                    required: false
+                    sortOrder: 7
               -
-                name: test
-                sortOrder: 1
+                name: Credits
+                sortOrder: 3
+                fields:
+                  002dc819-24d2-428e-9e9c-d279dd8f112f:
+                    required: false
+                    sortOrder: 1
 siteGroups:
   330548d1-b81b-4755-96d3-a57901c9800d:
     name: 'Andrea Film'

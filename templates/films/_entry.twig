@@ -1,22 +1,31 @@
 {% extends '/_layout' %}
 {% set bodyClass = 'film-detail' %}
+
+{# {% set video = entry.videoBG.one() %}
+{% set image = entry.filmImage.one() %}  #}
+
+{# 
+{% set image = entry.filmImage.one().getUrl('fullImage') %}  
+#}
+
 {% block main %}
+ 
+{% if entry.filmImageDetail | length %}
+    {% set image = entry.filmImageDetail.one().getUrl('fullImage') %} 
+    <div class="container container__detail" style="background-image: url({{ image }});">
 
-<div class="container container__detail">
-        {# <div class="container container__detail" style="background-image: url({{ entry.filmImage.one().getUrl('fullImage') }});"> #}
-
-        {# {% set image = entry.videoStillImage.one() %} #}
-        {% set video = entry.videoBG.one() %}
+{% elseif entry.videoBG | length %}
+{% set video = entry.videoBG.one() %}
+    <div class="container container__detail">  
         
-        {% if video %}
-        <video autoplay loop muted playsinline preload>
-            <source src="{{ video.getUrl() }}" type="video/mp4">
-        </video>
-        {% endif %}
+    <video autoplay loop muted playsinline preload>
+        <source src="{{ video.getUrl() }}" type="video/mp4">
+    </video>
+{% endif %}
 
 
     <div class="container__navbox">
-        {% include '/_includes/navigation.twig' %}
+        {% include '/_includes/navigation-detail.twig' %}
     </div>
     
     <div class="detail__movie-titlebox">

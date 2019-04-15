@@ -1,3 +1,4 @@
+{% set pageTitle       = entry.title |striptags %}
 <head>
     <meta charset="UTF-8">
     <meta name="description" content="Andrea Film, Valentin Merz, Maxi Schmitz">
@@ -10,6 +11,9 @@
     {# <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400i,700,900" rel="stylesheet"> #}
 
     <link rel="stylesheet" href="https://use.typekit.net/pcz4xxa.css">
-    
-    <title>Document</title>
+    <script
+  src="https://code.jquery.com/jquery-3.4.0.min.js"
+  integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg="
+  crossorigin="anonymous"></script>
+    <title>Andreafilm - {{pageTitle}} </title>
 </head>

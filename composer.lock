@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "269fb3271f2c5f3dffbd296d96b78b0d",
+    "content-hash": "f4b7baf3f6d6e7d5669dbeb8f3b90594",
     "packages": [
         {
             "name": "barrelstrength/sprout-encode-email",
@@ -392,11 +392,11 @@
         },
         {
             "name": "craftcms/cms",
-            "version": "3.1.21.1",
+            "version": "3.1.22",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/cms/zipball/f2ef5da6693a3aa89bd2585b3a8c366ee5d7ab70",
-                "reference": "f2ef5da6693a3aa89bd2585b3a8c366ee5d7ab70",
+                "url": "https://api.github.com/repos/craftcms/cms/zipball/868202831139e51b9d60d9738147ac9635bc760c",
+                "reference": "868202831139e51b9d60d9738147ac9635bc760c",
                 "shasum": ""
             },
             "require": {
@@ -472,7 +472,7 @@
                 "docs": "https://docs.craftcms.com/v3/",
                 "rss": "https://github.com/craftcms/cms/releases.atom"
             },
-            "time": "2019-04-04T19:07:09+00:00"
+            "time": "2019-04-10T17:10:47+00:00"
         },
         {
             "name": "craftcms/oauth2-craftid",
