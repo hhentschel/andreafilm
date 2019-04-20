@@ -11,21 +11,27 @@
                 {% set video = entry.videoFileHome.one() %}
                 
                 {% if video %}
-                <video autoplay loop muted playsinline preload poster='{{ image.getUrl() }}'>
+                <video loop muted playsinline preload poster='{{ image.getUrl() }}'>
                     <source src="{{ video.getUrl() }}" type="video/mp4">
                 </video>
                 {% endif %}
 
-            </div>
+                <div class="container__navbox--arrow">
+                    <a href="#filmcontainer" class="navbox__arrow--link"><img src="user_assets/images/arrow.png" alt=""></a>
+                </div>
 
+            </div>
+            
         {% for entry in craft.entries.section('filmsSection').all() %}
         {% if entry.filmImage %}
-            <a href="{{entry.url}}" class="container__home--filmbox" style="background-image: url({{ entry.filmImage.one().getUrl('filmThumbImg') }});">
+            <a href="{{entry.url}}" class="container__home--filmbox" id="filmcontainer" style="background-image: url({{ entry.filmImage.one().getUrl('filmThumbImg') }});">
                 <h2 class="container__home--filmbox-title">{{ entry.title }}</h2>
                 <p style="{% if entry.colorSubtitle %}color: {{ entry.colorSubtitle }} {% endif %}" class="container__home--filmbox-subtitle">{{ entry.yearFilm }}</p>
             </a>
             {% endif %}
-        {% endfor %}
+        {% endfor %}    
+
+       
 
         </div>
 

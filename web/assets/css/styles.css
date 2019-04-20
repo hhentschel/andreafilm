@@ -543,7 +543,7 @@ COLORS
 /* line 6, src/sass/_base.scss */
 :root {
   --color-primary: #ffffff;
-  --color-yellow: #ffff00;
+  --color-yellow: #9900cc;
   --color-red: #ff0000;
   --color-purple: #7f64ff;
   --color-blue: #0050ff;
@@ -599,17 +599,24 @@ body {
 /* line 1, src/sass/_layout.scss */
 .layout__main {
   padding: 0;
-  height: 100%;
+  height: auto;
 }
 
-/* line 6, src/sass/_layout.scss */
+@media screen and (min-width: 31.25em) {
+  /* line 1, src/sass/_layout.scss */
+  .layout__main {
+    height: 100%;
+  }
+}
+
+/* line 10, src/sass/_layout.scss */
 .container {
   max-width: 1920px;
   margin: 0 auto;
   /* no grid support? */
 }
 
-/* line 10, src/sass/_layout.scss */
+/* line 14, src/sass/_layout.scss */
 .container__navbox {
   margin-left: 5px;
   margin-right: 5px;
@@ -622,40 +629,104 @@ body {
 }
 
 @media screen and (min-width: 48em) {
-  /* line 10, src/sass/_layout.scss */
+  /* line 14, src/sass/_layout.scss */
   .container__navbox {
     padding: 50px 40px 50px 40px;
   }
 }
 
-/* line 22, src/sass/_layout.scss */
+/* line 26, src/sass/_layout.scss */
+.container__navbox--arrow {
+  height: 50px;
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto;
+  z-index: 100;
+  -webkit-animation: updown .8s infinite  alternate;
+          animation: updown .8s infinite  alternate;
+}
+
+@-webkit-keyframes updown {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-8px);
+            transform: translateY(-8px);
+  }
+}
+
+@keyframes updown {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-8px);
+            transform: translateY(-8px);
+  }
+}
+
+/* line 47, src/sass/_layout.scss */
+.container__navbox .navbox__arrow--link {
+  width: 100%;
+}
+
+/* line 49, src/sass/_layout.scss */
+.container__navbox .navbox__arrow--link img {
+  width: 50px;
+}
+
+/* line 55, src/sass/_layout.scss */
+.page--home .container__navbox.mobile {
+  height: 100%;
+}
+
+/* line 60, src/sass/_layout.scss */
 .page--home .container__navbox {
   height: 100vh;
 }
 
-/* line 26, src/sass/_layout.scss */
+/* line 64, src/sass/_layout.scss */
 .page--about .container__navbox {
   grid-column: 1 / 2;
 }
 
-/* line 30, src/sass/_layout.scss */
+/* line 68, src/sass/_layout.scss */
 .page--films .container__navbox {
   background-color: var(--color-purple);
 }
 
-/* line 34, src/sass/_layout.scss */
+/* line 72, src/sass/_layout.scss */
 .page--film-detail .container__navbox {
   padding: 0 0 20px 0;
 }
 
 @media screen and (min-width: 48em) {
-  /* line 34, src/sass/_layout.scss */
+  /* line 72, src/sass/_layout.scss */
   .page--film-detail .container__navbox {
     padding: 0px 40px 50px 0px;
   }
 }
 
-/* line 43, src/sass/_layout.scss */
+/* line 81, src/sass/_layout.scss */
 .container__home, .container__index, .container__detail {
   display: grid;
   margin: 0 auto;
@@ -665,7 +736,7 @@ body {
   /* We need to set the margin used on flex items to 0 as we have gaps in grid.  */
 }
 
-/* line 52, src/sass/_layout.scss */
+/* line 90, src/sass/_layout.scss */
 .container__home--filmbox, .container__index--filmbox, .container__detail--filmbox {
   background-repeat: no-repeat;
   background-size: cover;
@@ -693,7 +764,7 @@ body {
   padding: 0 50px 20px 50px;
 }
 
-/* line 66, src/sass/_layout.scss */
+/* line 104, src/sass/_layout.scss */
 .container__home--filmbox-title, .container__index--filmbox-title, .container__detail--filmbox-title {
   font-family: futura-pt-bold, sans-serif;
   font-weight: 700;
@@ -704,7 +775,7 @@ body {
   line-height: 1.2;
 }
 
-/* line 76, src/sass/_layout.scss */
+/* line 114, src/sass/_layout.scss */
 .container__home--filmbox-subtitle, .container__index--filmbox-subtitle, .container__detail--filmbox-subtitle {
   font-family: futura-pt-bold, sans-serif;
   font-weight: 700;
@@ -713,20 +784,20 @@ body {
   text-transform: uppercase;
 }
 
-/* line 85, src/sass/_layout.scss */
+/* line 123, src/sass/_layout.scss */
 .container__home > *, .container__index > *, .container__detail > * {
   color: var(--color-white);
   margin-bottom: 10px;
 }
 
 @supports (display: grid) {
-  /* line 93, src/sass/_layout.scss */
+  /* line 131, src/sass/_layout.scss */
   .container__home > *, .container__index > *, .container__detail > * {
     margin: 0;
   }
 }
 
-/* line 100, src/sass/_layout.scss */
+/* line 138, src/sass/_layout.scss */
 .container__home, .container__index, .container__detail {
   display: -webkit-box;
   display: -webkit-flex;
@@ -737,7 +808,7 @@ body {
           flex-wrap: wrap;
 }
 
-/* line 107, src/sass/_layout.scss */
+/* line 145, src/sass/_layout.scss */
 .container__home {
   display: grid;
   margin: 0 auto;
@@ -746,14 +817,14 @@ body {
 }
 
 @media screen and (min-width: 600px) {
-  /* line 107, src/sass/_layout.scss */
+  /* line 145, src/sass/_layout.scss */
   .container__home {
     grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
     grid-auto-rows: minmax(300px, auto);
   }
 }
 
-/* line 119, src/sass/_layout.scss */
+/* line 157, src/sass/_layout.scss */
 .container__home .container__navbox {
   position: relative;
   grid-row: 1 / 3;
@@ -761,13 +832,13 @@ body {
 }
 
 @media screen and (max-width: 768px) {
-  /* line 119, src/sass/_layout.scss */
+  /* line 157, src/sass/_layout.scss */
   .container__home .container__navbox {
     grid-row: 1 / 2;
   }
 }
 
-/* line 129, src/sass/_layout.scss */
+/* line 167, src/sass/_layout.scss */
 .container__home video {
   position: absolute;
   overflow: hidden;
@@ -782,7 +853,7 @@ body {
      object-fit: cover;
 }
 
-/* line 142, src/sass/_layout.scss */
+/* line 180, src/sass/_layout.scss */
 .container__index {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
@@ -790,35 +861,36 @@ body {
 }
 
 @media screen and (min-width: 600px) {
-  /* line 142, src/sass/_layout.scss */
+  /* line 180, src/sass/_layout.scss */
   .container__index {
     grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
     grid-auto-rows: minmax(300px, auto);
   }
 }
 
-/* line 152, src/sass/_layout.scss */
+/* line 190, src/sass/_layout.scss */
 .page--about .container__index {
   grid-template-columns: 100%;
   grid-auto-rows: -webkit-min-content;
   grid-auto-rows: min-content;
+  min-height: 100%;
 }
 
 @media screen and (min-width: 48em) {
-  /* line 152, src/sass/_layout.scss */
+  /* line 190, src/sass/_layout.scss */
   .page--about .container__index {
     grid-template-columns: 40% 60%;
   }
 }
 
 @media screen and (min-width: 68.75em) {
-  /* line 152, src/sass/_layout.scss */
+  /* line 190, src/sass/_layout.scss */
   .page--about .container__index {
     grid-template-columns: 30% 70%;
   }
 }
 
-/* line 166, src/sass/_layout.scss */
+/* line 204, src/sass/_layout.scss */
 .page--contact .container__index {
   grid-auto-rows: -webkit-min-content;
   grid-auto-rows: min-content;
@@ -826,17 +898,18 @@ body {
   min-height: 100vh;
 }
 
-/* line 175, src/sass/_layout.scss */
+/* line 213, src/sass/_layout.scss */
 .container__detail {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: -webkit-min-content;
   grid-template-rows: min-content;
-  padding: 50px 40px 20px 40px;
+  padding: 20px 40px 20px 40px;
+  height: 100%;
   position: relative;
 }
 
-/* line 183, src/sass/_layout.scss */
+/* line 221, src/sass/_layout.scss */
 .container__detail video {
   position: absolute;
   overflow: hidden;
@@ -851,7 +924,7 @@ body {
      object-fit: cover;
 }
 
-/* line 197, src/sass/_layout.scss */
+/* line 235, src/sass/_layout.scss */
 .container__text {
   grid-column: 1/-1;
   padding: 0 50px;
@@ -864,7 +937,7 @@ body {
           flex-wrap: wrap;
 }
 
-/* line 205, src/sass/_layout.scss */
+/* line 243, src/sass/_layout.scss */
 .container__textcontent {
   font-family: minion-pro-display,serif;
   font-weight: 400;
@@ -873,19 +946,20 @@ body {
   line-height: 1.2;
 }
 
-/* line 212, src/sass/_layout.scss */
+/* line 250, src/sass/_layout.scss */
 .container__textcontent p {
   margin: 0 0 0.6em 0;
 }
 
-/* line 216, src/sass/_layout.scss */
+/* line 254, src/sass/_layout.scss */
 .page--about .container__textcontent {
   grid-column: 1 / -1;
   padding: 20px 40px 20px 40px;
+  font-style: italic;
 }
 
 @media screen and (min-width: 48em) {
-  /* line 216, src/sass/_layout.scss */
+  /* line 254, src/sass/_layout.scss */
   .page--about .container__textcontent {
     padding: 50px 40px 20px 40px;
     grid-column: 2 / 3;
@@ -893,13 +967,13 @@ body {
 }
 
 @media screen and (min-width: 75em) {
-  /* line 216, src/sass/_layout.scss */
+  /* line 254, src/sass/_layout.scss */
   .page--about .container__textcontent {
     padding-right: 200px;
   }
 }
 
-/* line 230, src/sass/_layout.scss */
+/* line 269, src/sass/_layout.scss */
 .container__textcontent .container__textcontent-title {
   color: var(--color-primary);
   background-repeat: no-repeat;
@@ -908,7 +982,7 @@ body {
   line-height: 1.6;
 }
 
-/* line 238, src/sass/_layout.scss */
+/* line 277, src/sass/_layout.scss */
 .container__textcontent .container__textcontent-email {
   background-repeat: no-repeat;
   padding: 0 0 0 60px;
@@ -916,24 +990,24 @@ body {
   line-height: 1.6;
 }
 
-/* line 244, src/sass/_layout.scss */
+/* line 283, src/sass/_layout.scss */
 .container__textcontent .container__textcontent-email a {
   color: var(--color-red);
 }
 
-/* line 249, src/sass/_layout.scss */
+/* line 288, src/sass/_layout.scss */
 .container__textcontent-swiss, .container__textcontent-france {
   width: 100%;
 }
 
 @media screen and (min-width: 48em) {
-  /* line 249, src/sass/_layout.scss */
+  /* line 288, src/sass/_layout.scss */
   .container__textcontent-swiss, .container__textcontent-france {
     width: calc(50% - 20px);
   }
 }
 
-/* line 258, src/sass/_layout.scss */
+/* line 297, src/sass/_layout.scss */
 .container__textcontent-swiss {
   font-size: 3rem;
   color: var(--color-red);
@@ -942,20 +1016,20 @@ body {
 }
 
 @media screen and (min-width: 48em) {
-  /* line 258, src/sass/_layout.scss */
+  /* line 297, src/sass/_layout.scss */
   .container__textcontent-swiss {
     margin-right: 20px;
   }
 }
 
-/* line 269, src/sass/_layout.scss */
+/* line 308, src/sass/_layout.scss */
 .container__textcontent-france {
   font-size: 3rem;
   color: var(--color-blue);
   font-style: italic;
 }
 
-/* line 277, src/sass/_layout.scss */
+/* line 316, src/sass/_layout.scss */
 .container .detail__movie-titlebox {
   grid-column: 1 / -1;
   padding: 0 0 20px 0;
@@ -964,13 +1038,13 @@ body {
 }
 
 @media screen and (min-width: 48em) {
-  /* line 277, src/sass/_layout.scss */
+  /* line 316, src/sass/_layout.scss */
   .container .detail__movie-titlebox {
     padding: 0 0 40px 0px;
   }
 }
 
-/* line 287, src/sass/_layout.scss */
+/* line 326, src/sass/_layout.scss */
 .container .detail__movie-titlebox-title {
   font-size: 4rem;
   font-style: italic;
@@ -979,7 +1053,7 @@ body {
   line-height: 1;
 }
 
-/* line 295, src/sass/_layout.scss */
+/* line 334, src/sass/_layout.scss */
 .container .detail__movie-titlebox-subtitle {
   font-size: 4rem;
   font-style: italic;
@@ -988,7 +1062,7 @@ body {
   line-height: 1.2;
 }
 
-/* line 303, src/sass/_layout.scss */
+/* line 342, src/sass/_layout.scss */
 .container .detail__movie-titlebox-subline {
   font-family: minion-pro-display,serif;
   font-weight: 400;
@@ -997,7 +1071,7 @@ body {
   line-height: 1.5;
 }
 
-/* line 312, src/sass/_layout.scss */
+/* line 351, src/sass/_layout.scss */
 .container .detail__movie-infotext {
   grid-column: 1 / -1;
   font-size: 2.6rem;
@@ -1009,14 +1083,14 @@ body {
 }
 
 @media screen and (min-width: 48em) {
-  /* line 312, src/sass/_layout.scss */
+  /* line 351, src/sass/_layout.scss */
   .container .detail__movie-infotext {
     grid-column: 1 / 5;
     padding: 0 0 40px 0px;
   }
 }
 
-/* line 327, src/sass/_layout.scss */
+/* line 366, src/sass/_layout.scss */
 .container .detail__movie-credits {
   grid-column: 1 / -1;
   -webkit-column-count: 2;
@@ -1030,7 +1104,7 @@ body {
 }
 
 @media screen and (min-width: 48em) {
-  /* line 327, src/sass/_layout.scss */
+  /* line 366, src/sass/_layout.scss */
   .container .detail__movie-credits {
     -webkit-column-count: 2;
             column-count: 2;
@@ -1039,20 +1113,20 @@ body {
   }
 }
 
-/* line 343, src/sass/_layout.scss */
+/* line 382, src/sass/_layout.scss */
 .container .detail__movie-credits .movie__credits-box {
   margin: 0 0 10px 0;
   break-inside: avoid-column;
   -webkit-column-break-inside: avoid;
 }
 
-/* line 349, src/sass/_layout.scss */
+/* line 388, src/sass/_layout.scss */
 .container .detail__movie-credits .movie__credits-text {
   font-weight: bold;
   line-height: 1.2;
 }
 
-/* line 355, src/sass/_layout.scss */
+/* line 394, src/sass/_layout.scss */
 .container .detail__movie-filmbox {
   grid-column: 1 / -1;
   padding: 56.25% 0 0 0;
@@ -1061,7 +1135,7 @@ body {
 }
 
 @media screen and (min-width: 48em) {
-  /* line 355, src/sass/_layout.scss */
+  /* line 394, src/sass/_layout.scss */
   .container .detail__movie-filmbox {
     grid-column: 5 / 7;
   }
@@ -1086,25 +1160,25 @@ body {
   text-transform: uppercase;
   padding: 3px 0;
   display: block;
-  font-size: 3rem;
+  font-size: 2.8rem;
   cursor: pointer;
 }
 
 /* line 20, src/sass/_navigation.scss */
 .container__nav-item.active {
-  font-size: 4rem;
+  font-size: 3.8rem;
   color: var(--color-yellow);
 }
 
 /* line 28, src/sass/_navigation.scss */
 .container .nav__item-home {
   color: var(--color-yellow);
-  font-family: futura-pt-bold, sans-serif;
-  font-weight: 700;
-  font-style: normal;
+  font-family: futura-pt, sans-serif;
+  font-weight: 500;
+  font-style: italic;
 }
 
-/* line 36, src/sass/_navigation.scss */
+/* line 35, src/sass/_navigation.scss */
 .container .nav__item-films {
   font-family: futura-pt, sans-serif;
   font-weight: 500;
@@ -1112,26 +1186,33 @@ body {
   color: var(--color-yellow);
 }
 
-/* line 43, src/sass/_navigation.scss */
+/* line 44, src/sass/_navigation.scss */
+.page--about .container .nav__item-home,
+.page--contact .container .nav__item-home, .page--about .container .nav__item-films,
+.page--contact .container .nav__item-films {
+  color: var(--color-white);
+}
+
+/* line 50, src/sass/_navigation.scss */
 .container .nav__item-about {
   font-family: futura-pt-bold, sans-serif;
   font-weight: 700;
   font-style: normal;
 }
 
-/* line 50, src/sass/_navigation.scss */
+/* line 57, src/sass/_navigation.scss */
 .container .nav__item-contact {
   font-family: futura-pt, sans-serif;
   font-style: normal;
   font-weight: 500;
 }
 
-/* line 59, src/sass/_navigation.scss */
+/* line 66, src/sass/_navigation.scss */
 .container__detail .container__nav-item {
-  font-size: 3rem;
+  font-size: 2.8rem;
 }
 
-/* line 62, src/sass/_navigation.scss */
+/* line 69, src/sass/_navigation.scss */
 .container__detail .container__nav-item.active {
-  font-size: 4rem;
+  font-size: 3.8rem;
 }

@@ -14,11 +14,11 @@
 			text-transform: uppercase;
 			padding: 3px 0;
 			display: block;
-			font-size: 3rem;
+			font-size: 2.8rem;
 			cursor: pointer;
 
 			&.active {
-				font-size: 4rem;
+				font-size: 3.8rem;
 				color: var(--color-yellow);
 			}
 		}
@@ -27,10 +27,9 @@
 	.nav__item {
 		&-home {
 			color: var(--color-yellow);
-			font-family: futura-pt-bold, sans-serif;
-			font-weight: 700;
-			font-style: normal;
-				
+			font-family: futura-pt, sans-serif;
+			font-weight: 500;
+			font-style: italic;
 		}
 
 		&-films {
@@ -38,6 +37,14 @@
 			font-weight: 500;
 			font-style: italic;
 			color: var(--color-yellow);
+		}
+
+		&-home, 
+		&-films {
+			.page--about &,
+			.page--contact &  {
+				color: var(--color-white);
+			}
 		}
 
 		&-about {
@@ -57,10 +64,10 @@
 	&__detail {
 		.container__nav {
 			&-item {
-				font-size: 3rem;
+				font-size: 2.8rem;
 
 				&.active {
-					font-size: 4rem;
+					font-size: 3.8rem;
 				}
 			}
 		}
