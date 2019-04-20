@@ -4,7 +4,22 @@
 
 {% set email = "<a href='mailto:info@andreafilm.com'>info@andreafilm.com</a>" %}
 
-<div class="container container__index" style="background-image: url({{ entry.PageBackgroundImage.one().getUrl('fullImage') }});">
+<!-- <div class="container container__index" style="background-image: url({#{ entry.PageBackgroundImage.one().getUrl('fullImage') }#});"> -->
+
+
+    {% if entry.PageBackgroundImage | length %}
+        {% set image = entry.PageBackgroundImage.one().getUrl('fullImage') %} 
+        <div class="container container__index" style="background-image: url({{ image }});">
+    
+    {% elseif entry.videoBG | length %}
+    {% set video = entry.videoBG.one() %}
+        <div class="container container__index">  
+            
+        <video autoplay loop muted playsinline preload>
+            <source src="{{ video.getUrl() }}" type="video/mp4">
+        </video>
+    {% endif %}
+
 
     <div class="container__navbox">
         {% include '/_includes/navigation.twig' %}

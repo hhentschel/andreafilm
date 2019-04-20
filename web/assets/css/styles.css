@@ -898,7 +898,23 @@ body {
   min-height: 100vh;
 }
 
-/* line 213, src/sass/_layout.scss */
+/* line 211, src/sass/_layout.scss */
+.container__index video {
+  position: absolute;
+  overflow: hidden;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  width: 100.1%;
+  z-index: -1;
+  min-height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100vw;
+}
+
+/* line 229, src/sass/_layout.scss */
 .container__detail {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
@@ -909,7 +925,7 @@ body {
   position: relative;
 }
 
-/* line 221, src/sass/_layout.scss */
+/* line 237, src/sass/_layout.scss */
 .container__detail video {
   position: absolute;
   overflow: hidden;
@@ -924,7 +940,7 @@ body {
      object-fit: cover;
 }
 
-/* line 235, src/sass/_layout.scss */
+/* line 251, src/sass/_layout.scss */
 .container__text {
   grid-column: 1/-1;
   padding: 0 50px;
@@ -937,7 +953,7 @@ body {
           flex-wrap: wrap;
 }
 
-/* line 243, src/sass/_layout.scss */
+/* line 259, src/sass/_layout.scss */
 .container__textcontent {
   font-family: minion-pro-display,serif;
   font-weight: 400;
@@ -946,12 +962,12 @@ body {
   line-height: 1.2;
 }
 
-/* line 250, src/sass/_layout.scss */
+/* line 266, src/sass/_layout.scss */
 .container__textcontent p {
   margin: 0 0 0.6em 0;
 }
 
-/* line 254, src/sass/_layout.scss */
+/* line 270, src/sass/_layout.scss */
 .page--about .container__textcontent {
   grid-column: 1 / -1;
   padding: 20px 40px 20px 40px;
@@ -959,7 +975,7 @@ body {
 }
 
 @media screen and (min-width: 48em) {
-  /* line 254, src/sass/_layout.scss */
+  /* line 270, src/sass/_layout.scss */
   .page--about .container__textcontent {
     padding: 50px 40px 20px 40px;
     grid-column: 2 / 3;
@@ -967,13 +983,13 @@ body {
 }
 
 @media screen and (min-width: 75em) {
-  /* line 254, src/sass/_layout.scss */
+  /* line 270, src/sass/_layout.scss */
   .page--about .container__textcontent {
     padding-right: 200px;
   }
 }
 
-/* line 269, src/sass/_layout.scss */
+/* line 285, src/sass/_layout.scss */
 .container__textcontent .container__textcontent-title {
   color: var(--color-primary);
   background-repeat: no-repeat;
@@ -982,7 +998,7 @@ body {
   line-height: 1.6;
 }
 
-/* line 277, src/sass/_layout.scss */
+/* line 293, src/sass/_layout.scss */
 .container__textcontent .container__textcontent-email {
   background-repeat: no-repeat;
   padding: 0 0 0 60px;
@@ -990,24 +1006,24 @@ body {
   line-height: 1.6;
 }
 
-/* line 283, src/sass/_layout.scss */
+/* line 299, src/sass/_layout.scss */
 .container__textcontent .container__textcontent-email a {
   color: var(--color-red);
 }
 
-/* line 288, src/sass/_layout.scss */
+/* line 304, src/sass/_layout.scss */
 .container__textcontent-swiss, .container__textcontent-france {
   width: 100%;
 }
 
 @media screen and (min-width: 48em) {
-  /* line 288, src/sass/_layout.scss */
+  /* line 304, src/sass/_layout.scss */
   .container__textcontent-swiss, .container__textcontent-france {
     width: calc(50% - 20px);
   }
 }
 
-/* line 297, src/sass/_layout.scss */
+/* line 313, src/sass/_layout.scss */
 .container__textcontent-swiss {
   font-size: 3rem;
   color: var(--color-red);
@@ -1016,20 +1032,20 @@ body {
 }
 
 @media screen and (min-width: 48em) {
-  /* line 297, src/sass/_layout.scss */
+  /* line 313, src/sass/_layout.scss */
   .container__textcontent-swiss {
     margin-right: 20px;
   }
 }
 
-/* line 308, src/sass/_layout.scss */
+/* line 324, src/sass/_layout.scss */
 .container__textcontent-france {
   font-size: 3rem;
   color: var(--color-blue);
   font-style: italic;
 }
 
-/* line 316, src/sass/_layout.scss */
+/* line 332, src/sass/_layout.scss */
 .container .detail__movie-titlebox {
   grid-column: 1 / -1;
   padding: 0 0 20px 0;
@@ -1038,13 +1054,13 @@ body {
 }
 
 @media screen and (min-width: 48em) {
-  /* line 316, src/sass/_layout.scss */
+  /* line 332, src/sass/_layout.scss */
   .container .detail__movie-titlebox {
     padding: 0 0 40px 0px;
   }
 }
 
-/* line 326, src/sass/_layout.scss */
+/* line 342, src/sass/_layout.scss */
 .container .detail__movie-titlebox-title {
   font-size: 4rem;
   font-style: italic;
@@ -1053,7 +1069,7 @@ body {
   line-height: 1;
 }
 
-/* line 334, src/sass/_layout.scss */
+/* line 350, src/sass/_layout.scss */
 .container .detail__movie-titlebox-subtitle {
   font-size: 4rem;
   font-style: italic;
@@ -1062,7 +1078,7 @@ body {
   line-height: 1.2;
 }
 
-/* line 342, src/sass/_layout.scss */
+/* line 358, src/sass/_layout.scss */
 .container .detail__movie-titlebox-subline {
   font-family: minion-pro-display,serif;
   font-weight: 400;
@@ -1071,7 +1087,7 @@ body {
   line-height: 1.5;
 }
 
-/* line 351, src/sass/_layout.scss */
+/* line 367, src/sass/_layout.scss */
 .container .detail__movie-infotext {
   grid-column: 1 / -1;
   font-size: 2.6rem;
@@ -1083,14 +1099,14 @@ body {
 }
 
 @media screen and (min-width: 48em) {
-  /* line 351, src/sass/_layout.scss */
+  /* line 367, src/sass/_layout.scss */
   .container .detail__movie-infotext {
     grid-column: 1 / 5;
     padding: 0 0 40px 0px;
   }
 }
 
-/* line 366, src/sass/_layout.scss */
+/* line 382, src/sass/_layout.scss */
 .container .detail__movie-credits {
   grid-column: 1 / -1;
   -webkit-column-count: 2;
@@ -1104,7 +1120,7 @@ body {
 }
 
 @media screen and (min-width: 48em) {
-  /* line 366, src/sass/_layout.scss */
+  /* line 382, src/sass/_layout.scss */
   .container .detail__movie-credits {
     -webkit-column-count: 2;
             column-count: 2;
@@ -1113,20 +1129,20 @@ body {
   }
 }
 
-/* line 382, src/sass/_layout.scss */
+/* line 398, src/sass/_layout.scss */
 .container .detail__movie-credits .movie__credits-box {
   margin: 0 0 10px 0;
   break-inside: avoid-column;
   -webkit-column-break-inside: avoid;
 }
 
-/* line 388, src/sass/_layout.scss */
+/* line 404, src/sass/_layout.scss */
 .container .detail__movie-credits .movie__credits-text {
   font-weight: bold;
   line-height: 1.2;
 }
 
-/* line 394, src/sass/_layout.scss */
+/* line 410, src/sass/_layout.scss */
 .container .detail__movie-filmbox {
   grid-column: 1 / -1;
   padding: 56.25% 0 0 0;
@@ -1135,7 +1151,7 @@ body {
 }
 
 @media screen and (min-width: 48em) {
-  /* line 394, src/sass/_layout.scss */
+  /* line 410, src/sass/_layout.scss */
   .container .detail__movie-filmbox {
     grid-column: 5 / 7;
   }
