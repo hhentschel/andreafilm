@@ -231,7 +231,7 @@
 		grid-template-columns: repeat(6, 1fr);
 		grid-template-rows: min-content;
 		padding: 20px 40px 20px 40px;
-		height: 100%;
+		min-height: 100%;
 		position: relative;
 
 		video {
@@ -312,7 +312,7 @@
 
 		&-swiss {
 			font-size: 3rem;
-			color: var(--color-red);
+			color: var(--color-white);
 			font-style: italic;
 			margin: 0 0 20px 0;
 
@@ -323,7 +323,7 @@
 
 		&-france {
 			font-size: 3rem;
-			color: var(--color-blue);
+			color: var(--color-white);
 			font-style: italic;
 		}
 	}
@@ -342,7 +342,7 @@
 			&-title {
 				font-size: 4rem;
 				font-style: italic;
-				color: var(--color-red);
+				color: var(--color-yellow);
 				text-transform: uppercase;
 				line-height: 1;
 			}
