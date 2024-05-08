@@ -1,0 +1,11 @@
+contentColumnType: string(7)
+fieldGroup: 9256a3ac-dd6e-4b9a-bb95-5ed9b5249701
+handle: colorSubtitle
+instructions: "Entweder auf den Kreis klicken und Farbe auswählen\r\noder Hex-Wert in das Feld einsetzten."
+name: 'Farbe Subtitel'
+searchable: false
+settings:
+  defaultColor: '#ffff00'
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Color

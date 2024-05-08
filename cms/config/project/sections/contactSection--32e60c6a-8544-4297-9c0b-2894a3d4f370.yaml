@@ -1,0 +1,15 @@
+enableVersioning: true
+handle: contactSection
+name: Contact
+previewTargets:
+  -
+    label: 'Primary entry page'
+    urlFormat: '{url}'
+propagationMethod: all
+siteSettings:
+  eccd415c-2a08-4035-94cd-62a46c8cd0a2:
+    enabledByDefault: true
+    hasUrls: true
+    template: contact/
+    uriFormat: contact
+type: single

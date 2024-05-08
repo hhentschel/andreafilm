@@ -1,0 +1,45 @@
+fieldLayouts:
+  b0964ab8-fd10-4fe4-b0bc-cc385571b6a0:
+    tabs:
+      -
+        elements:
+          -
+            instructions: null
+            label: ''
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+          -
+            fieldUid: f13b35b9-004c-4ccb-9b3c-073525339052 # Hintergrundbild
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: 4f0dec7a-50a1-4a37-9c5e-baec5cc417eb # Video Hintergrund
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+        name: Kontakt
+        sortOrder: 1
+      -
+        elements:
+          -
+            fieldUid: eebf63a4-14fb-4630-b033-c6d97e89e154 # Mini Icon
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: 492ad7a2-68f1-4e64-9414-86e3aa3b8cd8 # Schweiz
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: 33e01c33-728f-4c1a-9a61-3aea27ed7866 # Text Schweiz
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: de3c3820-1e5f-4317-8661-e739917c470a # Mini Icon Email
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+        name: 'Kontakt Schweiz'
+        sortOrder: 2
+handle: contactSection
+hasTitleField: false
+name: Contact
+section: 32e60c6a-8544-4297-9c0b-2894a3d4f370 # Contact
+sortOrder: 1
+titleFormat: '{section.name|raw}'

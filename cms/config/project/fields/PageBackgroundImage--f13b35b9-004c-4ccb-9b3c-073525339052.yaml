@@ -1,0 +1,25 @@
+contentColumnType: string
+fieldGroup: 05290696-2d33-4040-8bdf-ecb9e2593586
+handle: PageBackgroundImage
+instructions: ''
+name: Hintergrundbild
+searchable: true
+settings:
+  allowedKinds:
+    - image
+  defaultUploadLocationSource: 'volume:9161c7ba-81a8-43c7-88a0-1c31bc63965e'
+  defaultUploadLocationSubpath: ''
+  limit: '1'
+  localizeRelations: false
+  restrictFiles: '1'
+  selectionLabel: ''
+  singleUploadLocationSource: 'volume:2bd602c1-1b57-447d-81bd-0be7595de63a' # Hintergrundbilder
+  singleUploadLocationSubpath: ''
+  source: null
+  sources: '*'
+  targetSiteId: null
+  useSingleFolder: '1'
+  viewMode: list
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Assets

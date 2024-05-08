@@ -1,0 +1,26 @@
+contentColumnType: string
+fieldGroup: 4d7dbfa9-1442-453c-8342-8502890b71f4
+handle: miniIconFr
+instructions: ''
+name: 'Mini Icon FR'
+searchable: true
+settings:
+  allowedKinds:
+    - image
+  defaultUploadLocationSource: 'volume:69816707-a2df-4e48-b818-2b43eb29e9fd' # Icons
+  defaultUploadLocationSubpath: ''
+  limit: ''
+  localizeRelations: false
+  restrictFiles: '1'
+  selectionLabel: ''
+  singleUploadLocationSource: 'volume:f7b6e1ba-4676-494b-bda5-666cf9d0533a' # Films
+  singleUploadLocationSubpath: ''
+  source: null
+  sources:
+    - 'volume:69816707-a2df-4e48-b818-2b43eb29e9fd' # Icons
+  targetSiteId: null
+  useSingleFolder: ''
+  viewMode: list
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Assets

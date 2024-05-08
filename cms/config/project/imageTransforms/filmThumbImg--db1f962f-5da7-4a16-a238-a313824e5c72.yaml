@@ -1,0 +1,10 @@
+format: null
+handle: filmThumbImg
+height: '400'
+interlace: none
+mode: crop
+name: '600x400 FilmThumb'
+position: center-center
+quality: null
+upscale: true
+width: '600'

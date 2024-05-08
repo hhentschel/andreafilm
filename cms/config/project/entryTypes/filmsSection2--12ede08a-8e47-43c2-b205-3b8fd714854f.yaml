@@ -1,0 +1,69 @@
+fieldLayouts:
+  e95b998a-e615-4cb8-a530-d820ecb4f68f:
+    tabs:
+      -
+        elements:
+          -
+            instructions: null
+            label: Titel
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+          -
+            fieldUid: 8837aea0-a136-4261-8bd5-5272b7e8172d # Jahreszahl
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: bf2eb36d-0ecb-43ae-9d29-051fae84a60b # Farbe Subtitel
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: f7647892-8b56-4f2c-bf36-036bfff0df4b # Bild Hintergrund
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+        name: 'Film Infos Startseite'
+        sortOrder: 1
+      -
+        elements:
+          -
+            fieldUid: 16890e98-bcfc-4e72-a2f7-9ee23c3c93b9 # Film Title
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: 1514f8d1-b2aa-4e97-8c3b-fef6f23a4cd7 # Film Subline
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: 968402ba-82ef-4c27-aa14-4f14dc268c8a # Regisseur
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: 69983b47-acee-48fe-a414-30b622fe223b # Inhaltsfeld
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: 95b6bd76-0ca5-46fe-b075-9cb9e9663005 # Video
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: 4f0dec7a-50a1-4a37-9c5e-baec5cc417eb # Video Hintergrund
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: c46ade7c-34e1-4543-98f6-69f58bae2993 # Bild Hintergrund
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+        name: 'Angaben für Film-Detail Seite'
+        sortOrder: 2
+      -
+        elements:
+          -
+            fieldUid: 002dc819-24d2-428e-9e9c-d279dd8f112f # Creditbox
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+        name: Credits
+        sortOrder: 3
+handle: filmsSection2
+hasTitleField: true
+name: Film
+section: b9364b69-4890-4291-87d2-84de73a5f576 # Filme
+sortOrder: 1
+titleFormat: Titel

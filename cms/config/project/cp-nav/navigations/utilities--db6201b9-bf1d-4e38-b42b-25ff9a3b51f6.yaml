@@ -1,0 +1,16 @@
+currLabel: Werkzeuge
+customIcon: null
+enabled: 1
+handle: utilities
+icon: tool
+layout: 1e06c5fa-d04f-4336-afaf-b5c8f8f1094d # Default
+level: 1
+newWindow: 0
+parentId: null
+prevLabel: Werkzeuge
+prevLevel: null
+prevParentId: null
+prevUrl: utilities
+sortOrder: 3
+type: craft
+url: utilities

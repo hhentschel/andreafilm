@@ -1,0 +1,18 @@
+enableVersioning: true
+handle: filmsSection
+name: Filme
+previewTargets:
+  -
+    label: 'Primary entry page'
+    urlFormat: '{url}'
+propagationMethod: all
+siteSettings:
+  eccd415c-2a08-4035-94cd-62a46c8cd0a2:
+    enabledByDefault: true
+    hasUrls: true
+    template: films/_entry
+    uriFormat: 'filme/{slug}'
+structure:
+  maxLevels: ''
+  uid: e293fa32-175d-4149-b22f-c505ac585cbd
+type: structure

@@ -1,0 +1,10 @@
+format: null
+handle: fullImage
+height: ''
+interlace: none
+mode: crop
+name: 'Full IMage'
+position: center-center
+quality: null
+upscale: true
+width: '1920'

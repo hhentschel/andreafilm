@@ -1,0 +1,115 @@
+dateModified: 1715165519
+email:
+  fromEmail: p@henrik-hentschel.de
+  fromName: 'Andrea Film'
+  transportType: craft\mail\transportadapters\Sendmail
+fs:
+  films:
+    hasUrls: true
+    name: Films
+    settings:
+      path: '@webroot/user_assets/images/films'
+    type: craft\fs\Local
+    url: '@andreafilm_url/user_assets/images/films'
+  icons:
+    hasUrls: true
+    name: Icons
+    settings:
+      path: '@webroot/user_assets/icons'
+    type: craft\fs\Local
+    url: '@andreafilm_url/user_assets/icons'
+  pageBackgroundImage:
+    hasUrls: true
+    name: Hintergrundbilder
+    settings:
+      path: '@webroot/user_assets/images/bgimages'
+    type: craft\fs\Local
+    url: '@andreafilm_url/user_assets/images/bgimages'
+graphql:
+  publicToken:
+    enabled: false
+    expiryDate: null
+meta:
+  __names__:
+    00a6421d-d37d-4148-a2bc-87e90165e7b8: Subtitel # Subtitel
+    1c4795f4-32d4-4671-8316-84b8c342311f: 'Credit Label' # Credit Label
+    1e06c5fa-d04f-4336-afaf-b5c8f8f1094d: Default # Default
+    2bd602c1-1b57-447d-81bd-0be7595de63a: Hintergrundbilder # Hintergrundbilder
+    002dc819-24d2-428e-9e9c-d279dd8f112f: Creditbox # Creditbox
+    4a983616-a6d6-44b4-9cc0-f7118261de07: 'Video Standbild' # Video Standbild
+    4f0dec7a-50a1-4a37-9c5e-baec5cc417eb: 'Video Hintergrund' # Video Hintergrund
+    5eec0c3a-943f-4959-b56a-bdb2c1ddc2f6: Subtitel # Subtitel
+    7a99164a-50a9-475c-b99d-61473c486253: Frankreich # Frankreich
+    9ef1ba03-2162-4953-81a3-66674319841c: miniThumb50x50 # miniThumb50x50
+    12ede08a-8e47-43c2-b205-3b8fd714854f: Film # Film
+    32e60c6a-8544-4297-9c0b-2894a3d4f370: Contact # Contact
+    33e01c33-728f-4c1a-9a61-3aea27ed7866: 'Text Schweiz' # Text Schweiz
+    42c4a58f-7215-463d-ba64-6c346ab02572: 'Credit Text' # Credit Text
+    95b6bd76-0ca5-46fe-b075-9cb9e9663005: Video # Video
+    381f95a2-5ab7-4b9d-9a8b-ae3c3a5efbbf: Homepage # Homepage
+    492ad7a2-68f1-4e64-9414-86e3aa3b8cd8: Schweiz # Schweiz
+    1514f8d1-b2aa-4e97-8c3b-fef6f23a4cd7: 'Film Subline' # Film Subline
+    3262e568-8b53-4657-9be4-b54fe9e0b1d7: 'Full IMage' # Full IMage
+    6634a09d-efe0-40c4-a534-bd5a5f77affb: 'Mini Icon FR' # Mini Icon FR
+    8837aea0-a136-4261-8bd5-5272b7e8172d: Jahreszahl # Jahreszahl
+    16890e98-bcfc-4e72-a2f7-9ee23c3c93b9: 'Film Title' # Film Title
+    46982c5f-b8a8-4ba1-bdef-d9e05a0aec4c: 'Text Frankreich' # Text Frankreich
+    69983b47-acee-48fe-a414-30b622fe223b: Inhaltsfeld # Inhaltsfeld
+    269746c8-f044-4f33-a3e7-f6a27dea14ae: Video # Video
+    968402ba-82ef-4c27-aa14-4f14dc268c8a: Regisseur # Regisseur
+    04996341-dc28-4956-8835-0b437e17d6dd: Regisseur # Regisseur
+    69816707-a2df-4e48-b818-2b43eb29e9fd: Icons # Icons
+    a4a96368-4fde-4bb3-85e9-f98695bbc66d: About # About
+    b063e1c5-e127-450e-8dd1-480f6deac923: About # About
+    b9364b69-4890-4291-87d2-84de73a5f576: Filme # Filme
+    bf2eb36d-0ecb-43ae-9d29-051fae84a60b: 'Farbe Subtitel' # Farbe Subtitel
+    c46ade7c-34e1-4543-98f6-69f58bae2993: 'Bild Hintergrund' # Bild Hintergrund
+    db1f962f-5da7-4a16-a238-a313824e5c72: '600x400 FilmThumb' # 600x400 FilmThumb
+    de3c3820-1e5f-4317-8661-e739917c470a: 'Mini Icon Email' # Mini Icon Email
+    ec7692f4-f47a-4290-b6bd-3803680586f6: Homepage # Homepage
+    eebf63a4-14fb-4630-b033-c6d97e89e154: 'Mini Icon' # Mini Icon
+    f7b6e1ba-4676-494b-bda5-666cf9d0533a: Films # Films
+    f13b35b9-004c-4ccb-9b3c-073525339052: Hintergrundbild # Hintergrundbild
+    f7647892-8b56-4f2c-bf36-036bfff0df4b: 'Bild Hintergrund' # Bild Hintergrund
+    f8035747-f395-413b-81cb-077ad48d657a: 'Page Intro' # Page Intro
+    fd8bac83-e955-4b7d-b685-11622dbb13cf: Contact # Contact
+plugins:
+  ckeditor:
+    edition: standard
+    enabled: false
+    schemaVersion: 1.0.0
+  cp-field-inspect:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  cp-nav:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.0.11
+    settings:
+      originalNavHash:
+        __assoc__:
+          -
+            - c41642dc-27c7-4562-9d4b-a9e1a4d68f2c
+            - W3sibGFiZWwiOiLDnGJlcnNpY2h0IiwidXJsIjoiZGFzaGJvYXJkIiwiZm9udEljb24iOiJnYXVnZSJ9LHsibGFiZWwiOiJFaW50csOkZ2UiLCJ1cmwiOiJlbnRyaWVzIiwiZm9udEljb24iOiJzZWN0aW9uIn0seyJsYWJlbCI6IkRhdGVpZW4iLCJ1cmwiOiJhc3NldHMiLCJmb250SWNvbiI6ImFzc2V0cyJ9LHsidXJsIjoidXRpbGl0aWVzIiwibGFiZWwiOiJXZXJremV1Z2UiLCJmb250SWNvbiI6InRvb2wiLCJiYWRnZUNvdW50Ijo0fSx7InVybCI6InNldHRpbmdzIiwibGFiZWwiOiJFaW5zdGVsbHVuZ2VuIiwiZm9udEljb24iOiJzZXR0aW5ncyJ9LHsidXJsIjoicGx1Z2luLXN0b3JlIiwibGFiZWwiOiJQbHVnLWluLVN0b3JlIiwiZm9udEljb24iOiJwbHVnaW4ifV0=
+  redactor:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.3.0
+  sprout-encode-email:
+    edition: standard
+    enabled: false
+    schemaVersion: 2.0.0
+system:
+  edition: solo
+  live: true
+  name: 'Andrea Film'
+  schemaVersion: 4.5.3.0
+  timeZone: Europe/Zurich
+users:
+  allowPublicRegistration: false
+  deactivateByDefault: false
+  defaultGroup: null
+  photoSubpath: ''
+  photoVolumeUid: null
+  requireEmailVerification: true

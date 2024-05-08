@@ -1,0 +1,16 @@
+currLabel: Dateien
+customIcon: null
+enabled: 1
+handle: assets
+icon: assets
+layout: 1e06c5fa-d04f-4336-afaf-b5c8f8f1094d # Default
+level: 1
+newWindow: 0
+parentId: null
+prevLabel: Dateien
+prevLevel: null
+prevParentId: null
+prevUrl: assets
+sortOrder: 2
+type: craft
+url: assets
