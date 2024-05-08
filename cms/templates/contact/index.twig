@@ -2,19 +2,18 @@
 {% set bodyClass = "contact" %}
 {% block main %}
 
-{% set email = "<a href='mailto:info@andreafilm.com'>info@andreafilm.com</a>" %}
 
 <!-- <div class="container container__index" style="background-image: url({#{ entry.PageBackgroundImage.one().getUrl('fullImage') }#});"> -->
 
 
     {% if entry.PageBackgroundImage | length %}
-        {% set image = entry.PageBackgroundImage.one().getUrl('fullImage') %} 
+        {% set image = entry.PageBackgroundImage.one().getUrl('fullImage') %}
         <div class="container container__index" style="background-image: url({{ image }});">
-    
+
     {% elseif entry.videoBG | length %}
     {% set video = entry.videoBG.one() %}
-        <div class="container container__index">  
-            
+        <div class="container container__index">
+
         <video autoplay loop muted playsinline preload>
             <source src="{{ video.getUrl() }}" type="video/mp4">
         </video>
@@ -29,15 +28,15 @@
     <div class="container__textcontent container__textcontent-swiss">
         <p class="container__textcontent-title" style="background-image: url({{ entry.miniIcon.one().getUrl('miniThumb50x50') }});">{{ entry.contactTitleCH }}</p>
         <p class="container__textcontent-text">{{ entry.contactTextCH|nl2br }}</p>
-        <div class="container__textcontent-email" style="background-image: url({{ entry.miniIconFR.one().getUrl('miniThumb50x50') }});">{{ entry.contactTitleFR }}dasdasd</div>
+        {# <div class="container__textcontent-email" style="background-image: url({{ entry.miniIconFR.one().getUrl('miniThumb50x50') }});">{{ entry.contactTitleFR }}dasdasd</div> #}
     </div>
 
-    <div class="container__textcontent container__textcontent-france">
-        <p class="container__textcontent-title" style="background-image: url({{ entry.miniIconEmail.one().getUrl('miniThumb50x50') }});">{{ email | rot13 }}</p>
+    {# <div class="container__textcontent container__textcontent-france">
+        <p class="container__textcontent-title" style="background-image: url({{ entry.miniIconEmail.one().getUrl('miniThumb50x50') }});">{{ email }}</p>
         <p class="container__textcontent-text">{{ entry.contactTextFR|nl2br }}</p>
+    </div> #}
     </div>
-    </div>
-    
+
 </div>
 
 
