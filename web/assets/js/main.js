@@ -1,7 +1,7 @@
 /*!
  * andreafilm v1.0.0
  * Andrea Film Website
- * (c) 2019 henrik hentschel
+ * (c) 2024 henrik hentschel
  * MIT License
  * http://link-to-your-git-repo.com
  */
