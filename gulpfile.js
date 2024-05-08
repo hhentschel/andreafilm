@@ -189,13 +189,13 @@ var buildStyles = function(done) {
 				sourceComments: true
 			})
 		)
-		.pipe(
-			prefix({
-				browsers: [ 'last 2 version', '> 0.25%' ],
-				cascade: true,
-				remove: true
-			})
-		)
+		// .pipe(
+		// 	prefix({
+		// 		browsers: [ 'last 2 version', '> 0.25%' ],
+		// 		cascade: true,
+		// 		remove: true
+		// 	})
+		// )
 		.pipe(header(banner.full, { package: package }))
 		.pipe(dest(paths.styles.output))
 		.pipe(rename({ suffix: '.min' }))

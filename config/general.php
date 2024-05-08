@@ -27,7 +27,7 @@ return [
         'convertFilenamesToAscii' => true,
         'cacheDuration' => '0',
         'allowUpdates' => true,
-        
+
         //'phpMaxMemoryLimit' => '512M',
 
         //Make sure the image transforms are generated before pageload
@@ -50,7 +50,7 @@ return [
         'aliases' => [
             '@root' => getenv('ROOT'),
             '@andreafilm_url' => 'http://andreafilm.local' // for publications pdf's
-        ],  
+        ],
     ],
 
     // Staging environment settings
@@ -68,7 +68,7 @@ return [
         'aliases' => [
             '@root' => getenv('ROOT'),
             '@andreafilm_url' => 'http://andreafilm.com' // for publications pdf's
-        ], 
+        ],
     ],
-    
+
 ];
