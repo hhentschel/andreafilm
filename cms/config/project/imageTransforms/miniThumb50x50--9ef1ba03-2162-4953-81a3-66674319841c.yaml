@@ -1,0 +1,10 @@
+format: null
+handle: miniThumb50x50
+height: '50'
+interlace: none
+mode: crop
+name: miniThumb50x50
+position: center-center
+quality: null
+upscale: true
+width: '50'

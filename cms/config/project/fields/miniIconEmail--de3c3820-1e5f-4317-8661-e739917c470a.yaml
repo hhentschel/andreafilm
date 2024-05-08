@@ -1,0 +1,25 @@
+contentColumnType: string
+fieldGroup: 4d7dbfa9-1442-453c-8342-8502890b71f4
+handle: miniIconEmail
+instructions: ''
+name: 'Mini Icon Email'
+searchable: true
+settings:
+  allowedKinds: null
+  defaultUploadLocationSource: 'volume:69816707-a2df-4e48-b818-2b43eb29e9fd' # Icons
+  defaultUploadLocationSubpath: ''
+  limit: '1'
+  localizeRelations: false
+  restrictFiles: ''
+  selectionLabel: ''
+  singleUploadLocationSource: 'volume:9161c7ba-81a8-43c7-88a0-1c31bc63965e'
+  singleUploadLocationSubpath: ''
+  source: null
+  sources:
+    - 'volume:69816707-a2df-4e48-b818-2b43eb29e9fd' # Icons
+  targetSiteId: null
+  useSingleFolder: ''
+  viewMode: list
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Assets

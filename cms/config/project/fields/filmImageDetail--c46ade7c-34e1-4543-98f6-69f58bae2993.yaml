@@ -1,0 +1,26 @@
+contentColumnType: string
+fieldGroup: a5f5d17b-2754-4410-b70a-67b25b2c4b46
+handle: filmImageDetail
+instructions: ''
+name: 'Bild Hintergrund'
+searchable: true
+settings:
+  allowedKinds: null
+  defaultUploadLocationSource: 'volume:2bd602c1-1b57-447d-81bd-0be7595de63a' # Hintergrundbilder
+  defaultUploadLocationSubpath: ''
+  limit: ''
+  localizeRelations: false
+  restrictFiles: ''
+  selectionLabel: ''
+  singleUploadLocationSource: 'volume:f7b6e1ba-4676-494b-bda5-666cf9d0533a' # Films
+  singleUploadLocationSubpath: ''
+  source: null
+  sources:
+    - 'volume:f7b6e1ba-4676-494b-bda5-666cf9d0533a' # Films
+    - 'volume:2bd602c1-1b57-447d-81bd-0be7595de63a' # Hintergrundbilder
+  targetSiteId: null
+  useSingleFolder: ''
+  viewMode: list
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Assets

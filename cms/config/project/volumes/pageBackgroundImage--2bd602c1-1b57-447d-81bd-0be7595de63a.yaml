@@ -1,0 +1,6 @@
+fs: pageBackgroundImage
+handle: pageBackgroundImage
+hasUrls: true
+name: Hintergrundbilder
+sortOrder: 3
+url: '@andreafilm_url/user_assets/images/bgimages'

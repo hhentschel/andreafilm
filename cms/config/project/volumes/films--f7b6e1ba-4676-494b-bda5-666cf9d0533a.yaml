@@ -1,0 +1,6 @@
+fs: films
+handle: films
+hasUrls: true
+name: Films
+sortOrder: '2'
+url: '@andreafilm_url/user_assets/images/films'

@@ -1,0 +1,16 @@
+contentColumnType: text
+fieldGroup: 9256a3ac-dd6e-4b9a-bb95-5ed9b5249701
+handle: filmAuthor
+instructions: ''
+name: Regisseur
+searchable: true
+settings:
+  charLimit: ''
+  code: ''
+  columnType: text
+  initialRows: '4'
+  multiline: ''
+  placeholder: ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

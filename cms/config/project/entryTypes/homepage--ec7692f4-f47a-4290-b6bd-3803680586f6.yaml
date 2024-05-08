@@ -1,0 +1,25 @@
+fieldLayouts:
+  0838e0c3-1e02-47dc-af5b-e6d7cd820336:
+    tabs:
+      -
+        elements:
+          -
+            instructions: null
+            label: ''
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+          -
+            fieldUid: 269746c8-f044-4f33-a3e7-f6a27dea14ae # Video
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: 4a983616-a6d6-44b4-9cc0-f7118261de07 # Video Standbild
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+        name: Homepage
+        sortOrder: 1
+handle: homepage
+hasTitleField: false
+name: Homepage
+section: 381f95a2-5ab7-4b9d-9a8b-ae3c3a5efbbf # Homepage
+sortOrder: 1
+titleFormat: '{section.name|raw}'

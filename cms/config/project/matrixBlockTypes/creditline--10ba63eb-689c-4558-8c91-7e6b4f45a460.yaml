@@ -1,0 +1,52 @@
+field: 002dc819-24d2-428e-9e9c-d279dd8f112f # Creditbox
+fieldLayouts:
+  5eb00478-8bed-49c4-8126-6412f53eb707:
+    tabs:
+      -
+        fields:
+          1c4795f4-32d4-4671-8316-84b8c342311f: # Credit Label
+            required: false
+            sortOrder: 1
+          42c4a58f-7215-463d-ba64-6c346ab02572: # Credit Text
+            required: false
+            sortOrder: 2
+        name: Content
+        sortOrder: 1
+fields:
+  1c4795f4-32d4-4671-8316-84b8c342311f: # Credit Label
+    contentColumnType: text
+    fieldGroup: null
+    handle: creditLabel
+    instructions: ''
+    name: 'Credit Label'
+    searchable: true
+    settings:
+      charLimit: ''
+      code: ''
+      columnType: text
+      initialRows: '4'
+      multiline: ''
+      placeholder: Label
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  42c4a58f-7215-463d-ba64-6c346ab02572: # Credit Text
+    contentColumnType: text
+    fieldGroup: null
+    handle: creditText
+    instructions: ''
+    name: 'Credit Text'
+    searchable: true
+    settings:
+      charLimit: ''
+      code: ''
+      columnType: text
+      initialRows: '1'
+      multiline: '1'
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: creditline
+name: Creditline
+sortOrder: 1
