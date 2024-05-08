@@ -2,10 +2,11 @@
   "minimum-stability": "beta",
   "prefer-stable": true,
   "require": {
-    "craftcms/ckeditor": "^3.8.0",
     "php": "^8.0.2",
+    "craftcms/ckeditor": "^3.8.0",
     "craftcms/cms": "^4.0.0",
     "craftcms/redactor": "^3.0.4",
+    "miranj/craft-obfuscator": "^1.2.0",
     "mmikkel/cp-field-inspect": "^1.4.4",
     "verbb/cp-nav": "^4.0.12",
     "vlucas/phpdotenv": "^5.4.0",

@@ -1,4 +1,4 @@
-dateModified: 1715165519
+dateModified: 1715167543
 email:
   fromEmail: p@henrik-hentschel.de
   fromName: 'Andrea Film'
@@ -61,6 +61,7 @@ meta:
     69816707-a2df-4e48-b818-2b43eb29e9fd: Icons # Icons
     a4a96368-4fde-4bb3-85e9-f98695bbc66d: About # About
     b063e1c5-e127-450e-8dd1-480f6deac923: About # About
+    b84af26f-7dc4-4849-8a11-29881470d18c: Simple # Simple
     b9364b69-4890-4291-87d2-84de73a5f576: Filme # Filme
     bf2eb36d-0ecb-43ae-9d29-051fae84a60b: 'Farbe Subtitel' # Farbe Subtitel
     c46ade7c-34e1-4543-98f6-69f58bae2993: 'Bild Hintergrund' # Bild Hintergrund
@@ -76,8 +77,8 @@ meta:
 plugins:
   ckeditor:
     edition: standard
-    enabled: false
-    schemaVersion: 1.0.0
+    enabled: true
+    schemaVersion: 3.0.0.0
   cp-field-inspect:
     edition: standard
     enabled: true
@@ -92,6 +93,10 @@ plugins:
           -
             - c41642dc-27c7-4562-9d4b-a9e1a4d68f2c
             - W3sibGFiZWwiOiLDnGJlcnNpY2h0IiwidXJsIjoiZGFzaGJvYXJkIiwiZm9udEljb24iOiJnYXVnZSJ9LHsibGFiZWwiOiJFaW50csOkZ2UiLCJ1cmwiOiJlbnRyaWVzIiwiZm9udEljb24iOiJzZWN0aW9uIn0seyJsYWJlbCI6IkRhdGVpZW4iLCJ1cmwiOiJhc3NldHMiLCJmb250SWNvbiI6ImFzc2V0cyJ9LHsidXJsIjoidXRpbGl0aWVzIiwibGFiZWwiOiJXZXJremV1Z2UiLCJmb250SWNvbiI6InRvb2wiLCJiYWRnZUNvdW50Ijo0fSx7InVybCI6InNldHRpbmdzIiwibGFiZWwiOiJFaW5zdGVsbHVuZ2VuIiwiZm9udEljb24iOiJzZXR0aW5ncyJ9LHsidXJsIjoicGx1Z2luLXN0b3JlIiwibGFiZWwiOiJQbHVnLWluLVN0b3JlIiwiZm9udEljb24iOiJwbHVnaW4ifV0=
+  obfuscator:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
   redactor:
     edition: standard
     enabled: true
