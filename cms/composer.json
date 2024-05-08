@@ -2,12 +2,12 @@
   "minimum-stability": "beta",
   "prefer-stable": true,
   "require": {
-    "barrelstrength/sprout-encode-email": "^2.0.5",
-    "craftcms/ckeditor": "^1.0.0-beta.2",
-    "craftcms/cms": "^3.7.22",
-    "craftcms/redactor": "^2.3.2",
-    "mmikkel/cp-field-inspect": "^1.0.5",
-    "verbb/cp-nav": "^2.0.9",
+    "craftcms/ckeditor": "^3.8.0",
+    "php": "^8.0.2",
+    "craftcms/cms": "^4.0.0",
+    "craftcms/redactor": "^3.0.4",
+    "mmikkel/cp-field-inspect": "^1.4.4",
+    "verbb/cp-nav": "^4.0.12",
     "vlucas/phpdotenv": "^5.4.0",
     "yiisoft/yii2-redis": "^2.0.6"
   },
@@ -17,14 +17,11 @@
     }
   },
   "config": {
-    "allow-plugins": {
-      "craftcms/plugin-installer": true,
-      "yiisoft/yii2-composer": true
-    },
     "sort-packages": true,
     "optimize-autoloader": true,
-    "platform": {
-      "php": "8.0"
+    "allow-plugins": {
+      "yiisoft/yii2-composer": true,
+      "craftcms/plugin-installer": true
     }
   },
   "scripts": {
