@@ -8,6 +8,7 @@
     "craftcms/redactor": "^3.0.4",
     "miranj/craft-obfuscator": "^1.2.0",
     "mmikkel/cp-field-inspect": "^1.4.4",
+    "nystudio107/craft-vite": "^4.0.9",
     "verbb/cp-nav": "^4.0.12",
     "vlucas/phpdotenv": "^5.4.0",
     "yiisoft/yii2-redis": "^2.0.6"
