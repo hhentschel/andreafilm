@@ -1,4 +1,4 @@
-dateModified: 1715334815
+dateModified: 1715339176
 email:
   fromEmail: p@henrik-hentschel.de
   fromName: 'Andrea Film'
@@ -40,6 +40,7 @@ meta:
     4f0dec7a-50a1-4a37-9c5e-baec5cc417eb: 'Video Hintergrund' # Video Hintergrund
     5eec0c3a-943f-4959-b56a-bdb2c1ddc2f6: Subtitel # Subtitel
     7a99164a-50a9-475c-b99d-61473c486253: Frankreich # Frankreich
+    9acf338d-de8b-41c4-a72f-07be62b25a2d: 'Formatierter Text' # Formatierter Text
     9ef1ba03-2162-4953-81a3-66674319841c: miniThumb50x50 # miniThumb50x50
     12ede08a-8e47-43c2-b205-3b8fd714854f: Film # Film
     32e60c6a-8544-4297-9c0b-2894a3d4f370: Contact # Contact

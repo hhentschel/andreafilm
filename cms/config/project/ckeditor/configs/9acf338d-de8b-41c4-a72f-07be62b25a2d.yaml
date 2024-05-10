@@ -1,0 +1,32 @@
+headingLevels:
+  - 1
+  - 2
+  - 3
+name: 'Formatierter Text'
+options:
+  alignment:
+    options:
+      - left
+      - right
+  link:
+    decorators:
+      addTargetToExternalLinks:
+        attributes:
+          rel: 'noopener noreferrer'
+          target: _blank
+        defaultValue: true
+        label: 'In einem neuen Tab öffnen'
+        mode: manual
+toolbar:
+  - code
+  - '|'
+  - bold
+  - italic
+  - link
+  - underline
+  - subscript
+  - superscript
+  - strikethrough
+  - alignment
+  - bulletedList
+  - sourceEditing
