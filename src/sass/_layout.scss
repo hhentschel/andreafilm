@@ -87,6 +87,8 @@
 		background-size: cover;
 		background-position: center;
 
+
+
 		&--filmbox {
 			background-repeat: no-repeat;
 			background-size: cover;
@@ -385,6 +387,7 @@
 
 		&-credits {
 			grid-column: 1 / -1;
+			grid-row: 4/7;
 			column-count: 2;
 			font-size: 2rem;
 			font-family: minion-pro-display,serif;
@@ -411,6 +414,14 @@
 			}
 		}
 
+		&-reviews {
+			grid-column: 5/7;
+			grid-row: 4/7;
+			background: rgba(100, 100, 100, .7);
+			// max-height: 100px;
+			height: auto;
+		}
+
 		&-filmbox {
 			grid-column: 1 / -1;
 			padding: 56.25% 0 0 0;
@@ -419,7 +430,27 @@
 
 			@media screen and (min-width: $bp-medium) {
 				grid-column: 5 / 7;
+				grid-row: 6/7;
 			}
+		}
+	}
+
+	.movie-reviews {
+		&__heading {
+			font-family: minion-pro-display,serif;
+			font-size: 3rem;
+			margin: 0 0 1rem 0;
+		}
+
+		&__title {
+			font-family: minion-pro-display,serif;
+			font-size: 2rem;
+			margin: 0 0 1rem 0;
+		}
+
+		&__url {
+
+			color: var(--color-white);
 		}
 	}
 }
