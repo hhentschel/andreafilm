@@ -1,0 +1,5 @@
+{
+    "require-dev": {
+        "nystudio107/craft-autocomplete": "^1.12"
+    }
+}
