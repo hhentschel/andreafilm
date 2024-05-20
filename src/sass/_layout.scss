@@ -414,12 +414,23 @@
 			}
 		}
 
-		&-reviews {
+		&-reviews-wrapper {
 			grid-column: 5/7;
-			grid-row: 4/7;
-			background: rgba(100, 100, 100, .7);
+			grid-row: 4/6;
 			// max-height: 100px;
-			height: auto;
+
+
+
+			// background-color: green;
+			margin-bottom: 20px;
+		}
+
+		&-reviews {
+			padding: 20px;
+			background: rgba(100, 100, 100, .7);
+			max-height: 500px;
+			overflow-y: scroll;
+			margin-bottom: 20px;
 		}
 
 		&-filmbox {
@@ -436,6 +447,7 @@
 	}
 
 	.movie-reviews {
+
 		&__heading {
 			font-family: minion-pro-display,serif;
 			font-size: 3rem;
@@ -445,7 +457,8 @@
 		&__title {
 			font-family: minion-pro-display,serif;
 			font-size: 2rem;
-			margin: 0 0 1rem 0;
+			margin: 0 0 2rem 0;
+			line-height: 1.2;
 		}
 
 		&__url {

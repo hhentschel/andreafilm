@@ -1,0 +1,22 @@
+{
+  "src/js/app-legacy.ts": {
+    "file": "assets/app-legacy-0d51602f.js",
+    "isEntry": true,
+    "src": "src/js/app-legacy.ts",
+    "integrity": "sha384-El/leu3tBhO6STm4YO7PelkQKWyco79V8AEfqkifkxU3G3jrxSvPDFHLVngQtNsf"
+  },
+  "src/js/app.css": {
+    "file": "assets/app-49fe9385.css",
+    "src": "src/js/app.css",
+    "integrity": "sha384-QfaJx42KBe+sTFhGYCNihndz4c/LncwCxIfailQOffhGW98N/CnFB81U6qyjNMK1"
+  },
+  "src/js/app.ts": {
+    "css": [
+      "assets/app-49fe9385.css"
+    ],
+    "file": "assets/app-5afa722d.js",
+    "isEntry": true,
+    "src": "src/js/app.ts",
+    "integrity": "sha384-/wlzCtN6i26WGTZnlq5yV/s0Gnk6csSOpzdUFpDNnQ05Orv7QN1aUiPFnhbOJEvu"
+  }
+}
