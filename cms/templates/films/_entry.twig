@@ -56,14 +56,16 @@
 
 
     {% if entry.reviewsMatrix | length %}
-        <div class="detail__movie-reviews">
+        <div class="detail__movie-reviews-wrapper">
             <h3 class="movie-reviews__heading">Reviews</h3>
-            {% for block in entry.reviewsMatrix.limit(10).all() %}
+        <div class="detail__movie-reviews">
+            {% for block in entry.reviewsMatrix.all() %}
                 {% switch block.type.handle %}
                     {% case 'review' %}
                             <h4 class="movie-reviews__title"><a href="{{ block.urlReview }}" target="_blank" rel="norefer noopener" class="movie-reviews__url">{{ block.titleReview }}</a></h4>  {# Assuming 'heading' is a field within this block type #}
                 {% endswitch %}
             {% endfor %}
+        </div>
         </div>
     {% else %}
         <p>No reviews available.</p>
