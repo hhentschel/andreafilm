@@ -50,5 +50,8 @@
     "pre-install-cmd": "@pre-craft-update",
     "post-update-cmd": "@post-craft-update",
     "post-install-cmd": "@post-craft-update"
+  },
+  "require-dev": {
+    "nystudio107/craft-autocomplete": "^1.12"
   }
 }
