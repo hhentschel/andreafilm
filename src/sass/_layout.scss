@@ -427,10 +427,11 @@
 
 		&-reviews {
 			padding: 20px;
-			background: rgba(100, 100, 100, .7);
-			max-height: 500px;
+			background: rgba(100, 100, 100, .4);
+			max-height: 300px;
 			overflow-y: scroll;
 			margin-bottom: 20px;
+			border-radius: 3px;
 		}
 
 		&-filmbox {
@@ -457,8 +458,25 @@
 		&__title {
 			font-family: minion-pro-display,serif;
 			font-size: 2rem;
-			margin: 0 0 2rem 0;
+			margin: 0;
 			line-height: 1.2;
+			> a {
+				padding: 0.5rem 0;
+				display: block;
+			}
+
+			&:hover {
+				color: var(--color-purple);
+			}
+		}
+
+		&__separator {
+			font-size: 18px;
+			line-height: 1;
+			height: 10px;
+			margin: .5rem 0;
+			display: inline-block;
+			letter-spacing: 0.3rem;
 		}
 
 		&__url {
