@@ -1,23 +1,27 @@
 {% extends '/_layout' %}
 {% set bodyClass = 'film-detail' %}
 
+{% set reviews = craft.entries()
+    .section('reviews')
+    .all() %}
+
 {# {% set video = entry.videoBG.one() %}
 {% set image = entry.filmImage.one() %}  #}
 
-{# 
-{% set image = entry.filmImage.one().getUrl('fullImage') %}  
+{#
+{% set image = entry.filmImage.one().getUrl('fullImage') %}
 #}
 
 {% block main %}
- 
+
 {% if entry.filmImageDetail | length %}
-    {% set image = entry.filmImageDetail.one().getUrl('fullImage') %} 
+    {% set image = entry.filmImageDetail.one().getUrl('fullImage') %}
     <div class="container container__detail" style="background-image: url({{ image }});">
 
 {% elseif entry.videoBG | length %}
 {% set video = entry.videoBG.one() %}
-    <div class="container container__detail">  
-        
+    <div class="container container__detail">
+
     <video autoplay loop muted playsinline preload>
         <source src="{{ video.getUrl() }}" type="video/mp4">
     </video>
@@ -27,33 +31,55 @@
     <div class="container__navbox">
         {% include '/_includes/navigation-detail.twig' %}
     </div>
-    
+
     <div class="detail__movie-titlebox">
         {# {{ entry.filmImage.one().img }} #}
         <h2 class="detail__movie-titlebox-title">{{ entry.filmDetailTitle }}</h2>
         <h3 class="detail__movie-titlebox-subtitle">{{ entry.filmDetailSubline }}</h3>
         <p class="detail__movie-titlebox-subline">{{ entry.filmDetailAuthor }}</p>
     </div>
-        
+
     <div class="detail__movie-infotext">{{ entry.contentField }}</div>
-        
-   
+
+
     <div class="detail__movie-credits">
-   
+
         {% for credit in entry.creditbox.all() %}
         <div class="movie__credits-box">
-        
+
             <p class="movie__credits-label">{{ credit.creditLabel }}</p>
             <p class="movie__credits-text">{{ credit.creditText|nl2br }}</p>
         </div>
         {% endfor %}
-    
+
     </div>
 
-  
+
+    {% if entry.reviewsMatrix | length %}
+        <div class="detail__movie-reviews-wrapper">
+            <h3 class="movie-reviews__heading">Reviews</h3>
+        <div class="detail__movie-reviews">
+            {% for block in entry.reviewsMatrix.all() %}
+                {% switch block.type.handle %}
+                    {% case 'review' %}
+                        <h4 class="movie-reviews__title">
+                            <a href="{{ block.urlReview }}" target="_blank" rel="norefer noopener" class="movie-reviews__url">
+                                {{ block.titleReview }}
+                            </a>
+                        </h4>
+                        <span class="movie-reviews__separator">***</span>{# Assuming 'heading' is a field within this block type #}
+                {% endswitch %}
+            {% endfor %}
+        </div>
+        </div>
+    {% else %}
+        <p>No reviews available.</p>
+    {% endif %}
+
+
 
      {% if entry.videoID %}
-     
+
     <div class="detail__movie-filmbox">
         <iframe
             src="https://player.vimeo.com/video/{{ entry.videoID }}"
