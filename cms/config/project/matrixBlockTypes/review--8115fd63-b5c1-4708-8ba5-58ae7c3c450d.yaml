@@ -1,0 +1,73 @@
+field: 20f8c5b8-e9c6-45b3-91f2-f2e731db3a9f # Reviews
+fieldLayouts:
+  d223cb05-6e6a-4702-8f07-adbfef89e6de:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 754abfa1-d7dc-4aa9-a22a-2265a651fcb5 # Title
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 4a9ac0dc-94b5-4b0a-b431-8976d6558ee6
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 83912628-a8ec-4015-9c82-d72a33a08b74 # URL
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: bc232a95-8f78-4f64-825a-1c48cd3156e6
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: e09bf084-3456-47d5-9a48-3d2d975efe84
+        userCondition: null
+fields:
+  754abfa1-d7dc-4aa9-a22a-2265a651fcb5: # Title
+    columnSuffix: ieoyhekp
+    contentColumnType: text
+    fieldGroup: null
+    handle: titleReview
+    instructions: null
+    name: Title
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  83912628-a8ec-4015-9c82-d72a33a08b74: # URL
+    columnSuffix: xmanmldr
+    contentColumnType: string(255)
+    fieldGroup: null
+    handle: urlReview
+    instructions: null
+    name: URL
+    searchable: false
+    settings:
+      maxLength: 255
+      types:
+        - url
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Url
+handle: review
+name: Review
+sortOrder: 1

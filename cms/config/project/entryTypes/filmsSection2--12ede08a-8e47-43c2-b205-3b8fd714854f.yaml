@@ -2,68 +2,208 @@ fieldLayouts:
   e95b998a-e615-4cb8-a530-d820ecb4f68f:
     tabs:
       -
+        elementCondition: null
         elements:
           -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            inputType: null
             instructions: null
             label: Titel
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
             type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 33b6b2f1-c38d-42a9-ac35-6a8b0c7c2616
+            userCondition: null
+            warning: null
+            width: 100
           -
+            elementCondition: null
             fieldUid: 8837aea0-a136-4261-8bd5-5272b7e8172d # Jahreszahl
+            instructions: null
+            label: null
             required: false
+            tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: b21bc5fa-4438-4479-b1a4-adfed1e90aca
+            userCondition: null
+            warning: null
+            width: 100
           -
+            elementCondition: null
             fieldUid: bf2eb36d-0ecb-43ae-9d29-051fae84a60b # Farbe Subtitel
+            instructions: null
+            label: null
             required: false
+            tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: f96e61eb-dc37-4532-b1c1-3fb927809b1a
+            userCondition: null
+            warning: null
+            width: 100
           -
+            elementCondition: null
             fieldUid: f7647892-8b56-4f2c-bf36-036bfff0df4b # Bild Hintergrund
+            instructions: null
+            label: null
             required: false
+            tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: f7f6a84b-4b14-43f1-9adc-a9cd0cd66525
+            userCondition: null
+            warning: null
+            width: 100
         name: 'Film Infos Startseite'
-        sortOrder: 1
+        uid: 9a10968b-260d-4b8b-b22c-ed1ba797484f
+        userCondition: null
       -
+        elementCondition: null
         elements:
           -
+            elementCondition: null
             fieldUid: 16890e98-bcfc-4e72-a2f7-9ee23c3c93b9 # Film Title
+            instructions: null
+            label: null
             required: false
+            tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: c8bebd47-40fd-4e1f-8827-6461dacbe7d7
+            userCondition: null
+            warning: null
+            width: 100
           -
+            elementCondition: null
             fieldUid: 1514f8d1-b2aa-4e97-8c3b-fef6f23a4cd7 # Film Subline
+            instructions: null
+            label: null
             required: false
+            tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: ef9ea5ef-757d-4f65-bfc7-c5e4b8bf3ac1
+            userCondition: null
+            warning: null
+            width: 100
           -
+            elementCondition: null
             fieldUid: 968402ba-82ef-4c27-aa14-4f14dc268c8a # Regisseur
+            instructions: null
+            label: null
             required: false
+            tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 70b719be-d3eb-4fb4-8901-3b285695fedb
+            userCondition: null
+            warning: null
+            width: 100
           -
+            elementCondition: null
             fieldUid: 69983b47-acee-48fe-a414-30b622fe223b # Inhaltsfeld
+            instructions: null
+            label: null
             required: false
+            tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 35285ed3-171f-45af-aa32-78485ae3ca4d
+            userCondition: null
+            warning: null
+            width: 100
           -
+            elementCondition: null
             fieldUid: 95b6bd76-0ca5-46fe-b075-9cb9e9663005 # Video
+            instructions: null
+            label: null
             required: false
+            tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 6ef61f03-425d-4a7f-9526-77f3fcf9d4cd
+            userCondition: null
+            warning: null
+            width: 100
           -
+            elementCondition: null
             fieldUid: 4f0dec7a-50a1-4a37-9c5e-baec5cc417eb # Video Hintergrund
+            instructions: null
+            label: null
             required: false
+            tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 520aa44f-9af5-4d39-b5a5-a9aedeb9e126
+            userCondition: null
+            warning: null
+            width: 100
           -
+            elementCondition: null
             fieldUid: c46ade7c-34e1-4543-98f6-69f58bae2993 # Bild Hintergrund
+            instructions: null
+            label: null
             required: false
+            tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 82b427cf-56d0-4758-9327-b53f4d1fc5bd
+            userCondition: null
+            warning: null
+            width: 100
         name: 'Angaben für Film-Detail Seite'
-        sortOrder: 2
+        uid: e8e06413-32d7-46a1-8491-e955bef430ae
+        userCondition: null
       -
+        elementCondition: null
         elements:
           -
+            elementCondition: null
             fieldUid: 002dc819-24d2-428e-9e9c-d279dd8f112f # Creditbox
+            instructions: null
+            label: null
             required: false
+            tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 44eb7ab2-8a84-49f0-b39e-60f06d3d6e87
+            userCondition: null
+            warning: null
+            width: 100
         name: Credits
-        sortOrder: 3
+        uid: 9e7b464f-c7ec-435c-bc83-09f5b7e1c60b
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 20f8c5b8-e9c6-45b3-91f2-f2e731db3a9f # Reviews
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 0418cc73-bfac-417a-b490-b3cc4abf6100
+            userCondition: null
+            warning: null
+            width: 100
+        name: Reviews
+        uid: 827ef57f-8063-44d9-875a-488f450d4a26
+        userCondition: null
 handle: filmsSection2
 hasTitleField: true
 name: Film
 section: b9364b69-4890-4291-87d2-84de73a5f576 # Filme
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
 sortOrder: 1
 titleFormat: Titel
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

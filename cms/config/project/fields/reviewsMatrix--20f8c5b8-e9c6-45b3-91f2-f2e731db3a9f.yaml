@@ -1,0 +1,16 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: 695f2705-9ba1-4d94-800b-7601fa8fd1f0
+handle: reviewsMatrix
+instructions: null
+name: Reviews
+searchable: false
+settings:
+  contentTable: '{{%matrixcontent_reviewsmatrix}}'
+  maxBlocks: null
+  minBlocks: null
+  propagationKeyFormat: null
+  propagationMethod: all
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix
