@@ -1,0 +1,51 @@
+color: null
+fieldLayouts:
+  5eb00478-8bed-49c4-8126-6412f53eb707:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 1c4795f4-32d4-4671-8316-84b8c342311f
+            handle: null
+            includeInCards: true
+            instructions: null
+            label: 'Credit Label'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 24436b0e-84d2-43ad-8ff7-609c9032fd95
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 42c4a58f-7215-463d-ba64-6c346ab02572
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: 'Credit Text'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: c124e907-fffc-45dd-9af8-707c43a80669
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 768fe5a4-e60e-4951-8f7f-464f3d131c22
+        userCondition: null
+handle: creditline
+hasTitleField: false
+icon: null
+name: Creditline
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

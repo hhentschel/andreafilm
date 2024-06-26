@@ -20,6 +20,5 @@ fieldLayouts:
 handle: homepage
 hasTitleField: false
 name: Homepage
-section: 381f95a2-5ab7-4b9d-9a8b-ae3c3a5efbbf # Homepage
 sortOrder: 1
 titleFormat: '{section.name|raw}'

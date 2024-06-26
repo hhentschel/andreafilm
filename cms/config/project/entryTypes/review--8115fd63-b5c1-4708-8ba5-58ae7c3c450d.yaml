@@ -1,0 +1,51 @@
+color: null
+fieldLayouts:
+  d223cb05-6e6a-4702-8f07-adbfef89e6de:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 754abfa1-d7dc-4aa9-a22a-2265a651fcb5
+            handle: null
+            includeInCards: true
+            instructions: null
+            label: Title
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 4a9ac0dc-94b5-4b0a-b431-8976d6558ee6
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 83912628-a8ec-4015-9c82-d72a33a08b74
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: URL
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: bc232a95-8f78-4f64-825a-1c48cd3156e6
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: e09bf084-3456-47d5-9a48-3d2d975efe84
+        userCondition: null
+handle: review
+hasTitleField: false
+icon: null
+name: Review
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

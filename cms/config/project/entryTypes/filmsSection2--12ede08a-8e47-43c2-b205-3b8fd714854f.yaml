@@ -199,7 +199,6 @@ fieldLayouts:
 handle: filmsSection2
 hasTitleField: true
 name: Film
-section: b9364b69-4890-4291-87d2-84de73a5f576 # Filme
 showStatusField: true
 slugTranslationKeyFormat: null
 slugTranslationMethod: site

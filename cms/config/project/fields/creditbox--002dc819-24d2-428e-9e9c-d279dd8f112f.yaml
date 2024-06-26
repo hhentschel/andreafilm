@@ -1,14 +1,15 @@
 contentColumnType: string
-fieldGroup: 9256a3ac-dd6e-4b9a-bb95-5ed9b5249701
 handle: creditbox
 instructions: ''
 name: Creditbox
 searchable: true
 settings:
-  contentTable: '{{%matrixcontent_creditbox}}'
+  entryTypes:
+    - 10ba63eb-689c-4558-8c91-7e6b4f45a460
   localizeBlocks: false
-  maxBlocks: ''
-  minBlocks: ''
+  maxEntries: ''
+  minEntries: ''
+  viewMode: blocks
 translationKeyFormat: null
 translationMethod: site
 type: craft\fields\Matrix

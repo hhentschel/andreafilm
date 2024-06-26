@@ -3,12 +3,12 @@
   "prefer-stable": true,
   "require": {
     "php": "^8.0.2",
-    "craftcms/ckeditor": "^3.8.0",
-    "craftcms/cms": "4.10.2",
+    "craftcms/ckeditor": "^4.1.0",
+    "craftcms/cms": "^5.0.0",
     "miranj/craft-obfuscator": "^1.2.0",
-    "mmikkel/cp-field-inspect": "^1.4.4",
-    "nystudio107/craft-vite": "^4.0.9",
-    "verbb/cp-nav": "^4.0.12",
+    "mmikkel/cp-field-inspect": "^2.0.1",
+    "nystudio107/craft-vite": "^5.0.0",
+    "verbb/cp-nav": "^5.0.1",
     "vlucas/phpdotenv": "^5.4.0",
     "yiisoft/yii2-redis": "^2.0.6"
   },

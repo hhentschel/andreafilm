@@ -1,10 +1,19 @@
+defaultPlacement: end
 enableVersioning: false
+entryTypes:
+  - ec7692f4-f47a-4290-b6bd-3803680586f6 # Homepage
 handle: homepage
+maxAuthors: 1
 name: Homepage
 previewTargets:
   -
-    label: 'Primary entry page'
-    urlFormat: '{url}'
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
 propagationMethod: all
 siteSettings:
   eccd415c-2a08-4035-94cd-62a46c8cd0a2:

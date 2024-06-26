@@ -40,6 +40,5 @@ fieldLayouts:
 handle: contactSection
 hasTitleField: false
 name: Contact
-section: 32e60c6a-8544-4297-9c0b-2894a3d4f370 # Contact
 sortOrder: 1
 titleFormat: '{section.name|raw}'

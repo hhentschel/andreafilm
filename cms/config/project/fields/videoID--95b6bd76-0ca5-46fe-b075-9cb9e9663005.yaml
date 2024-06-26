@@ -1,5 +1,4 @@
 contentColumnType: text
-fieldGroup: 9256a3ac-dd6e-4b9a-bb95-5ed9b5249701
 handle: videoID
 instructions: "die Zahlenreihe aus der URL nehmen, nach \"...vimeo.com/\"\r\nz.B. 327554892"
 name: Video

@@ -1,10 +1,19 @@
+defaultPlacement: end
 enableVersioning: true
+entryTypes:
+  - a4a96368-4fde-4bb3-85e9-f98695bbc66d # About
 handle: aboutSection
+maxAuthors: 1
 name: About
 previewTargets:
   -
-    label: 'Primary entry page'
-    urlFormat: '{url}'
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
 propagationMethod: all
 siteSettings:
   eccd415c-2a08-4035-94cd-62a46c8cd0a2:
@@ -13,6 +22,6 @@ siteSettings:
     template: about/
     uriFormat: '{parent.uri}/{slug}'
 structure:
-  maxLevels: ''
+  maxLevels: null
   uid: c24e7b7b-1c27-4722-bf4f-4bc0b833d73f
 type: structure
