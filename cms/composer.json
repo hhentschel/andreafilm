@@ -4,8 +4,7 @@
   "require": {
     "php": "^8.0.2",
     "craftcms/ckeditor": "^3.8.0",
-    "craftcms/cms": "^4.0.0",
-    "craftcms/redactor": "^3.0.4",
+    "craftcms/cms": "4.10.2",
     "miranj/craft-obfuscator": "^1.2.0",
     "mmikkel/cp-field-inspect": "^1.4.4",
     "nystudio107/craft-vite": "^4.0.9",
@@ -53,5 +52,12 @@
   },
   "require-dev": {
     "nystudio107/craft-autocomplete": "^1.12"
-  }
+  },
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://composer.craftcms.com",
+      "canonical": false
+    }
+  ]
 }
