@@ -1,0 +1,38 @@
+{% extends '/_layout' %}
+{% set bodyClass = 'personen' %}
+
+{% set personen = craft.entries()
+    .section('personen')
+    .all() %}
+
+{% set image = entry.imagePerson.one() %}
+
+{#
+{% set image = entry.filmImage.one().getUrl('fullImage') %}
+#}
+
+{% block main %}
+
+<h2 class="person__title">{{entry.title}}</h2>
+
+{% do image.setTransform('fullImage') %}
+<img src="{{ image.url }}"
+  width="{{ image.width }}"
+  height="{{ image.height }}">
+
+{# {{ image.imageTag()
+  .imgAttrs
+    ({
+      'sizes': "100vw",
+      'alt': '',
+      'class': "object-cover",
+      'fetchpriority': 'high'
+    })
+  .pictureAttrs
+    ({
+       'class': "",
+    })
+  .render()
+}} #}
+
+{% endblock %}

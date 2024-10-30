@@ -1,0 +1,26 @@
+{% extends '/_layout' %}
+{% set bodyClass = "films" %}
+{% block main %}
+
+<div class="container container__index">
+
+    <div class="container__navbox">
+        {% include '/_includes/navigation.twig' %}
+    </div>
+
+    {% for entry in craft.entries.section('filmsSection').all() %}
+
+    {% if entry.filmImage | length %}
+        <a href="{{entry.url}}" class="container__index--filmbox" style="background-image: url({{ entry.filmImage.one().getUrl('filmThumbImg') }});">
+            <div>
+                <h2 class="container__index--filmbox-title">{{ entry.title }}</h2>
+                <p style="{% if entry.colorSubtitle %}color: {{ entry.colorSubtitle }} {% endif %}" class="container__index--filmbox-subtitle">{{ entry.yearFilm }}</p>
+            </div>
+        </a>
+        {% endif %}
+    {% endfor %}
+
+</div>
+
+
+{% endblock %}

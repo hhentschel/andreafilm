@@ -1,4 +1,4 @@
-dateModified: 1719390747
+dateModified: 1730304774
 email:
   fromEmail: p@henrik-hentschel.de
   fromName: 'Andrea Film'
@@ -25,6 +25,13 @@ fs:
       path: '@webroot/user_assets/images/bgimages'
     type: craft\fs\Local
     url: '@andreafilm_url/user_assets/images/bgimages'
+  personen:
+    hasUrls: true
+    name: Personen
+    settings:
+      path: '@webroot/user_assets/images/personen'
+    type: craft\fs\Local
+    url: '@andreafilm_url/user_assets/images/personen'
 graphql:
   publicToken:
     enabled: false
@@ -35,6 +42,7 @@ meta:
     1e06c5fa-d04f-4336-afaf-b5c8f8f1094d: Default # Default
     2bd602c1-1b57-447d-81bd-0be7595de63a: Hintergrundbilder # Hintergrundbilder
     002dc819-24d2-428e-9e9c-d279dd8f112f: Creditbox # Creditbox
+    3f726da0-01a5-472f-9ba8-5a49157e9056: Personen # Personen
     4a983616-a6d6-44b4-9cc0-f7118261de07: 'Video Standbild' # Video Standbild
     4f0dec7a-50a1-4a37-9c5e-baec5cc417eb: 'Video Hintergrund' # Video Hintergrund
     5eec0c3a-943f-4959-b56a-bdb2c1ddc2f6: Subtitel # Subtitel
@@ -56,6 +64,7 @@ meta:
     46982c5f-b8a8-4ba1-bdef-d9e05a0aec4c: 'Text Frankreich' # Text Frankreich
     69983b47-acee-48fe-a414-30b622fe223b: Inhaltsfeld # Inhaltsfeld
     269746c8-f044-4f33-a3e7-f6a27dea14ae: Video # Video
+    315537d8-5143-4f75-bdfc-812e719318f1: 'Bild Person' # Bild Person
     968402ba-82ef-4c27-aa14-4f14dc268c8a: Regisseur # Regisseur
     04996341-dc28-4956-8835-0b437e17d6dd: Regisseur # Regisseur
     69816707-a2df-4e48-b818-2b43eb29e9fd: Icons # Icons
@@ -64,14 +73,16 @@ meta:
     b84af26f-7dc4-4849-8a11-29881470d18c: Simple # Simple
     b9364b69-4890-4291-87d2-84de73a5f576: Filme # Filme
     bf2eb36d-0ecb-43ae-9d29-051fae84a60b: 'Farbe Subtitel' # Farbe Subtitel
+    c31e5233-34ac-4776-953b-378bb0db5b18: Person # Person
     c46ade7c-34e1-4543-98f6-69f58bae2993: 'Bild Hintergrund' # Bild Hintergrund
+    d15eb8da-5f6a-472a-bbdb-6c921cf46d20: Personen # Personen
     db1f962f-5da7-4a16-a238-a313824e5c72: '600x400 FilmThumb' # 600x400 FilmThumb
     de3c3820-1e5f-4317-8661-e739917c470a: 'Mini Icon Email' # Mini Icon Email
     ec7692f4-f47a-4290-b6bd-3803680586f6: Homepage # Homepage
     eebf63a4-14fb-4630-b033-c6d97e89e154: 'Mini Icon' # Mini Icon
     f7b6e1ba-4676-494b-bda5-666cf9d0533a: Films # Films
     f13b35b9-004c-4ccb-9b3c-073525339052: Hintergrundbild # Hintergrundbild
-    f7647892-8b56-4f2c-bf36-036bfff0df4b: 'Bild Hintergrund' # Bild Hintergrund
+    f7647892-8b56-4f2c-bf36-036bfff0df4b: Bild # Bild
     f8035747-f395-413b-81cb-077ad48d657a: 'Page Intro' # Page Intro
     fd8bac83-e955-4b7d-b685-11622dbb13cf: Contact # Contact
 plugins:
@@ -113,7 +124,7 @@ system:
   edition: solo
   live: true
   name: 'Andrea Film'
-  schemaVersion: 5.0.0.21
+  schemaVersion: 5.3.0.2
   timeZone: Europe/Zurich
 users:
   allowPublicRegistration: false

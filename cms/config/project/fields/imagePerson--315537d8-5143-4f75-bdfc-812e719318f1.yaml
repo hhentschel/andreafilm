@@ -1,23 +1,22 @@
 columnSuffix: null
-handle: filmImage
+handle: imagePerson
 instructions: null
-name: Bild
-searchable: true
+name: 'Bild Person'
+searchable: false
 settings:
   allowSelfRelations: false
   allowSubfolders: false
   allowUploads: true
-  allowedKinds:
-    - image
+  allowedKinds: null
   branchLimit: null
-  defaultUploadLocationSource: 'volume:f7b6e1ba-4676-494b-bda5-666cf9d0533a' # Films
+  defaultUploadLocationSource: 'volume:3f726da0-01a5-472f-9ba8-5a49157e9056' # Personen
   defaultUploadLocationSubpath: null
   maintainHierarchy: false
   maxRelations: null
   minRelations: null
   previewMode: full
-  restrictFiles: true
-  restrictLocation: true
+  restrictFiles: false
+  restrictLocation: false
   restrictedDefaultUploadSubpath: null
   restrictedLocationSource: 'volume:f7b6e1ba-4676-494b-bda5-666cf9d0533a' # Films
   restrictedLocationSubpath: null
@@ -25,8 +24,9 @@ settings:
   showCardsInGrid: false
   showSiteMenu: true
   showUnpermittedFiles: false
-  showUnpermittedVolumes: true
-  sources: '*'
+  showUnpermittedVolumes: false
+  sources:
+    - 'volume:3f726da0-01a5-472f-9ba8-5a49157e9056' # Personen
   targetSiteId: null
   validateRelatedElements: false
   viewMode: list

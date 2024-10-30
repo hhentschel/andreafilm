@@ -1,0 +1,30 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  - c31e5233-34ac-4776-953b-378bb0db5b18 # Person
+handle: personen
+maxAuthors: 1
+name: Personen
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primäre Eintrag Seite'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  eccd415c-2a08-4035-94cd-62a46c8cd0a2:
+    enabledByDefault: true
+    hasUrls: true
+    template: personen/_entry.twig
+    uriFormat: 'personen/{slug}'
+structure:
+  maxLevels: null
+  uid: faef92e4-7d13-43cd-848e-b2ded84190cf
+type: structure
