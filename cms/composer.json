@@ -34,7 +34,7 @@
       "@post-craft-update"
     ],
     "deploy-staging": [
-      "composer install --no-interaction --prefer-dist --optimize-autoloader"
+      "composer update --no-interaction --prefer-dist --optimize-autoloader"
     ],
     "deploy-production": [
       "composer craft-update"
