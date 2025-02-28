@@ -3,10 +3,10 @@
   "prefer-stable": true,
   "require": {
     "php": "^8.0.2",
-    "craftcms/ckeditor": "4.3.1",
-    "craftcms/cms": "5.4.9",
+    "craftcms/ckeditor": "4.5.0",
+    "craftcms/cms": "5.6.3",
     "miranj/craft-obfuscator": "^1.2.0",
-    "mmikkel/cp-field-inspect": "2.0.2",
+    "mmikkel/cp-field-inspect": "2.0.4",
     "nystudio107/craft-vite": "5.0.1",
     "verbb/cp-nav": "5.0.2",
     "vlucas/phpdotenv": "^5.4.0",
@@ -32,6 +32,12 @@
     "craft-update": [
       "@pre-craft-update",
       "@post-craft-update"
+    ],
+    "deploy-staging": [
+      "composer install --no-interaction --prefer-dist --optimize-autoloader"
+    ],
+    "deploy-production": [
+      "composer craft-update"
     ],
     "post-craft-update": [
       "Composer\\Config::disableProcessTimeout",
