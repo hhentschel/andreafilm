@@ -1,22 +1,22 @@
 {
   "src/js/app-legacy.ts": {
-    "file": "assets/app-legacy-14291c69.js",
+    "file": "assets/app-legacy-dd7e33d5.js",
     "isEntry": true,
     "src": "src/js/app-legacy.ts",
-    "integrity": "sha384-5pSgeOXy3ItJePuM6r8w8xliuLugCi47llTC9cI8L1CZhVKnfGb+hA/CVOo3ziG6"
+    "integrity": "sha384-lVuuY3hcH4pz9TmjwiSwO1dkZK3hPlCNewOi1d06xTLOgf6BROSzDCIu3FYjoToS"
   },
   "src/js/app.css": {
-    "file": "assets/app-254c378a.css",
+    "file": "assets/app-fc379c70.css",
     "src": "src/js/app.css",
-    "integrity": "sha384-R+HUaVGAeqqEezhvgN6z/SnnGoQfB0H22/CIcZ3XTAGjYfc6Q6p0nSm5C2BlxqQe"
+    "integrity": "sha384-LQZFGpAOfbjVtNxMeOdFbE1H7W2E1sEnLZtOBxPfbDQV89kYGwE2aF3SxlVb1b8v"
   },
   "src/js/app.ts": {
     "css": [
-      "assets/app-254c378a.css"
+      "assets/app-fc379c70.css"
     ],
-    "file": "assets/app-ef9db43c.js",
+    "file": "assets/app-7a4c97e6.js",
     "isEntry": true,
     "src": "src/js/app.ts",
-    "integrity": "sha384-CfvS3PzG6mo+C2yLhcbqI+z54XfaDke1lR1TlBANtTm7gkkPngqoMtOYVBHCG77h"
+    "integrity": "sha384-91sPVXtzMWGam3aYlfpb8JgIP/rYoTqpEoKuWbzwGhXz1BVO/HHrgrUNw4MIRZ+6"
   }
 }
