@@ -19,7 +19,7 @@ user_assets/
 # ASSETS
 /cms/web/assets/*
 /cms/web/cpresources/*
-/cms/web/dist/*
+#/cms/web/dist/*
 /cms/web/favicon.*
 /cms/web/sw.*
 
