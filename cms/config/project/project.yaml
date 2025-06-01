@@ -1,4 +1,4 @@
-dateModified: 1744480680
+dateModified: 1748786444
 email:
   fromEmail: p@henrik-hentschel.de
   fromName: 'Andrea Film'
@@ -124,7 +124,7 @@ system:
   edition: solo
   live: true
   name: 'Andrea Film'
-  schemaVersion: 5.6.0.2
+  schemaVersion: 5.7.0.3
   timeZone: Europe/Zurich
 users:
   allowPublicRegistration: false
