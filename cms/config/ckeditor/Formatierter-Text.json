@@ -1,0 +1,21 @@
+{
+  "alignment": {
+    "options": [
+      "left",
+      "right"
+    ]
+  },
+  "link": {
+    "decorators": {
+      "addTargetToExternalLinks": {
+        "attributes": {
+          "rel": "noopener noreferrer",
+          "target": "_blank"
+        },
+        "defaultValue": true,
+        "label": "In einem neuen Tab öffnen",
+        "mode": "manual"
+      }
+    }
+  }
+}

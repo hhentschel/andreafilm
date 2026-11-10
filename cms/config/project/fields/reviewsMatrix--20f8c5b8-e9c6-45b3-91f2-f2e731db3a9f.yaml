@@ -6,7 +6,7 @@ name: Reviews
 searchable: false
 settings:
   entryTypes:
-    - 8115fd63-b5c1-4708-8ba5-58ae7c3c450d
+    - 8115fd63-b5c1-4708-8ba5-58ae7c3c450d # Review
   maxEntries: null
   minEntries: null
   propagationKeyFormat: null

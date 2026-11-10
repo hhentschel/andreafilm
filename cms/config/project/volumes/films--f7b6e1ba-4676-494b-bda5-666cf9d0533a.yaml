@@ -2,5 +2,6 @@ fs: films
 handle: films
 hasUrls: true
 name: Films
+propagationMethod: custom
 sortOrder: '2'
 url: '@andreafilm_url/user_assets/images/films'

@@ -1,6 +1,8 @@
 color: null
 fieldLayouts:
   5eb00478-8bed-49c4-8126-6412f53eb707:
+    cardView:
+      - 'layoutElement:24436b0e-84d2-43ad-8ff7-609c9032fd95'
     tabs:
       -
         elementCondition: null
@@ -9,10 +11,8 @@ fieldLayouts:
             elementCondition: null
             fieldUid: 1c4795f4-32d4-4671-8316-84b8c342311f
             handle: null
-            includeInCards: true
             instructions: null
             label: 'Credit Label'
-            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -24,10 +24,8 @@ fieldLayouts:
             elementCondition: null
             fieldUid: 42c4a58f-7215-463d-ba64-6c346ab02572
             handle: null
-            includeInCards: false
             instructions: null
             label: 'Credit Text'
-            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField

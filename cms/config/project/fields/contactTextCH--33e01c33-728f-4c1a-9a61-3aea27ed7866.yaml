@@ -7,15 +7,37 @@ searchable: true
 settings:
   availableTransforms: '*'
   availableVolumes: '*'
-  ckeConfig: 9acf338d-de8b-41c4-a72f-07be62b25a2d # Formatierter Text
   columnType: text
+  css: null
+  cssFile: null
   defaultTransform: null
   enableSourceEditingForNonAdmins: false
+  fullGraphqlData: false
+  headingLevels:
+    - 1
+    - 2
+    - 3
+  js: null
+  jsFile: Formatierter-Text.json
+  options: null
   purifierConfig: null
   purifyHtml: true
   showUnpermittedFiles: false
   showUnpermittedVolumes: false
   showWordCount: false
+  toolbar:
+    - code
+    - '|'
+    - bold
+    - italic
+    - link
+    - underline
+    - subscript
+    - superscript
+    - strikethrough
+    - alignment
+    - bulletedList
+    - sourceEditing
   wordLimit: null
 translationKeyFormat: null
 translationMethod: none

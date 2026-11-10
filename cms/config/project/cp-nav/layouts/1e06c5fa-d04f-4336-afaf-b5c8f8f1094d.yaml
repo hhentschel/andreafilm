@@ -1,3 +1,76 @@
+customizations:
+  acknowledgedRegistryKeys:
+    - 'craft:dashboard'
+    - 'craft:content/entries'
+    - 'craft:assets'
+    - 'craft:graphql'
+    - 'craft:graphql/schemas'
+    - 'craft:graphql/tokens'
+    - 'craft:graphql/graphiql'
+    - 'craft:utilities'
+    - 'craft:settings'
+    - 'craft:plugin-store'
+  migrationVersion: 1
+  nodes:
+    craft__b64_Y29udGVudC9lbnRyaWVz:
+      enabled: true
+      icon: section
+      key: 'craft:content/entries'
+      parent: ''
+      sort: 20
+    craft__b64_YXNzZXRz:
+      enabled: true
+      icon: assets
+      key: 'craft:assets'
+      parent: ''
+      sort: 30
+    craft__b64_Z3JhcGhxbA:
+      enabled: true
+      icon: graphql
+      key: 'craft:graphql'
+      parent: ''
+      sort: 70
+    craft__b64_Z3JhcGhxbC9ncmFwaGlxbA:
+      enabled: true
+      key: 'craft:graphql/graphiql'
+      newWindow: true
+      parent: 'craft:graphql'
+      sort: 30
+    craft__b64_Z3JhcGhxbC9zY2hlbWFz:
+      enabled: true
+      key: 'craft:graphql/schemas'
+      parent: 'craft:graphql'
+      sort: 10
+    craft__b64_Z3JhcGhxbC90b2tlbnM:
+      enabled: true
+      key: 'craft:graphql/tokens'
+      parent: 'craft:graphql'
+      sort: 20
+    craft__b64_ZGFzaGJvYXJk:
+      enabled: true
+      icon: gauge
+      key: 'craft:dashboard'
+      parent: ''
+      sort: 10
+    craft__b64_c2V0dGluZ3M:
+      enabled: true
+      icon: settings
+      key: 'craft:settings'
+      parent: ''
+      sort: 50
+    craft__b64_cGx1Z2luLXN0b3Jl:
+      enabled: true
+      icon: plugin
+      key: 'craft:plugin-store'
+      parent: ''
+      sort: 60
+    craft__b64_dXRpbGl0aWVz:
+      enabled: true
+      icon: tool
+      key: 'craft:utilities'
+      parent: ''
+      sort: 40
+  providerKeyVersion: 2
 isDefault: 1
 name: Default
 permissions: null

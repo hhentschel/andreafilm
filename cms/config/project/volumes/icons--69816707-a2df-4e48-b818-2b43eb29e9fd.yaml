@@ -2,5 +2,6 @@ fs: icons
 handle: icons
 hasUrls: true
 name: Icons
+propagationMethod: custom
 sortOrder: 4
 url: '@andreafilm_url/user_assets/icons'
